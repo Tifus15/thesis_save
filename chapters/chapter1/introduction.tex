@@ -1,0 +1,22 @@
+\chapter{Introduction}
+The intersection of physics and deep learning has never been more pronounced than it is today. With advancements in hardware and computational capabilities, we are now positioned to model physical phenomena with unprecedented precision using deep learning techniques, particularly through physics-informed neural networks.\\
+The robotics and machine learning are mostly oriented on dynamics of the robot like manipulators. Such robots are mostly difficult to simulate that they have joints which has property of position and velocity. In dynamics calculation every of those should be calculated in real time. Such fast calculation often bring the inaccuracy in the dynamics of the robot.\\
+With the implementation of the neural networks, we could build a generalised model which is governed trough the dynamics equations. The papers often mention making the model  with the Langrage equations\cite{Delan}. In the thesis we will use similar equations which are called hamiltonian equations. Those equations brings our dynamics calculations to the simple ordinary differential equation(ODE)
+\begin{equation}
+	\dot{x} = f(x,t)
+\end{equation} \\
+or in Hamiltonian Form
+\begin{equation}
+	\dot{\mathbf{z}} = \mathbf{J}\frac{\partial\mathcal{H}}{\partial \mathbf{z}}
+\end{equation} where $\mathbf{z}=[\mathbf{q},\mathbf{p}]^T$ and $\mathbf{J} = \begin{bmatrix}
+0 & \mathbf{I}_n\\
+-\mathbf{I}_n & 0
+\end{bmatrix} $\\
+
+This calls for the inspection of neural architectures as multilayer pereceptrons, Gated/Recurrent neural networks, and hamiltonian neural networks.\\ 
+Manipulator has many joints, Franka Emika Panda for example has 7 joints which means that it has 7 degrees of freedom. Such connections between the joints build a graph. This give us idea to inspect the capabilities of graph neural networks. This will be done on N-body problem and N-body Pendelum. We hope that the network will be capable not only to learn physical properties in the system but show the accurate predictions of the joints and be trained in reasonable long time.
+
+
+
+
+%% related works, philosophy, motivations, my contributions
