@@ -19,6 +19,162 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{dopri5}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d94899789d514df7a10e24eaeadb6d7b}{%
+           family={Calvo},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0d9863d0c653a020d060e529591ab11b}{%
+           family={Montijano},
+           familyi={M\bibinitperiod},
+           given={J.I.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d66dbd5aac4b71d7412e50db804c6aee}{%
+           family={Randez},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8f1e4c1dcf1dc057a9155df7da7ef45}
+      \strng{fullhash}{c8f1e4c1dcf1dc057a9155df7da7ef45}
+      \strng{bibnamehash}{c8f1e4c1dcf1dc057a9155df7da7ef45}
+      \strng{authorbibnamehash}{c8f1e4c1dcf1dc057a9155df7da7ef45}
+      \strng{authornamehash}{c8f1e4c1dcf1dc057a9155df7da7ef45}
+      \strng{authorfullhash}{c8f1e4c1dcf1dc057a9155df7da7ef45}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A family of fifth-order interpolants for the fifth-order solution provided by the Dormand and Prince Runge-Kutta pair RK5(4)7M which requires two additional function evaluations per step is presented. An optimal interpolant in this family has been determined by choosing the parameters to minimize the leading coefficients of the local truncation error of the continuous solution. Some numerical experiments with the nonstiff DETEST problems show that the proposed optimal method has a good interpolatory behavior.}
+      \field{issn}{0377-0427}
+      \field{journaltitle}{Journal of Computational and Applied Mathematics}
+      \field{number}{1}
+      \field{title}{A fifth-order interpolant for the Dormand and Prince Runge-Kutta method}
+      \field{volume}{29}
+      \field{year}{1990}
+      \field{pages}{91\bibrangedash 100}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0377-0427(90)90198-9
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0377042790901989
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0377042790901989
+      \endverb
+      \keyw{Ordinary differential equations,Runge-Kutta methods,interpolation}
+    \endentry
+    \entry{mlppic}{article}{}
+      \name{author}{8}{}{%
+        {{hash=79b43b17b9a7950f56a0709f57883073}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Kit\bibnamedelima Yan},
+           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=a23074a303b7666adb4e31d30cf96426}{%
+           family={Abu-Salih},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Bilal},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ee303b5398cfabcc64fb830b80454584}{%
+           family={Qaddoura},
+           familyi={Q\bibinitperiod},
+           given={Raneem},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6f8e3aef854b4874fd1df48383abf4b1}{%
+           family={Al-Zoubi},
+           familyi={A\bibinithyphendelim Z\bibinitperiod},
+           given={Ala’\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5f11552455807f527c6703db8b3a2c0f}{%
+           family={Palade},
+           familyi={P\bibinitperiod},
+           given={Vasile},
+           giveni={V\bibinitperiod}}}%
+        {{hash=e7b86b7700c13a9d7665ccb7081b1fa4}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={Duc-Son},
+           giveni={D\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=9af0792c82515e88f0d30221b55f31ba}{%
+           family={Ser},
+           familyi={S\bibinitperiod},
+           given={Javier\bibnamedelima Del},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=fc7891c81d834c5b7ced804c65d6560f}{%
+           family={Muhammad},
+           familyi={M\bibinitperiod},
+           given={Khan},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{7873ed7c0c516fdeb7bc219753eae09c}
+      \strng{fullhash}{42e7a2e1072dd9ab4f8deaeda6ffd6cc}
+      \strng{bibnamehash}{7873ed7c0c516fdeb7bc219753eae09c}
+      \strng{authorbibnamehash}{7873ed7c0c516fdeb7bc219753eae09c}
+      \strng{authornamehash}{7873ed7c0c516fdeb7bc219753eae09c}
+      \strng{authorfullhash}{42e7a2e1072dd9ab4f8deaeda6ffd6cc}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0925-2312}
+      \field{journaltitle}{Neurocomputing}
+      \field{title}{Deep neural networks in the cloud: Review, applications, challenges and research directions}
+      \field{volume}{545}
+      \field{year}{2023}
+      \field{pages}{126327}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.neucom.2023.126327
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925231223004502
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925231223004502
+      \endverb
+      \keyw{Big data,Cloud computing,Deep neural networks,High-performance computing}
+    \endentry
+    \entry{osci}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=a8a82b35752377da9a145f99b125011b}{%
+           family={Chandra},
+           familyi={C\bibinitperiod},
+           given={Suresh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f70eb145b3ce72b4e4d4625545d63b47}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Mohit\bibnamedelima Kumar},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=fdecefb6146f4340a6c1062544e64db9}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Monika},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Foundation Books}%
+      }
+      \strng{namehash}{7080cd16b40f697b7d099f8a04e14db7}
+      \strng{fullhash}{7080cd16b40f697b7d099f8a04e14db7}
+      \strng{bibnamehash}{7080cd16b40f697b7d099f8a04e14db7}
+      \strng{authorbibnamehash}{7080cd16b40f697b7d099f8a04e14db7}
+      \strng{authornamehash}{7080cd16b40f697b7d099f8a04e14db7}
+      \strng{authorfullhash}{7080cd16b40f697b7d099f8a04e14db7}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Fundamentals of Mechanics}
+      \field{title}{Harmonic Oscillator}
+      \field{year}{2014}
+      \field{pages}{150\bibrangedash 174}
+      \range{pages}{25}
+    \endentry
     \entry{neuralODE}{misc}{}
       \name{author}{4}{}{%
         {{hash=9db211fe28b9db15bc04d29bedf2e03f}{%
@@ -64,6 +220,575 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/1806.07366
+      \endverb
+    \endentry
+    \entry{rnntypes}{inbook}{}
+      \name{author}{5}{}{%
+        {{hash=feca11d8611979a867d0653e90946ffe}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Susmita},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9b6bd78aa38d1e46644d64d6fe5aed3b}{%
+           family={Tariq},
+           familyi={T\bibinitperiod},
+           given={Amara},
+           giveni={A\bibinitperiod}}}%
+        {{hash=74547320589ede9ca840cab623fe37b3}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Thiago},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f1814afa23cf479df72448d5925c9a28}{%
+           family={Kantareddy},
+           familyi={K\bibinitperiod},
+           given={Sai\bibnamedelima Sandeep},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8f33fc7aa273f793e518c49954ab7a0f}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Imon},
+           giveni={I\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=f7b4f4b7a13b3d9b4e903f743d6cccf6}{%
+           family={Colliot},
+           familyi={C\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{06186ec6a371e9f54e371174df30edad}
+      \strng{fullhash}{14cb2b7d012c2534074d9cd54cec0943}
+      \strng{bibnamehash}{06186ec6a371e9f54e371174df30edad}
+      \strng{authorbibnamehash}{06186ec6a371e9f54e371174df30edad}
+      \strng{authornamehash}{06186ec6a371e9f54e371174df30edad}
+      \strng{authorfullhash}{14cb2b7d012c2534074d9cd54cec0943}
+      \strng{editorbibnamehash}{f7b4f4b7a13b3d9b4e903f743d6cccf6}
+      \strng{editornamehash}{f7b4f4b7a13b3d9b4e903f743d6cccf6}
+      \strng{editorfullhash}{f7b4f4b7a13b3d9b4e903f743d6cccf6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recurrent neural networks (RNNs) are neural network architectures with hidden state and which use feedback loops to process a sequence of data that ultimately informs the final output. Therefore, RNN models can recognize sequential characteristics in the data and help to predict the next likely data point in the data sequence. Leveraging the power of sequential data processing, RNN use cases tend to be connected to either language models or time-series data analysis. However, multiple popular RNN architectures have been introduced in the field, starting from SimpleRNN and LSTM to deep RNN, and applied in different experimental settings. In this chapter, we will present six distinct RNN architectures and will highlight the pros and cons of each model. Afterward, we will discuss real-life tips and tricks for training the RNN models. Finally, we will present four popular language modeling applications of the RNN models --text classification, summarization, machine translation, and image-to-text translation-- thereby demonstrating influential research in the field.}
+      \field{booktitle}{Machine Learning for Brain Disorders}
+      \field{isbn}{978-1-0716-3195-9}
+      \field{title}{Recurrent Neural Networks (RNNs): Architectures, Training Tricks, and Introduction to Influential Research}
+      \field{year}{2023}
+      \field{pages}{117\bibrangedash 138}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/978-1-0716-3195-9_4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-1-0716-3195-9_4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-1-0716-3195-9_4
+      \endverb
+    \endentry
+    \entry{gru}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cdbe375f4349622904210be2071a2806}{%
+           family={Dey},
+           familyi={D\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=562329d35461b8ad79d7293e6f6f7164}{%
+           family={Salem},
+           familyi={S\bibinitperiod},
+           given={Fathi\bibnamedelima M.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{fullhash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{bibnamehash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{authorbibnamehash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{authornamehash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{authorfullhash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2017 IEEE 60th International Midwest Symposium on Circuits and Systems (MWSCAS)}
+      \field{title}{Gate-variants of Gated Recurrent Unit (GRU) neural networks}
+      \field{year}{2017}
+      \field{pages}{1597\bibrangedash 1600}
+      \range{pages}{4}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:8492900
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:8492900
+      \endverb
+    \endentry
+    \entry{rnn_picture}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=c102a4f1b21f6dfa5a61504f7970559a}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Weijiang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ac537b225529e941159a6615d757d667}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Naiyang},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e5d6fa51a69f9c96a946952d51fd92f7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=87f628db6da99dc0a2a20f276e51b3ac}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=6adce7767df11011537cbf38d5e121d0}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Zhigang},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{b15ba3fa223adb579828479eb8c21152}
+      \strng{fullhash}{377761588095ca03dab69896a270f995}
+      \strng{bibnamehash}{b15ba3fa223adb579828479eb8c21152}
+      \strng{authorbibnamehash}{b15ba3fa223adb579828479eb8c21152}
+      \strng{authornamehash}{b15ba3fa223adb579828479eb8c21152}
+      \strng{authorfullhash}{377761588095ca03dab69896a270f995}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{Audio visual speech recognition with multimodal recurrent neural networks}
+      \field{year}{2017}
+      \field{pages}{681\bibrangedash 688}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IJCNN.2017.7965918
+      \endverb
+    \endentry
+    \entry{dalam}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=828d0dfb1d9b450ef4a35de020969f74}{%
+           family={Flygare},
+           familyi={F\bibinitperiod},
+           given={Mattias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{828d0dfb1d9b450ef4a35de020969f74}
+      \strng{fullhash}{828d0dfb1d9b450ef4a35de020969f74}
+      \strng{bibnamehash}{828d0dfb1d9b450ef4a35de020969f74}
+      \strng{authorbibnamehash}{828d0dfb1d9b450ef4a35de020969f74}
+      \strng{authornamehash}{828d0dfb1d9b450ef4a35de020969f74}
+      \strng{authorfullhash}{828d0dfb1d9b450ef4a35de020969f74}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Holonomic versus nonholonomic constraints}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:118677177
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:118677177
+      \endverb
+    \endentry
+    \entry{hnn}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=fe9ce1bef3d1676b744e04c0a24a08b9}{%
+           family={Greydanus},
+           familyi={G\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8435ccdef951e544721249bb2a1a2fd0}{%
+           family={Dzamba},
+           familyi={D\bibinitperiod},
+           given={Misko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9f400712248e594ce887c5cd06d9767b}{%
+           family={Yosinski},
+           familyi={Y\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6027ccf3fd0a08c653080ac4ba9bc1f9}
+      \strng{fullhash}{6027ccf3fd0a08c653080ac4ba9bc1f9}
+      \strng{bibnamehash}{6027ccf3fd0a08c653080ac4ba9bc1f9}
+      \strng{authorbibnamehash}{6027ccf3fd0a08c653080ac4ba9bc1f9}
+      \strng{authornamehash}{6027ccf3fd0a08c653080ac4ba9bc1f9}
+      \strng{authorfullhash}{6027ccf3fd0a08c653080ac4ba9bc1f9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.NE}
+      \field{eprinttype}{arXiv}
+      \field{title}{Hamiltonian Neural Networks}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1906.01563
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1906.01563
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1906.01563
+      \endverb
+    \endentry
+    \entry{hudomal2015new}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2dce7f3f9dc5cb04c067336c4142ac15}{%
+           family={Hudomal},
+           familyi={H\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2dce7f3f9dc5cb04c067336c4142ac15}
+      \strng{fullhash}{2dce7f3f9dc5cb04c067336c4142ac15}
+      \strng{bibnamehash}{2dce7f3f9dc5cb04c067336c4142ac15}
+      \strng{authorbibnamehash}{2dce7f3f9dc5cb04c067336c4142ac15}
+      \strng{authornamehash}{2dce7f3f9dc5cb04c067336c4142ac15}
+      \strng{authorfullhash}{2dce7f3f9dc5cb04c067336c4142ac15}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Master of Science Thesis at the Faculty of Physics, Belgrade University}
+      \field{title}{New periodic solutions to the three-body problem and gravitational waves}
+      \field{year}{2015}
+    \endentry
+    \entry{adamW}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=1241b8181104f1917578d4c7f9b323b6}{%
+           family={Loshchilov},
+           familyi={L\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+        {{hash=528d4af87fd2ecf5fb8a22db913ce088}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b308ccb07134a06ec3735828ac4f15e2}
+      \strng{fullhash}{b308ccb07134a06ec3735828ac4f15e2}
+      \strng{bibnamehash}{b308ccb07134a06ec3735828ac4f15e2}
+      \strng{authorbibnamehash}{b308ccb07134a06ec3735828ac4f15e2}
+      \strng{authornamehash}{b308ccb07134a06ec3735828ac4f15e2}
+      \strng{authorfullhash}{b308ccb07134a06ec3735828ac4f15e2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Decoupled Weight Decay Regularization}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1711.05101
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1711.05101
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1711.05101
+      \endverb
+    \endentry
+    \entry{Delan}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=ea28cc6441701681edf0680b2a1e52af}{%
+           family={Lutter},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e3b80d21c4b5bc95c21568646b724627}{%
+           family={Ritter},
+           familyi={R\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c2cb77a864f65a21da0f69121b89835b}{%
+           family={Peters},
+           familyi={P\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b374ee271f2e5addb42b722daef6290}
+      \strng{fullhash}{3b374ee271f2e5addb42b722daef6290}
+      \strng{bibnamehash}{3b374ee271f2e5addb42b722daef6290}
+      \strng{authorbibnamehash}{3b374ee271f2e5addb42b722daef6290}
+      \strng{authornamehash}{3b374ee271f2e5addb42b722daef6290}
+      \strng{authorfullhash}{3b374ee271f2e5addb42b722daef6290}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Deep Lagrangian Networks: Using Physics as Model Prior for Deep Learning}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1907.04490
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1907.04490
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1907.04490
+      \endverb
+    \endentry
+    \entry{mlprnn}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=b9495c8a5a2c9489e8af928b6f0eed6b}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=854278958e1021c53ca312cc8316e2a6}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Jiliang},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{2c81b5bc387477e8e81c55956c94422f}
+      \strng{fullhash}{2c81b5bc387477e8e81c55956c94422f}
+      \strng{bibnamehash}{2c81b5bc387477e8e81c55956c94422f}
+      \strng{authorbibnamehash}{2c81b5bc387477e8e81c55956c94422f}
+      \strng{authornamehash}{2c81b5bc387477e8e81c55956c94422f}
+      \strng{authorfullhash}{2c81b5bc387477e8e81c55956c94422f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Deep Learning on Graphs}
+      \field{title}{Foundations of Deep Learning}
+      \field{year}{2021}
+      \field{pages}{43\bibrangedash 72}
+      \range{pages}{30}
+    \endentry
+    \entry{ClassPhy}{book}{}
+      \name{author}{1}{}{%
+        {{hash=642c4d85c111c7f4b493339954619e23}{%
+           family={Matthew\bibnamedelimb J.\bibnamedelimi Benacquista},
+           familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Joseph\bibnamedelimb D.\bibnamedelimi Romano},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{642c4d85c111c7f4b493339954619e23}
+      \strng{fullhash}{642c4d85c111c7f4b493339954619e23}
+      \strng{bibnamehash}{642c4d85c111c7f4b493339954619e23}
+      \strng{authorbibnamehash}{642c4d85c111c7f4b493339954619e23}
+      \strng{authornamehash}{642c4d85c111c7f4b493339954619e23}
+      \strng{authorfullhash}{642c4d85c111c7f4b493339954619e23}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-68779-7}
+      \field{title}{Classical Mechanics}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{gru_picture}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fca9de034455d7069366355da24ee7a1}{%
+           family={Mohsen},
+           familyi={M\bibinitperiod},
+           given={Saeed},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fca9de034455d7069366355da24ee7a1}
+      \strng{fullhash}{fca9de034455d7069366355da24ee7a1}
+      \strng{bibnamehash}{fca9de034455d7069366355da24ee7a1}
+      \strng{authorbibnamehash}{fca9de034455d7069366355da24ee7a1}
+      \strng{authornamehash}{fca9de034455d7069366355da24ee7a1}
+      \strng{authorfullhash}{fca9de034455d7069366355da24ee7a1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{month}{05}
+      \field{title}{Recognition of human activity using GRU deep learning algorithm}
+      \field{volume}{82}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1007/s11042-023-15571-y
+      \endverb
+    \endentry
+    \entry{ham}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=659248696cebf0f5ecf23f684fb6f122}{%
+           family={Montague},
+           familyi={M\bibinitperiod},
+           given={B.\bibnamedelimi W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{659248696cebf0f5ecf23f684fb6f122}
+      \strng{fullhash}{659248696cebf0f5ecf23f684fb6f122}
+      \strng{bibnamehash}{659248696cebf0f5ecf23f684fb6f122}
+      \strng{authorbibnamehash}{659248696cebf0f5ecf23f684fb6f122}
+      \strng{authornamehash}{659248696cebf0f5ecf23f684fb6f122}
+      \strng{authorfullhash}{659248696cebf0f5ecf23f684fb6f122}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{CERN Accelerator School: Course on Advanced Accelerator Physics (CAS)}}
+      \field{title}{{Basic Hamiltonian mechanics}}
+      \field{year}{1993}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+    \endentry
+    \entry{web}{online}{}
+      \name{author}{1}{}{%
+        {{hash=25297a887b25eb381d4eb960135210c5}{%
+           family={Physics\bibnamedelima Belgrade},
+           familyi={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Institute},
+           giveni={I\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{25297a887b25eb381d4eb960135210c5}
+      \strng{fullhash}{25297a887b25eb381d4eb960135210c5}
+      \strng{bibnamehash}{25297a887b25eb381d4eb960135210c5}
+      \strng{authorbibnamehash}{25297a887b25eb381d4eb960135210c5}
+      \strng{authornamehash}{25297a887b25eb381d4eb960135210c5}
+      \strng{authorfullhash}{25297a887b25eb381d4eb960135210c5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{THREE-BODY GALLERY}
+      \verb{urlraw}
+      \verb http://three-body.ipb.ac.rs/
+      \endverb
+      \verb{url}
+      \verb http://three-body.ipb.ac.rs/
+      \endverb
+    \endentry
+    \entry{ortho}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=5cd8c5e24329422b443a9ecf5bf8e738}{%
+           family={Ray},
+           familyi={R\bibinitperiod},
+           given={Subhankar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=daff272f718d14a7da501d205c81c2e2}{%
+           family={Shamanna},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{20d695dd6edd5facb3fc59e9607ceb1a}
+      \strng{fullhash}{20d695dd6edd5facb3fc59e9607ceb1a}
+      \strng{bibnamehash}{20d695dd6edd5facb3fc59e9607ceb1a}
+      \strng{authorbibnamehash}{20d695dd6edd5facb3fc59e9607ceb1a}
+      \strng{authornamehash}{20d695dd6edd5facb3fc59e9607ceb1a}
+      \strng{authorfullhash}{20d695dd6edd5facb3fc59e9607ceb1a}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.ed-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Virtual Displacement in Lagrangian Dynamics}
+      \field{year}{2004}
+      \verb{eprint}
+      \verb physics/0410123
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/physics/0410123
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/physics/0410123
+      \endverb
+    \endentry
+    \entry{rnn}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3c434db5f6f20ddfc1806a8d873a4748}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Robin\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c434db5f6f20ddfc1806a8d873a4748}
+      \strng{fullhash}{3c434db5f6f20ddfc1806a8d873a4748}
+      \strng{bibnamehash}{3c434db5f6f20ddfc1806a8d873a4748}
+      \strng{authorbibnamehash}{3c434db5f6f20ddfc1806a8d873a4748}
+      \strng{authornamehash}{3c434db5f6f20ddfc1806a8d873a4748}
+      \strng{authorfullhash}{3c434db5f6f20ddfc1806a8d873a4748}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Recurrent Neural Networks (RNNs): A gentle Introduction and Overview}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1912.05911
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1912.05911
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1912.05911
+      \endverb
+    \endentry
+    \entry{papthreebody}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4eb26f9d6fed3e92a5d3567d054f76bc}{%
+           family={Šuvakov},
+           familyi={Š\bibinitperiod},
+           given={Milovan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=09f57aae77440cdf449cfc6c54ee9e8c}{%
+           family={Dmitrašinović},
+           familyi={D\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{b8c83e5c4c8ba2d4c62e80e88a27d9b7}
+      \strng{fullhash}{b8c83e5c4c8ba2d4c62e80e88a27d9b7}
+      \strng{bibnamehash}{b8c83e5c4c8ba2d4c62e80e88a27d9b7}
+      \strng{authorbibnamehash}{b8c83e5c4c8ba2d4c62e80e88a27d9b7}
+      \strng{authornamehash}{b8c83e5c4c8ba2d4c62e80e88a27d9b7}
+      \strng{authorfullhash}{b8c83e5c4c8ba2d4c62e80e88a27d9b7}
+      \field{sortinit}{Š}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{3}
+      \field{number}{11}
+      \field{title}{Three Classes of Newtonian Three-Body Planar Periodic Orbits}
+      \field{volume}{110}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1103/physrevlett.110.114301
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.110.114301
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.110.114301
       \endverb
     \endentry
   \enddatalist

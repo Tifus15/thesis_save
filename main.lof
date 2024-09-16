@@ -2,4 +2,12 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Multilayer perceptron\blx@tocontentsinit {0}\cite {mlppic}}}{24}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Recurrent neural unit(many to many)\blx@tocontentsinit {0}\cite {rnn_picture}}}{25}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Gated recurrent unit\blx@tocontentsinit {0}\cite {gru_picture}}}{26}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces ReLU activation}}{26}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Tanh activation}}{27}{figure.2.5}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

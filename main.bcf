@@ -2344,10 +2344,48 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">neuralODE</bcf:citekey>
-    <bcf:citekey order="2">Delan</bcf:citekey>
-    <bcf:citekey order="3">neuralODE</bcf:citekey>
-    <bcf:citekey order="4">Delan</bcf:citekey>
+    <bcf:citekey order="4">neuralODE</bcf:citekey>
+    <bcf:citekey order="5">Delan</bcf:citekey>
+    <bcf:citekey order="6">ClassPhy</bcf:citekey>
+    <bcf:citekey order="7">osci</bcf:citekey>
+    <bcf:citekey order="8">dopri5</bcf:citekey>
+    <bcf:citekey order="9">ClassPhy</bcf:citekey>
+    <bcf:citekey order="10">ortho</bcf:citekey>
+    <bcf:citekey order="11">dalam</bcf:citekey>
+    <bcf:citekey order="12">ham</bcf:citekey>
+    <bcf:citekey order="13">mlppic</bcf:citekey>
+    <bcf:citekey order="14">mlprnn</bcf:citekey>
+    <bcf:citekey order="15">rnntypes</bcf:citekey>
+    <bcf:citekey order="16">rnn</bcf:citekey>
+    <bcf:citekey order="17">rnn_picture</bcf:citekey>
+    <bcf:citekey order="18">gru</bcf:citekey>
+    <bcf:citekey order="19">gru_picture</bcf:citekey>
+    <bcf:citekey order="20">adamW</bcf:citekey>
+    <bcf:citekey order="21">neuralODE</bcf:citekey>
+    <bcf:citekey order="22">hnn</bcf:citekey>
+    <bcf:citekey order="27">papthreebody</bcf:citekey>
+    <bcf:citekey order="28">web</bcf:citekey>
+    <bcf:citekey order="29">hudomal2015new</bcf:citekey>
+    <bcf:citekey order="30">neuralODE</bcf:citekey>
+    <bcf:citekey order="31">Delan</bcf:citekey>
+    <bcf:citekey order="32">ClassPhy</bcf:citekey>
+    <bcf:citekey order="33">osci</bcf:citekey>
+    <bcf:citekey order="34">dopri5</bcf:citekey>
+    <bcf:citekey order="35">ortho</bcf:citekey>
+    <bcf:citekey order="36">dalam</bcf:citekey>
+    <bcf:citekey order="37">ham</bcf:citekey>
+    <bcf:citekey order="38">mlppic</bcf:citekey>
+    <bcf:citekey order="39">mlprnn</bcf:citekey>
+    <bcf:citekey order="40">rnntypes</bcf:citekey>
+    <bcf:citekey order="41">rnn</bcf:citekey>
+    <bcf:citekey order="42">rnn_picture</bcf:citekey>
+    <bcf:citekey order="43">gru</bcf:citekey>
+    <bcf:citekey order="44">gru_picture</bcf:citekey>
+    <bcf:citekey order="45">adamW</bcf:citekey>
+    <bcf:citekey order="46">hnn</bcf:citekey>
+    <bcf:citekey order="47">papthreebody</bcf:citekey>
+    <bcf:citekey order="48">web</bcf:citekey>
+    <bcf:citekey order="49">hudomal2015new</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
