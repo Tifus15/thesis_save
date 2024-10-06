@@ -2,35 +2,35 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{8}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Background}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Classical Mechanics}{10}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Harmonic Oscilator}{11}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Analytical solution of Ordinary Differential Equations}{12}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Numerical solution of Ordinary Differential Equations}{15}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Solving the harmonic oscilator}{17}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Langrange and Hamiltonian Equations}{18}{subsection.2.1.5}%
-\contentsline {subsubsection}{\numberline {2.1.5.1}Lagrange Equations}{18}{subsubsection.2.1.5.1}%
-\contentsline {subsubsection}{\numberline {2.1.5.2}Hamiltonian Equations}{22}{subsubsection.2.1.5.2}%
-\contentsline {section}{\numberline {2.2}Neural Network Architectures}{23}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Deep forward Network - Multilayer Perceptron}{23}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Recurrent Neural Networks}{24}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Activation functions and Loss functions}{25}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Optimizers}{27}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Backpropagation of Neural Models}{28}{subsection.2.2.5}%
-\contentsline {chapter}{\numberline {3}Methods}{29}{chapter.3}%
-\contentsline {section}{\numberline {3.1}New paradigm - NeuralODE}{29}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Recurrent time steppers}{30}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Hamiltonian Neural Network}{30}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Graph Neural Network}{31}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Convolutional Graph Neural Network}{31}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Gated Attention Network}{32}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Graph Neural Hamiltonian Network}{33}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Gated Recurrent Graph Hamiltonian Neural Network - GRUGHNN}{33}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Datasets}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Oscilator}{34}{section.4.1}%
-\contentsline {section}{\numberline {4.2}N-body problem}{35}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Symplectic numerical methods to solve N-body problem}{36}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}twobody problem}{37}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Three body problem}{39}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}N Pendulum}{42}{section.4.3}%
+\contentsline {chapter}{\numberline {2}Background}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Classical Mechanics}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Harmonic Oscilator}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Analytical solution of Ordinary Differential Equations}{14}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Numerical solution of Ordinary Differential Equations}{17}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Solving the harmonic oscilator}{19}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Langrange and Hamiltonian Equations}{20}{subsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.5.1}Lagrange Equations}{20}{subsubsection.2.1.5.1}%
+\contentsline {subsubsection}{\numberline {2.1.5.2}Hamiltonian Equations}{24}{subsubsection.2.1.5.2}%
+\contentsline {section}{\numberline {2.2}Neural Network Architectures}{25}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Deep forward Network - Multilayer Perceptron}{25}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Recurrent Neural Networks}{26}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Activation functions and Loss functions}{27}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Optimizers}{29}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Backpropagation of Neural Models}{30}{subsection.2.2.5}%
+\contentsline {chapter}{\numberline {3}Methods}{31}{chapter.3}%
+\contentsline {section}{\numberline {3.1}New paradigm - NeuralODE}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Recurrent time steppers}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hamiltonian Neural Network}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Graph Neural Network}{33}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Convolutional Graph Neural Network}{33}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Gated Attention Network}{34}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Graph Neural Hamiltonian Network}{35}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Gated Recurrent Graph Hamiltonian Neural Network - GRUGHNN}{35}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Datasets}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Oscilator}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}N-body problem}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Symplectic numerical methods to solve N-body problem}{38}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}twobody problem}{39}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Three body problem}{41}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}N Pendulum}{44}{section.4.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

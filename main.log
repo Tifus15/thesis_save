@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.5.31)  15 SEP 2024 23:31
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.5.31)  6 OCT 2024 07:15
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2470,33 +2470,65 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
+LaTeX Font Info:    Font shape `TU/RobotoMono(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 5.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `RobotoMono' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
+warning  (file chapters/chapter1/pinn.pdf) (pdf inclusion): PDF inclusion: found
+ PDF version '1.6', but at most version '1.5' allowed
+<chapters/chapter1/pinn.pdf, id=143, 845.04684pt x 597.50787pt>
+File: chapters/chapter1/pinn.pdf Graphic file (type pdf)
+<use chapters/chapter1/pinn.pdf>
+Package luatex.def Info: chapters/chapter1/pinn.pdf  used on input line 13.
+(luatex.def)             Requested size: 426.79134pt x 301.771pt.
 
+Overfull \hbox (8.53578pt too wide) in paragraph at lines 13--15
+[][]
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8
 
 
 
 
-]) [9]
+] [9
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.1
+'
+<./chapters/chapter1/pinn.pdf>]
+warning  (file chapters/chapter1/hnn.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<chapters/chapter1/hnn.pdf, id=189, 845.04684pt x 597.50787pt>
+File: chapters/chapter1/hnn.pdf Graphic file (type pdf)
+<use chapters/chapter1/hnn.pdf>
+Package luatex.def Info: chapters/chapter1/hnn.pdf  used on input line 54.
+(luatex.def)             Requested size: 426.79134pt x 301.771pt.
+
+Overfull \hbox (8.53578pt too wide) in paragraph at lines 54--56
+[][]
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10]) [11
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.2
+'
+<./chapters/chapter1/hnn.pdf>]
 \openout2 = chapters/chapter2/background.aux
  (./chapters/chapter2/background.tex
 chapter 2.
-[10
+[12
 
 
 
 
-]
-LaTeX Font Info:    Font shape `TU/RobotoMono(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `RobotoMono' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [11]
+] [13]
 Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
@@ -2506,7 +2538,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--96
 
  []
 
-[12]
+[14]
 Missing character: There is no î (U+00EE) in font cmmi10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 127--129
@@ -2518,7 +2550,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
-[13] [14]
+[15] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
  []
@@ -2528,18 +2560,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
-[15]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 232--234
 
  []
 
-[16] [17] [18]
+[18] [19] [20]
 
 LaTeX Warning: Command \r invalid in math mode on input line 312.
 
 Missing character: There is no ̊ (U+030A) in font cmmi8!
-[19] [20] [21] [22]
-<chapters/chapter2/mlp.jpg, id=303, 234.7176pt x 168.20363pt>
+[21] [22] [23] [24]
+<chapters/chapter2/mlp.jpg, id=366, 234.7176pt x 168.20363pt>
 File: chapters/chapter2/mlp.jpg Graphic file (type jpg)
 <use chapters/chapter2/mlp.jpg>
 Package luatex.def Info: chapters/chapter2/mlp.jpg  used on input line 428.
@@ -2552,23 +2584,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 424--433
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23]
+[25]
 Missing character: There is no î (U+00EE) in font cmmi10!
 Missing character: There is no î (U+00EE) in font cmmi10!
-[24
+[26
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.1
 '
 <./chapters/chapter2/mlp.jpg>]
-<chapters/chapter2/rnn.png, id=324, 853.1875pt x 372.39125pt>
+<chapters/chapter2/rnn.png, id=387, 853.1875pt x 372.39125pt>
 File: chapters/chapter2/rnn.png Graphic file (type png)
 <use chapters/chapter2/rnn.png>
 Package luatex.def Info: chapters/chapter2/rnn.png  used on input line 456.
 (luatex.def)             Requested size: 227.62204pt x 99.34802pt.
 
 
-LaTeX Warning: Reference `gru' on page 25 undefined on input line 468.
+LaTeX Warning: Reference `gru' on page 27 undefined on input line 468.
 
-<chapters/chapter2/gru.png, id=327, 204.765pt x 121.6545pt>
+<chapters/chapter2/gru.png, id=390, 204.765pt x 121.6545pt>
 File: chapters/chapter2/gru.png Graphic file (type png)
 <use chapters/chapter2/gru.png>
 Package luatex.def Info: chapters/chapter2/gru.png  used on input line 470.
@@ -2581,16 +2613,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
-<chapters/chapter2/relu.png, id=329, 1336.995pt x 708.246pt>
+<chapters/chapter2/relu.png, id=392, 1336.995pt x 708.246pt>
 File: chapters/chapter2/relu.png Graphic file (type png)
 <use chapters/chapter2/relu.png>
 Package luatex.def Info: chapters/chapter2/relu.png  used on input line 486.
 (luatex.def)             Requested size: 227.62204pt x 120.57314pt.
-[25
+[27
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.2
 '
 <./chapters/chapter2/rnn.png>]
-<chapters/chapter2/tanh.png, id=340, 1336.995pt x 708.246pt>
+<chapters/chapter2/tanh.png, id=403, 1336.995pt x 708.246pt>
 File: chapters/chapter2/tanh.png Graphic file (type png)
 <use chapters/chapter2/tanh.png>
 Package luatex.def Info: chapters/chapter2/tanh.png  used on input line 492.
@@ -2599,23 +2631,23 @@ Package luatex.def Info: chapters/chapter2/tanh.png  used on input line 492.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26
+[28
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.3
 '
 
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.4
 '
-<./chapters/chapter2/gru.png><./chapters/chapter2/relu.png>] [27
+<./chapters/chapter2/gru.png><./chapters/chapter2/relu.png>] [29
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.5
 '
-<./chapters/chapter2/tanh.png>]) [28]
+<./chapters/chapter2/tanh.png>]) [30]
 \openout2 = chapters/chapter3/methods.aux
  (./chapters/chapter3/methods.tex
 chapter 3.
 
-LaTeX Warning: Reference `' on page 29 undefined on input line 31.
+LaTeX Warning: Reference `' on page 31 undefined on input line 31.
 
-[29
+[31
 
 
 
@@ -2625,26 +2657,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
-[30] [31] [32]
+[32] [33] [34]
 Underfull \hbox (badness 6708) in paragraph at lines 129--129
 []\TU/Roboto(0)/b/n/14.4 Gated Re-cur-rent Graph Hamil-to-nian Neu-ral Net-work -
  []
 
-) [33]
+) [35]
 \openout2 = chapters/chapter4/datasets.aux
  (./chapters/chapter4/datasets.tex
 chapter 4.
-[34
+[36
 
 
 
 
-] [35] [36] [37] [38] [39]
+] [37] [38] [39] [40] [41]
 Overfull \hbox (23.27261pt too wide) in alignment at lines 229--235
  [][][] []
  []
 
-[40]
+[42]
 Overfull \hbox (11.63391pt too wide) in paragraph at lines 276--285
 \TU/XCharter(0)/m/n/10.95 From trigonom-e-try we know that $[]\OT1/cmr/m/n/10.9
 5 (\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 )[] + [](\OML/cmm/m/it/10.95 \OT1/c
@@ -2652,7 +2684,7 @@ mr/m/n/10.95 )[] = 1$ \TU/XCharter(0)/m/n/10.95 which means $[] \OT1/cmr/m/n/10
 .95 =
  []
 
-[41] [42]) [43] [44
+[43] [44]) [45] [46
 
 
 
@@ -2677,7 +2709,7 @@ Package tudapub Warning: You did not provide a Label for key discussion.
 (tudapub)                Either you need to recompile your document or add a
 (tudapub)                label using \IMRADlabel.
 
-[45] (./main.aux (./chapters/abstract.aux)
+[47] (./main.aux (./chapters/abstract.aux)
 (./chapters/chapter1/introduction.aux) (./chapters/chapter2/background.aux)
 (./chapters/chapter3/methods.aux) (./chapters/chapter4/datasets.aux))
 
@@ -2685,26 +2717,31 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 43807 strings out of 477805
+ 43846 strings out of 477805
  100000,1977958 words of node,token memory allocated
- 9932 words of node memory still in use:
-   122 hlist, 11 vlist, 22 rule, 46 disc, 23 local_par, 10 math, 206 glue, 53 ke
-rn, 37 penalty, 2 margin_kern, 427 glyph, 732 attribute, 76 glue_spec, 373 attri
+ 9958 words of node memory still in use:
+   122 hlist, 11 vlist, 22 rule, 47 disc, 23 local_par, 10 math, 206 glue, 54 ke
+rn, 37 penalty, 2 margin_kern, 425 glyph, 740 attribute, 76 glue_spec, 377 attri
 bute_list, 2 write, 13 pdf_action, 58 pdf_colorstack, 4 pdf_setmatrix, 4 pdf_sav
 e, 4 pdf_restore nodes
-   avail lists: 1:4,2:2088,3:456,4:203,5:872,6:136,7:5573,8:91,9:1861,10:14,11:3
-12,12:1
- 62535 multiletter control sequences out of 65536+600000
+   avail lists: 1:4,2:2088,3:455,4:203,5:872,6:136,7:5573,8:91,9:1861,10:14,11:2
+95,12:1
+ 62553 multiletter control sequences out of 65536+600000
  140 fonts using 19805951 bytes
  122i,21n,136p,10650b,3705s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/opentype/google/roboto/RobotoMono-Regular.o
-tf></usr/share/texlive/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic
+</usr/share/texlive/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.ot
+f></usr/share/texlive/texmf-dist/fonts/opentype/google/roboto/RobotoMono-Regular
 .otf></usr/share/texlive/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold
 .otf></usr/share/texlive/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roma
 n.otf></usr/share/texlive/texmf-dist/fonts/opentype/google/roboto/Roboto-Regular
@@ -2719,9 +2756,9 @@ ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (45 pages, 1138562 bytes).
+Output written on main.pdf (47 pages, 1203642 bytes).
 
-PDF statistics: 728 PDF objects out of 1000 (max. 8388607)
- 233 named destinations out of 1000 (max. 131072)
+PDF statistics: 791 PDF objects out of 1000 (max. 8388607)
+ 242 named destinations out of 1000 (max. 131072)
  287 words of extra memory for PDF output out of 10000 (max. 100000000)
 
