@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.5.31)  6 OCT 2024 07:15
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.5.31)  13 OCT 2024 03:44
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2035,6 +2035,39 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen291
+\captionmargin@=\dimen292
+\captionwidth=\dimen293
+\caption@tempdima=\dimen294
+\caption@indent=\dimen295
+\caption@parindent=\dimen296
+\caption@hangindent=\dimen297
+Package caption Info: KOMA-Script document class detected.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption-koma.sto
+File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the 
+KOMA-Script document classes (AR)
+))
+\c@caption@flags=\count451
+\c@continuedfloat=\count452
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count453
+\c@subtable=\count454
+)
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write6
+
+Excluding comment 'comment')
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
@@ -2049,57 +2082,110 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count455
+\lst@gtempboxa=\box75
+\lst@token=\toks43
+\lst@length=\count456
+\lst@currlwidth=\dimen298
+\lst@column=\count457
+\lst@pos=\count458
+\lst@lostspace=\dimen299
+\lst@width=\dimen300
+\lst@newlines=\count459
+\lst@lineno=\count460
+\lst@maxwidth=\dimen301
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count461
+\lst@skipnumbers=\count462
+\lst@framebox=\box76
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./main.aux
 (./chapters/abstract.aux) (./chapters/chapter1/introduction.aux)
-(./chapters/chapter2/background.aux) (./chapters/chapter3/methods.aux)
-(./chapters/chapter4/datasets.aux))
+(./chapters/chapter2/background.aux) (./chapters/chapter3/datasets.aux)
+(./chapters/chapter4/methods.aux) (./chapters/chapter5/experiments.aux
+
+LaTeX Warning: Label `tab:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig_traj' multiply defined.
+
+
+LaTeX Warning: Label `tab:my_label' multiply defined.
+
+
+LaTeX Warning: Label `tab:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig_traj' multiply defined.
+
+
+LaTeX Warning: Label `tab:my_label' multiply defined.
+
+
+LaTeX Warning: Label `tab:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig_traj' multiply defined.
+
+) (./chapters/chapter6/conclusions.aux))
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 131.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-07.
+31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-Package scrbase Info: activating english \contentsname on input line 107.
-Package scrbase Info: activating english \listfigurename on input line 107.
-Package scrbase Info: activating english \listtablename on input line 107.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+Package scrbase Info: activating english \contentsname on input line 131.
+Package scrbase Info: activating english \listfigurename on input line 131.
+Package scrbase Info: activating english \listtablename on input line 131.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count451
-\scratchdimen=\dimen291
-\scratchbox=\box75
-\nofMPsegments=\count452
-\nofMParguments=\count453
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count454
-\MPscratchDim=\dimen292
-\MPnumerator=\count455
-\makeMPintoPDFobject=\count456
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count463
+\scratchdimen=\dimen302
+\scratchbox=\box77
+\nofMPsegments=\count464
+\nofMParguments=\count465
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count466
+\MPscratchDim=\dimen303
+\MPnumerator=\count467
+\makeMPintoPDFobject=\count468
+\everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -2115,92 +2201,92 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 107.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 107.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 107.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 107.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 107.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 107.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 107.
-LaTeX Font Info:    Redeclaring math accent \check on input line 107.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 107.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 107.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 107.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 107.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 131.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 131.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 131.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 131.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 131.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 131.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 131.
+LaTeX Font Info:    Redeclaring math accent \check on input line 131.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 131.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 131.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 131.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 131.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 107.
+(Font)              `operators' in the math version `normal' on input line 131.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/XCharter(0)/m/n on input line 107.
+(Font)                  OT1/cmr/m/n --> TU/XCharter(0)/m/n on input line 131.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 107.
+(Font)              `operators' in the math version `bold' on input line 131.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/m/n on input line 107.
+(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/m/n on input line 131.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/XCharter(0)/m/n --> TU/XCharter(0)/m/n on input line
- 107.
+ 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/XCharter(0)/m/it on input line 107.
+(Font)                  OT1/cmr/m/it --> TU/XCharter(0)/m/it on input line 131.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/b/n on input line 107.
+(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/b/n on input line 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Roboto(0)/m/n on input line 107.
+(Font)                  OT1/cmss/m/n --> TU/Roboto(0)/m/n on input line 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/m/n on input line 107
+(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/m/n on input line 131
 .
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/XCharter(0)/m/n --> TU/XCharter(0)/b/n on input line
- 107.
+ 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/XCharter(0)/b/it on input line 107
+(Font)                  OT1/cmr/bx/it --> TU/XCharter(0)/b/it on input line 131
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Roboto(0)/b/n on input line 107.
+(Font)                  OT1/cmss/bx/n --> TU/Roboto(0)/b/n on input line 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/b/n on input line 107
+(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/b/n on input line 131
 .
-\ptxcd_headrule_box=\box76
-Package scrbase Info: activating english \ptxcd_byname on input line 107.
-Package scrbase Info: activating english \ptxcd_fromname on input line 107.
+\ptxcd_headrule_box=\box78
+Package scrbase Info: activating english \ptxcd_byname on input line 131.
+Package scrbase Info: activating english \ptxcd_fromname on input line 131.
 Package scrbase Info: activating english \ptxcd_departmentprefix: on input line
- 107.
-Package scrbase Info: activating english \ptxcd_reviewname on input line 107.
-Package scrbase Info: activating english \ptxcd_examdatename on input line 107.
+ 131.
+Package scrbase Info: activating english \ptxcd_reviewname on input line 131.
+Package scrbase Info: activating english \ptxcd_examdatename on input line 131.
 
 Package scrbase Info: activating english \ptxcd_submissiondatename on input lin
-e 107.
-Package scrbase Info: activating english \ptxcd_studentIDname on input line 107
+e 131.
+Package scrbase Info: activating english \ptxcd_studentIDname on input line 131
 .
-Package scrbase Info: activating english \ptxcd_thesisType on input line 107.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_by: on input line 10
-7.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_nc: on input line 10
-7.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_sa: on input line 10
-7.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_nd: on input line 10
-7.
-Package scrbase Info: activating english \g__ptxcd_cc_intro: on input line 107.
+Package scrbase Info: activating english \ptxcd_thesisType on input line 131.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_by: on input line 13
+1.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_nc: on input line 13
+1.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_sa: on input line 13
+1.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_nd: on input line 13
+1.
+Package scrbase Info: activating english \g__ptxcd_cc_intro: on input line 131.
 
-Package scrbase Info: activating english \g__ptxcd_cc_sep: on input line 107.
-Package scrbase Info: activating english \researchgroupname on input line 107.
-Package scrbase Info: activating english \institutename on input line 107.
-Package scrbase Info: activating english \authorandname on input line 107.
-Package scrbase Info: activating english \ptxcd_datename on input line 107.
-Package hyperref Info: Link coloring OFF on input line 107.
+Package scrbase Info: activating english \g__ptxcd_cc_sep: on input line 131.
+Package scrbase Info: activating english \researchgroupname on input line 131.
+Package scrbase Info: activating english \institutename on input line 131.
+Package scrbase Info: activating english \authorandname on input line 131.
+Package scrbase Info: activating english \ptxcd_datename on input line 131.
+Package hyperref Info: Link coloring OFF on input line 131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -2211,16 +2297,16 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count457
+\c@section@level=\count469
 )
-LaTeX Info: Redefining \ref on input line 107.
-LaTeX Info: Redefining \pageref on input line 107.
-LaTeX Info: Redefining \nameref on input line 107.
+LaTeX Info: Redefining \ref on input line 131.
+LaTeX Info: Redefining \pageref on input line 131.
+LaTeX Info: Redefining \nameref on input line 131.
 
 (./main.out) (./main.out)
-\@outlinefile=\write6
+\@outlinefile=\write7
 
-\openout6 = main.out
+\openout7 = main.out
 Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           Using `bookmark' together with `hyperref' is recommended,
 (scrreprt)           because of handling of possible bookmark level gaps.
@@ -2228,27 +2314,27 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 107.
+(scrreprt)           before \begin{document} on input line 131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count458
+\BKM@id=\count470
 ))
-LaTeX Info: Redefining \microtypecontext on input line 107.
-Package microtype Info: Applying patch `item' on input line 107.
-Package microtype Info: Applying patch `toc' on input line 107.
-Package microtype Info: Applying patch `eqnum' on input line 107.
-Package microtype Info: Applying patch `footnote' on input line 107.
+LaTeX Info: Redefining \microtypecontext on input line 131.
+Package microtype Info: Applying patch `item' on input line 131.
+Package microtype Info: Applying patch `toc' on input line 131.
+Package microtype Info: Applying patch `eqnum' on input line 131.
+Package microtype Info: Applying patch `footnote' on input line 131.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 107.
+LaTeX Info: Redefining \showhyphens on input line 131.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
@@ -2288,8 +2374,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 107.
-Package biblatex Info: Reference segment=0 on input line 107.
+Package biblatex Info: Reference section=0 on input line 131.
+Package biblatex Info: Reference segment=0 on input line 131.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count471
 
 Package tudapub/thesis Info: You submitted birthplace data for title
 (tudapub/thesis)             information.
@@ -2309,28 +2399,28 @@ Package tudapub/thesis Warning: I can't recognize your department .
 (tudapub/thesis)                See tudathesis documentation for further
 (tudapub/thesis)                details.
 
-Package scrbase Info: activating english \departmentname on input line 145.
-\ptxcd_xmpdata_stream=\write7
+Package scrbase Info: activating english \departmentname on input line 169.
+\ptxcd_xmpdata_stream=\write8
 
-\openout7 = main.xmpdata
+\openout8 = main.xmpdata
 LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 145.
+(Font)              scaled to size 10.95pt on input line 169.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Roboto' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 145.
+(Font)              scaled to size 10.95pt on input line 169.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 36.0pt on input line 145.
+(Font)              scaled to size 36.0pt on input line 169.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 145.
+(Font)              scaled to size 12.0pt on input line 169.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 145.
+(Font)              scaled to size 12.0pt on input line 169.
 <tuda_logo.png, id=9, 156.585pt x 62.634pt>
 File: tuda_logo.png Graphic file (type png)
 <use tuda_logo.png>
-Package luatex.def Info: tuda_logo.png  used on input line 145.
+Package luatex.def Info: tuda_logo.png  used on input line 169.
 (luatex.def)             Requested size: 156.49142pt x 62.59605pt.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -2339,17 +2429,17 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 <logos/CELogo.png, id=10, 325.215pt x 300.1614pt>
 File: logos/CELogo.png Graphic file (type png)
 <use logos/CELogo.png>
-Package luatex.def Info: logos/CELogo.png  used on input line 145.
+Package luatex.def Info: logos/CELogo.png  used on input line 169.
 (luatex.def)             Requested size: 68.85556pt x 63.54872pt.
 <logos/pearllogo.png, id=11, 951.555pt x 951.555pt>
 File: logos/pearllogo.png Graphic file (type png)
 <use logos/pearllogo.png>
-Package luatex.def Info: logos/pearllogo.png  used on input line 145.
+Package luatex.def Info: logos/pearllogo.png  used on input line 169.
 (luatex.def)             Requested size: 68.85556pt x 68.85165pt.
 <logos/iasLogo.png, id=12, 941.65552pt x 581.66058pt>
 File: logos/iasLogo.png Graphic file (type png)
 <use logos/iasLogo.png>
-Package luatex.def Info: logos/iasLogo.png  used on input line 145.
+Package luatex.def Info: logos/iasLogo.png  used on input line 169.
 (luatex.def)             Requested size: 68.85556pt x 42.53098pt.
  [1
 
@@ -2366,7 +2456,7 @@ Package typearea Warning: \typearea used at group level 2.
 (typearea)                environments, math mode, boxes, etc. may result in
 (typearea)                many type setting problems.
 (typearea)                You should move the command \typearea
-(typearea)                outside all groups on input line 145.
+(typearea)                outside all groups on input line 169.
 
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 10
@@ -2384,9 +2474,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 145.
+(typearea)              on input line 169.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 145.
+(typearea)             dimensions of LaTeX on input line 169.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 10
 (typearea)             BCOR = 0.0pt
@@ -2403,13 +2493,13 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 145.
+(typearea)              on input line 169.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 145.
+(typearea)             dimensions of LaTeX on input line 169.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 152.
+(Font)              scaled to size 14.4pt on input line 176.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 152.
+(Font)              scaled to size 10.0pt on input line 176.
 [2
 
 
@@ -2417,38 +2507,38 @@ LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 20.74pt on input line 153.
-Package tocbasic Info: character protrusion at toc deactivated on input line 15
-3.
+(Font)              scaled to size 20.74pt on input line 177.
+Package tocbasic Info: character protrusion at toc deactivated on input line 17
+7.
  (./main.toc [3
 
 
 ])
-\tf@toc=\write8
+\tf@toc=\write9
 
-\openout8 = main.toc
+\openout9 = main.toc
  [4]
-Package tocbasic Info: character protrusion at lof deactivated on input line 15
-4.
- (./main.lof)
-\tf@lof=\write9
+Package tocbasic Info: character protrusion at lof deactivated on input line 17
+8.
+ (./main.lof [5
 
-\openout9 = main.lof
- [5
+])
+\tf@lof=\write10
 
-]
-Package tocbasic Info: character protrusion at lot deactivated on input line 15
-5.
+\openout10 = main.lof
+ [6]
+Package tocbasic Info: character protrusion at lot deactivated on input line 17
+9.
  (./main.lot)
-\tf@lot=\write10
+\tf@lot=\write11
 
-\openout10 = main.lot
- [6
+\openout11 = main.lot
+ [7
 
 ]
 \openout2 = chapters/abstract.aux
 
-(./chapters/abstract.tex) [7
+(./chapters/abstract.tex) [8
 
 
 ]
@@ -2479,216 +2569,816 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 warning  (file chapters/chapter1/pinn.pdf) (pdf inclusion): PDF inclusion: found
  PDF version '1.6', but at most version '1.5' allowed
-<chapters/chapter1/pinn.pdf, id=143, 845.04684pt x 597.50787pt>
+<chapters/chapter1/pinn.pdf, id=239, 845.04684pt x 597.50787pt>
 File: chapters/chapter1/pinn.pdf Graphic file (type pdf)
 <use chapters/chapter1/pinn.pdf>
-Package luatex.def Info: chapters/chapter1/pinn.pdf  used on input line 13.
+Package luatex.def Info: chapters/chapter1/pinn.pdf  used on input line 14.
 (luatex.def)             Requested size: 426.79134pt x 301.771pt.
 
-Overfull \hbox (8.53578pt too wide) in paragraph at lines 13--15
-[][]
+Overfull \hbox (8.53578pt too wide) in paragraph at lines 14--15
+[][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8
+[9
 
 
 
 
-] [9
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.1
-'
-<./chapters/chapter1/pinn.pdf>]
+] [10<./chapters/chapter1/pinn.pdf>]
 warning  (file chapters/chapter1/hnn.pdf) (pdf inclusion): PDF inclusion: found 
 PDF version '1.6', but at most version '1.5' allowed
-<chapters/chapter1/hnn.pdf, id=189, 845.04684pt x 597.50787pt>
+<chapters/chapter1/hnn.pdf, id=296, 845.04684pt x 597.50787pt>
 File: chapters/chapter1/hnn.pdf Graphic file (type pdf)
 <use chapters/chapter1/hnn.pdf>
-Package luatex.def Info: chapters/chapter1/hnn.pdf  used on input line 54.
+Package luatex.def Info: chapters/chapter1/hnn.pdf  used on input line 57.
 (luatex.def)             Requested size: 426.79134pt x 301.771pt.
 
-Overfull \hbox (8.53578pt too wide) in paragraph at lines 54--56
-[][]
+Overfull \hbox (8.53578pt too wide) in paragraph at lines 57--58
+[][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10]) [11
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.2
-'
-<./chapters/chapter1/hnn.pdf>]
+[11]) [12<./chapters/chapter1/hnn.pdf>]
 \openout2 = chapters/chapter2/background.aux
  (./chapters/chapter2/background.tex
 chapter 2.
-[12
+[13
 
 
 
 
-] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
+] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
 
-[14]
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+
+ []
+
+[15]
 Missing character: There is no î (U+00EE) in font cmmi10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--129
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 169--171
+[16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
+[18] [19] [20] [21]
 
- []
-
-[18] [19] [20]
-
-LaTeX Warning: Command \r invalid in math mode on input line 312.
+LaTeX Warning: Command \r invalid in math mode on input line 325.
 
 Missing character: There is no ̊ (U+030A) in font cmmi8!
-[21] [22] [23] [24]
-<chapters/chapter2/mlp.jpg, id=366, 234.7176pt x 168.20363pt>
+[22] [23] [24] [25] [26]
+<chapters/chapter2/mlp.jpg, id=506, 234.7176pt x 168.20363pt>
 File: chapters/chapter2/mlp.jpg Graphic file (type jpg)
 <use chapters/chapter2/mlp.jpg>
-Package luatex.def Info: chapters/chapter2/mlp.jpg  used on input line 428.
+Package luatex.def Info: chapters/chapter2/mlp.jpg  used on input line 466.
 (luatex.def)             Requested size: 227.62204pt x 163.12653pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--433
+Underfull \hbox (badness 10000) in paragraph at lines 462--471
 
  []
 
+[27<./chapters/chapter2/mlp.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+<chapters/chapter2/relu.png, id=516, 1336.995pt x 708.246pt>
+File: chapters/chapter2/relu.png Graphic file (type png)
+<use chapters/chapter2/relu.png>
+Package luatex.def Info: chapters/chapter2/relu.png  used on input line 482.
+(luatex.def)             Requested size: 227.62204pt x 120.57314pt.
+<chapters/chapter2/tanh.png, id=517, 1336.995pt x 708.246pt>
+File: chapters/chapter2/tanh.png Graphic file (type png)
+<use chapters/chapter2/tanh.png>
+Package luatex.def Info: chapters/chapter2/tanh.png  used on input line 488.
+(luatex.def)             Requested size: 227.62204pt x 120.57314pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25]
+[28<./chapters/chapter2/relu.png>] [29<./chapters/chapter2/tanh.png>]
 Missing character: There is no î (U+00EE) in font cmmi10!
 Missing character: There is no î (U+00EE) in font cmmi10!
-[26
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.1
-'
-<./chapters/chapter2/mlp.jpg>]
-<chapters/chapter2/rnn.png, id=387, 853.1875pt x 372.39125pt>
+<chapters/chapter2/rnn.png, id=539, 853.1875pt x 372.39125pt>
 File: chapters/chapter2/rnn.png Graphic file (type png)
 <use chapters/chapter2/rnn.png>
-Package luatex.def Info: chapters/chapter2/rnn.png  used on input line 456.
+Package luatex.def Info: chapters/chapter2/rnn.png  used on input line 537.
 (luatex.def)             Requested size: 227.62204pt x 99.34802pt.
-
-
-LaTeX Warning: Reference `gru' on page 27 undefined on input line 468.
-
-<chapters/chapter2/gru.png, id=390, 204.765pt x 121.6545pt>
+<chapters/chapter2/gru.png, id=544, 204.765pt x 121.6545pt>
 File: chapters/chapter2/gru.png Graphic file (type png)
 <use chapters/chapter2/gru.png>
-Package luatex.def Info: chapters/chapter2/gru.png  used on input line 470.
+Package luatex.def Info: chapters/chapter2/gru.png  used on input line 551.
 (luatex.def)             Requested size: 227.62204pt x 135.24226pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[30<./chapters/chapter2/rnn.png>] [31<./chapters/chapter2/gru.png>]) [32]
+\openout2 = chapters/chapter3/datasets.aux
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
+(./chapters/chapter3/datasets.tex
+chapter 3.
+[33
 
+
+
+
+] [34]
+Overfull \hbox (16.72644pt too wide) in paragraph at lines 68--71
+\TU/XCharter(0)/m/n/10.95 They have two forms. One in canon-i-cal co-or-di-nates
+(q,p) and in lan-grangian coordinates($\OML/cmm/m/it/10.95 x$\TU/XCharter(0)/m/
+n/10.95 ,$\OML/cmm/m/it/10.95 v$\TU/XCharter(0)/m/n/10.95 ,$\OML/cmm/m/it/10.95
+ a$\TU/XCharter(0)/m/n/10.95 ).
  []
 
-<chapters/chapter2/relu.png, id=392, 1336.995pt x 708.246pt>
-File: chapters/chapter2/relu.png Graphic file (type png)
-<use chapters/chapter2/relu.png>
-Package luatex.def Info: chapters/chapter2/relu.png  used on input line 486.
-(luatex.def)             Requested size: 227.62204pt x 120.57314pt.
-[27
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.2
-'
-<./chapters/chapter2/rnn.png>]
-<chapters/chapter2/tanh.png, id=403, 1336.995pt x 708.246pt>
-File: chapters/chapter2/tanh.png Graphic file (type png)
-<use chapters/chapter2/tanh.png>
-Package luatex.def Info: chapters/chapter2/tanh.png  used on input line 492.
-(luatex.def)             Requested size: 227.62204pt x 120.57314pt.
+[35] [36] [37] [38] [39] [40] [41]
+<chapters/chapter3/pendulum.pdf, id=657, 769.37437pt x 603.75563pt>
+File: chapters/chapter3/pendulum.pdf Graphic file (type pdf)
+<use chapters/chapter3/pendulum.pdf>
+Package luatex.def Info: chapters/chapter3/pendulum.pdf  used on input line 370
+.
+(luatex.def)             Requested size: 284.52756pt x 223.28474pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.3
-'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.4
-'
-<./chapters/chapter2/gru.png><./chapters/chapter2/relu.png>] [29
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.2.5
-'
-<./chapters/chapter2/tanh.png>]) [30]
-\openout2 = chapters/chapter3/methods.aux
- (./chapters/chapter3/methods.tex
-chapter 3.
-
-LaTeX Warning: Reference `' on page 31 undefined on input line 31.
-
-[31
+) [42] [43<./chapters/chapter3/pendulum.pdf>]
+\openout2 = chapters/chapter4/methods.aux
+ (./chapters/chapter4/methods.tex
+chapter 4.
+[44
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+warning  (file chapters/chapter4/RNN_stepper.pdf) (pdf inclusion): PDF inclusion
+: found PDF version '1.6', but at most version '1.5' allowed
+<chapters/chapter4/RNN_stepper.pdf, id=682, 844.84769pt x 597.67859pt>
+File: chapters/chapter4/RNN_stepper.pdf Graphic file (type pdf)
+<use chapters/chapter4/RNN_stepper.pdf>
+Package luatex.def Info: chapters/chapter4/RNN_stepper.pdf  used on input line 
+41.
+(luatex.def)             Requested size: 426.79134pt x 301.92105pt.
+
+Overfull \hbox (8.53578pt too wide) in paragraph at lines 41--42
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
-[32] [33] [34]
-Underfull \hbox (badness 6708) in paragraph at lines 129--129
+[45] [46<./chapters/chapter4/RNN_stepper.pdf>]
+
+Package caption Warning: \label without proper reference on input line 85.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `graph' on page 47 undefined on input line 82.
+
+
+warning  (file chapters/chapter4/graph.pdf) (pdf inclusion): PDF inclusion: foun
+d PDF version '1.6', but at most version '1.5' allowed
+<chapters/chapter4/graph.pdf, id=720, 844.84769pt x 597.67859pt>
+File: chapters/chapter4/graph.pdf Graphic file (type pdf)
+<use chapters/chapter4/graph.pdf>
+Package luatex.def Info: chapters/chapter4/graph.pdf  used on input line 84.
+(luatex.def)             Requested size: 426.79134pt x 301.92105pt.
+
+Overfull \hbox (8.53578pt too wide) in paragraph at lines 84--86
+[][]
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[47] [48<./chapters/chapter4/graph.pdf>] [49]
+warning  (file chapters/chapter4/ghnn.pdf) (pdf inclusion): PDF inclusion: found
+ PDF version '1.6', but at most version '1.5' allowed
+<chapters/chapter4/ghnn.pdf, id=778, 844.84769pt x 597.67859pt>
+File: chapters/chapter4/ghnn.pdf Graphic file (type pdf)
+<use chapters/chapter4/ghnn.pdf>
+Package luatex.def Info: chapters/chapter4/ghnn.pdf  used on input line 146.
+(luatex.def)             Requested size: 426.79134pt x 301.92105pt.
+
+Overfull \hbox (8.53578pt too wide) in paragraph at lines 146--147
+[][] 
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 151--151
 []\TU/Roboto(0)/b/n/14.4 Gated Re-cur-rent Graph Hamil-to-nian Neu-ral Net-work -
  []
 
-) [35]
-\openout2 = chapters/chapter4/datasets.aux
- (./chapters/chapter4/datasets.tex
-chapter 4.
-[36
+[50<./chapters/chapter4/ghnn.pdf>]
+warning  (file chapters/chapter4/GRUGHNN.pdf) (pdf inclusion): PDF inclusion: fo
+und PDF version '1.6', but at most version '1.5' allowed
+<chapters/chapter4/GRUGHNN.pdf, id=809, 844.84769pt x 597.67859pt>
+File: chapters/chapter4/GRUGHNN.pdf Graphic file (type pdf)
+<use chapters/chapter4/GRUGHNN.pdf>
+Package luatex.def Info: chapters/chapter4/GRUGHNN.pdf  used on input line 162.
 
+(luatex.def)             Requested size: 426.79134pt x 301.92105pt.
 
-
-
-] [37] [38] [39] [40] [41]
-Overfull \hbox (23.27261pt too wide) in alignment at lines 229--235
- [][][] []
+Overfull \hbox (8.53578pt too wide) in paragraph at lines 162--163
+[][] 
  []
 
-[42]
-Overfull \hbox (11.63391pt too wide) in paragraph at lines 276--285
-\TU/XCharter(0)/m/n/10.95 From trigonom-e-try we know that $[]\OT1/cmr/m/n/10.9
-5 (\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 )[] + [](\OML/cmm/m/it/10.95 \OT1/c
-mr/m/n/10.95 )[] = 1$ \TU/XCharter(0)/m/n/10.95 which means $[] \OT1/cmr/m/n/10
-.95 =
- []
 
-[43] [44]) [45] [46
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[51] [52<./chapters/chapter4/GRUGHNN.pdf>]) [53]
+\openout2 = chapters/chapter5/experiments.aux
+
+(./chapters/chapter5/experiments.tex
+chapter 5.
+[54
+
 
 
 
 ]
+
+Package caption Warning: \label without proper reference on input line 103.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `osci_loss' on page 55 undefined on input line 38.
+
+
+Package caption Warning: \label without proper reference on input line 147.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `osci_traj' on page 55 undefined on input line 38.
+
+[55]
+<chapters/chapter5/osci_mlp_loss.pdf, id=861, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/osci_mlp_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_mlp_loss.pdf>
+Package luatex.def Info: chapters/chapter5/osci_mlp_loss.pdf  used on input lin
+e 68.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/osci_ode_loss.pdf, id=862, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/osci_ode_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_ode_loss.pdf>
+Package luatex.def Info: chapters/chapter5/osci_ode_loss.pdf  used on input lin
+e 74.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/osci_gru_loss.pdf, id=863, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/osci_gru_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_gru_loss.pdf>
+Package luatex.def Info: chapters/chapter5/osci_gru_loss.pdf  used on input lin
+e 80.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/osci_rnn_loss.pdf, id=864, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/osci_rnn_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_rnn_loss.pdf>
+Package luatex.def Info: chapters/chapter5/osci_rnn_loss.pdf  used on input lin
+e 88.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/osci_gre_loss.pdf, id=865, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/osci_gre_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_gre_loss.pdf>
+Package luatex.def Info: chapters/chapter5/osci_gre_loss.pdf  used on input lin
+e 94.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/osci_rne_loss.pdf, id=866, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/osci_rne_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_rne_loss.pdf>
+Package luatex.def Info: chapters/chapter5/osci_rne_loss.pdf  used on input lin
+e 100.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+ [56]
+<chapters/chapter5/osci_mlp_ps.pdf, id=871, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/osci_mlp_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_mlp_ps.pdf>
+Package luatex.def Info: chapters/chapter5/osci_mlp_ps.pdf  used on input line 
+112.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/osci_ode_ps.pdf, id=872, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/osci_ode_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_ode_ps.pdf>
+Package luatex.def Info: chapters/chapter5/osci_ode_ps.pdf  used on input line 
+118.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/osci_gru_ps.pdf, id=873, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/osci_gru_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_gru_ps.pdf>
+Package luatex.def Info: chapters/chapter5/osci_gru_ps.pdf  used on input line 
+124.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/osci_rnn_ps.pdf, id=874, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/osci_rnn_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_rnn_ps.pdf>
+Package luatex.def Info: chapters/chapter5/osci_rnn_ps.pdf  used on input line 
+132.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/osci_gre_ps.pdf, id=875, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/osci_gre_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_gre_ps.pdf>
+Package luatex.def Info: chapters/chapter5/osci_gre_ps.pdf  used on input line 
+138.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/osci_rne_ps.pdf, id=876, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/osci_rne_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/osci_rne_ps.pdf>
+Package luatex.def Info: chapters/chapter5/osci_rne_ps.pdf  used on input line 
+144.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+ [57<./chapters/chapter5/osci_mlp_loss.pdf><./chapters/chapter5/osci_ode_loss.pd
+f><./chapters/chapter5/osci_gru_loss.pdf><./chapters/chapter5/osci_rnn_loss.pdf>
+<./chapters/chapter5/osci_gre_loss.pdf><./chapters/chapter5/osci_rne_loss.pdf>]
+
+
+LaTeX Warning: Reference `' on page 58 undefined on input line 163.
+
+
+LaTeX Warning: Reference `' on page 58 undefined on input line 163.
+
+
+LaTeX Warning: Reference `' on page 58 undefined on input line 163.
+
+[58<./chapters/chapter5/osci_mlp_ps.pdf><./chapters/chapter5/osci_ode_ps.pdf><./
+chapters/chapter5/osci_gru_ps.pdf><./chapters/chapter5/osci_rnn_ps.pdf><./chapte
+rs/chapter5/osci_gre_ps.pdf><./chapters/chapter5/osci_rne_ps.pdf>]
+<chapters/chapter5/body2_mlp_loss.pdf, id=1411, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body2_mlp_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_mlp_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body2_mlp_loss.pdf  used on input li
+ne 191.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body2_ode_loss.pdf, id=1412, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body2_ode_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_ode_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body2_ode_loss.pdf  used on input li
+ne 197.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body2_gru_loss.pdf, id=1413, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body2_gru_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_gru_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body2_gru_loss.pdf  used on input li
+ne 203.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body2_rnn_loss.pdf, id=1414, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body2_rnn_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_rnn_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body2_rnn_loss.pdf  used on input li
+ne 211.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body2_gre_loss.pdf, id=1415, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body2_gre_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_gre_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body2_gre_loss.pdf  used on input li
+ne 217.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body2_rne_loss.pdf, id=1416, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body2_rne_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_rne_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body2_rne_loss.pdf  used on input li
+ne 223.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+ [59]
+<chapters/chapter5/body2_mlp_traj.pdf, id=1421, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/body2_mlp_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_mlp_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body2_mlp_traj.pdf  used on input li
+ne 234.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/body2_ode_traj.pdf, id=1422, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/body2_ode_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_ode_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body2_ode_traj.pdf  used on input li
+ne 240.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/body2_gru_traj.pdf, id=1423, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/body2_gru_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_gru_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body2_gru_traj.pdf  used on input li
+ne 246.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/body2_rnn_traj.pdf, id=1424, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/body2_rnn_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_rnn_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body2_rnn_traj.pdf  used on input li
+ne 254.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/body2_gre_traj.pdf, id=1425, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/body2_gre_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_gre_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body2_gre_traj.pdf  used on input li
+ne 260.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+<chapters/chapter5/body2_rne_traj.pdf, id=1426, 408.45222pt x 346.71106pt>
+File: chapters/chapter5/body2_rne_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_rne_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body2_rne_traj.pdf  used on input li
+ne 266.
+(luatex.def)             Requested size: 125.47794pt x 106.51117pt.
+
+[60<./chapters/chapter5/body2_mlp_loss.pdf><./chapters/chapter5/body2_ode_loss.p
+df><./chapters/chapter5/body2_gru_loss.pdf><./chapters/chapter5/body2_rnn_loss.p
+df><./chapters/chapter5/body2_gre_loss.pdf><./chapters/chapter5/body2_rne_loss.p
+df>]
+<chapters/chapter5/body2_mlp_ps.pdf, id=1685, 421.75932pt x 346.71106pt>
+File: chapters/chapter5/body2_mlp_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_mlp_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body2_mlp_ps.pdf  used on input line
+ 277.
+(luatex.def)             Requested size: 125.47794pt x 103.14648pt.
+<chapters/chapter5/body2_ode_ps.pdf, id=1686, 425.4178pt x 346.71106pt>
+File: chapters/chapter5/body2_ode_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_ode_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body2_ode_ps.pdf  used on input line
+ 283.
+(luatex.def)             Requested size: 125.47794pt x 102.263pt.
+<chapters/chapter5/body2_gru_ps.pdf, id=1687, 421.2965pt x 346.71106pt>
+File: chapters/chapter5/body2_gru_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_gru_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body2_gru_ps.pdf  used on input line
+ 289.
+(luatex.def)             Requested size: 125.47794pt x 103.26288pt.
+<chapters/chapter5/body2_rnn_ps.pdf, id=1688, 421.31601pt x 346.71106pt>
+File: chapters/chapter5/body2_rnn_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_rnn_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body2_rnn_ps.pdf  used on input line
+ 297.
+(luatex.def)             Requested size: 125.47794pt x 103.25758pt.
+<chapters/chapter5/body2_gre_ps.pdf, id=1689, 418.0349pt x 346.71106pt>
+File: chapters/chapter5/body2_gre_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_gre_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body2_gre_ps.pdf  used on input line
+ 303.
+(luatex.def)             Requested size: 125.47794pt x 104.06702pt.
+<chapters/chapter5/body2_rne_ps.pdf, id=1690, 418.0349pt x 346.71106pt>
+File: chapters/chapter5/body2_rne_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body2_rne_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body2_rne_ps.pdf  used on input line
+ 309.
+(luatex.def)             Requested size: 125.47794pt x 104.06702pt.
+ [61<./chapters/chapter5/body2_mlp_traj.pdf><./chapters/chapter5/body2_ode_traj.
+pdf><./chapters/chapter5/body2_gru_traj.pdf><./chapters/chapter5/body2_rnn_traj.
+pdf><./chapters/chapter5/body2_gre_traj.pdf><./chapters/chapter5/body2_rne_traj.
+pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
+
+ []
+
+
+LaTeX Warning: Reference `' on page 62 undefined on input line 327.
+
+
+LaTeX Warning: Reference `' on page 62 undefined on input line 327.
+
+
+LaTeX Warning: Reference `' on page 62 undefined on input line 327.
+
+[62<./chapters/chapter5/body2_mlp_ps.pdf><./chapters/chapter5/body2_ode_ps.pdf><
+./chapters/chapter5/body2_gru_ps.pdf><./chapters/chapter5/body2_rnn_ps.pdf><./ch
+apters/chapter5/body2_gre_ps.pdf><./chapters/chapter5/body2_rne_ps.pdf>]
+<chapters/chapter5/body3_mlp_loss.pdf, id=2197, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body3_mlp_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_mlp_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body3_mlp_loss.pdf  used on input li
+ne 355.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body3_ode_loss.pdf, id=2198, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body3_ode_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_ode_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body3_ode_loss.pdf  used on input li
+ne 361.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body3_gru_loss.pdf, id=2199, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body3_gru_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_gru_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body3_gru_loss.pdf  used on input li
+ne 367.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body3_rnn_loss.pdf, id=2200, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body3_rnn_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_rnn_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body3_rnn_loss.pdf  used on input li
+ne 375.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body3_gre_loss.pdf, id=2201, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body3_gre_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_gre_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body3_gre_loss.pdf  used on input li
+ne 381.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+<chapters/chapter5/body3_rne_loss.pdf, id=2202, 423.11285pt x 346.71106pt>
+File: chapters/chapter5/body3_rne_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_rne_loss.pdf>
+Package luatex.def Info: chapters/chapter5/body3_rne_loss.pdf  used on input li
+ne 387.
+(luatex.def)             Requested size: 125.47794pt x 102.81848pt.
+
+[63]
+<chapters/chapter5/body3_mlp_traj.pdf, id=2207, 418.0349pt x 346.71106pt>
+File: chapters/chapter5/body3_mlp_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_mlp_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body3_mlp_traj.pdf  used on input li
+ne 398.
+(luatex.def)             Requested size: 125.47794pt x 104.06702pt.
+<chapters/chapter5/body3_ode_traj.pdf, id=2208, 418.0349pt x 346.71106pt>
+File: chapters/chapter5/body3_ode_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_ode_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body3_ode_traj.pdf  used on input li
+ne 404.
+(luatex.def)             Requested size: 125.47794pt x 104.06702pt.
+<chapters/chapter5/body3_gru_traj.pdf, id=2209, 418.0349pt x 346.71106pt>
+File: chapters/chapter5/body3_gru_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_gru_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body3_gru_traj.pdf  used on input li
+ne 410.
+(luatex.def)             Requested size: 125.47794pt x 104.06702pt.
+<chapters/chapter5/body3_rnn_traj.pdf, id=2210, 418.0349pt x 346.71106pt>
+File: chapters/chapter5/body3_rnn_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_rnn_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body3_rnn_traj.pdf  used on input li
+ne 418.
+(luatex.def)             Requested size: 125.47794pt x 104.06702pt.
+<chapters/chapter5/body3_gre_traj.pdf, id=2211, 418.0349pt x 346.71106pt>
+File: chapters/chapter5/body3_gre_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_gre_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body3_gre_traj.pdf  used on input li
+ne 424.
+(luatex.def)             Requested size: 125.47794pt x 104.06702pt.
+<chapters/chapter5/body3_rne_traj.pdf, id=2212, 418.0349pt x 346.71106pt>
+File: chapters/chapter5/body3_rne_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_rne_traj.pdf>
+Package luatex.def Info: chapters/chapter5/body3_rne_traj.pdf  used on input li
+ne 430.
+(luatex.def)             Requested size: 125.47794pt x 104.06702pt.
+ [64<./chapters/chapter5/body3_mlp_loss.pdf><./chapters/chapter5/body3_ode_loss.
+pdf><./chapters/chapter5/body3_gru_loss.pdf><./chapters/chapter5/body3_rnn_loss.
+pdf><./chapters/chapter5/body3_gre_loss.pdf><./chapters/chapter5/body3_rne_loss.
+pdf>]
+<chapters/chapter5/body3_mlp_ps.pdf, id=2468, 400.04582pt x 346.71106pt>
+File: chapters/chapter5/body3_mlp_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_mlp_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body3_mlp_ps.pdf  used on input line
+ 441.
+(luatex.def)             Requested size: 125.47794pt x 108.749pt.
+<chapters/chapter5/body3_ode_ps.pdf, id=2469, 400.04582pt x 346.71106pt>
+File: chapters/chapter5/body3_ode_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_ode_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body3_ode_ps.pdf  used on input line
+ 447.
+(luatex.def)             Requested size: 125.47794pt x 108.749pt.
+<chapters/chapter5/body3_gru_ps.pdf, id=2470, 400.04582pt x 346.71106pt>
+File: chapters/chapter5/body3_gru_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_gru_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body3_gru_ps.pdf  used on input line
+ 453.
+(luatex.def)             Requested size: 125.47794pt x 108.749pt.
+<chapters/chapter5/body3_rnn_ps.pdf, id=2471, 400.04582pt x 346.71106pt>
+File: chapters/chapter5/body3_rnn_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_rnn_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body3_rnn_ps.pdf  used on input line
+ 461.
+(luatex.def)             Requested size: 125.47794pt x 108.749pt.
+<chapters/chapter5/body3_gre_ps.pdf, id=2472, 400.04582pt x 346.71106pt>
+File: chapters/chapter5/body3_gre_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_gre_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body3_gre_ps.pdf  used on input line
+ 467.
+(luatex.def)             Requested size: 125.47794pt x 108.749pt.
+<chapters/chapter5/body3_rne_ps.pdf, id=2473, 400.04582pt x 346.71106pt>
+File: chapters/chapter5/body3_rne_ps.pdf Graphic file (type pdf)
+<use chapters/chapter5/body3_rne_ps.pdf>
+Package luatex.def Info: chapters/chapter5/body3_rne_ps.pdf  used on input line
+ 473.
+(luatex.def)             Requested size: 125.47794pt x 108.749pt.
+ [65<./chapters/chapter5/body3_mlp_traj.pdf><./chapters/chapter5/body3_ode_traj.
+pdf><./chapters/chapter5/body3_gru_traj.pdf><./chapters/chapter5/body3_rnn_traj.
+pdf><./chapters/chapter5/body3_gre_traj.pdf><./chapters/chapter5/body3_rne_traj.
+pdf>] [66<./chapters/chapter5/body3_mlp_ps.pdf><./chapters/chapter5/body3_ode_ps
+.pdf><./chapters/chapter5/body3_gru_ps.pdf><./chapters/chapter5/body3_rnn_ps.pdf
+><./chapters/chapter5/body3_gre_ps.pdf><./chapters/chapter5/body3_rne_ps.pdf>]
+<chapters/chapter5/figonly_hnn_loss.pdf, id=2992, 418.84062pt x 346.71106pt>
+File: chapters/chapter5/figonly_hnn_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/figonly_hnn_loss.pdf>
+Package luatex.def Info: chapters/chapter5/figonly_hnn_loss.pdf  used on input 
+line 520.
+(luatex.def)             Requested size: 125.47794pt x 103.86598pt.
+<chapters/chapter5/figonly_ghnn_loss.pdf, id=2993, 418.84062pt x 346.71106pt>
+File: chapters/chapter5/figonly_ghnn_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/figonly_ghnn_loss.pdf>
+Package luatex.def Info: chapters/chapter5/figonly_ghnn_loss.pdf  used on input
+ line 527.
+(luatex.def)             Requested size: 125.47794pt x 103.86598pt.
+<chapters/chapter5/figonly_grughnn_loss.pdf, id=2994, 422.04446pt x 346.71106pt
+>
+File: chapters/chapter5/figonly_grughnn_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/figonly_grughnn_loss.pdf>
+Package luatex.def Info: chapters/chapter5/figonly_grughnn_loss.pdf  used on in
+put line 534.
+(luatex.def)             Requested size: 125.47794pt x 103.07771pt.
+ [67]
+<chapters/chapter5/figonly_hnn_traj.pdf, id=3001, 426.01785pt x 346.71106pt>
+File: chapters/chapter5/figonly_hnn_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/figonly_hnn_traj.pdf>
+Package luatex.def Info: chapters/chapter5/figonly_hnn_traj.pdf  used on input 
+line 548.
+(luatex.def)             Requested size: 125.47794pt x 102.11487pt.
+<chapters/chapter5/figonly_ghnn_traj.pdf, id=3002, 426.01785pt x 346.71106pt>
+File: chapters/chapter5/figonly_ghnn_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/figonly_ghnn_traj.pdf>
+Package luatex.def Info: chapters/chapter5/figonly_ghnn_traj.pdf  used on input
+ line 555.
+(luatex.def)             Requested size: 125.47794pt x 102.11487pt.
+<chapters/chapter5/figonly_gru_ghnn_traj.pdf, id=3003, 426.01785pt x 346.71106p
+t>
+File: chapters/chapter5/figonly_gru_ghnn_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/figonly_gru_ghnn_traj.pdf>
+Package luatex.def Info: chapters/chapter5/figonly_gru_ghnn_traj.pdf  used on i
+nput line 562.
+(luatex.def)             Requested size: 125.47794pt x 102.11487pt.
+ Excluding 'comment' comment.
+<chapters/chapter5/v1a.png, id=3004, 225.84375pt x 225.84375pt>
+File: chapters/chapter5/v1a.png Graphic file (type png)
+<use chapters/chapter5/v1a.png>
+Package luatex.def Info: chapters/chapter5/v1a.png  used on input line 667.
+(luatex.def)             Requested size: 85.35973pt x 85.35973pt.
+<chapters/chapter5/v7d.png, id=3005, 225.84375pt x 225.84375pt>
+File: chapters/chapter5/v7d.png Graphic file (type png)
+<use chapters/chapter5/v7d.png>
+Package luatex.def Info: chapters/chapter5/v7d.png  used on input line 680.
+(luatex.def)             Requested size: 85.35973pt x 85.35973pt.
+<chapters/chapter5/v11a.png, id=3006, 225.84375pt x 225.84375pt>
+File: chapters/chapter5/v11a.png Graphic file (type png)
+<use chapters/chapter5/v11a.png>
+Package luatex.def Info: chapters/chapter5/v11a.png  used on input line 693.
+(luatex.def)             Requested size: 85.35973pt x 85.35973pt.
+<chapters/chapter5/v15a.png, id=3007, 225.84375pt x 225.84375pt>
+File: chapters/chapter5/v15a.png Graphic file (type png)
+<use chapters/chapter5/v15a.png>
+Package luatex.def Info: chapters/chapter5/v15a.png  used on input line 706.
+(luatex.def)             Requested size: 85.35973pt x 85.35973pt.
+<chapters/chapter5/v17d.png, id=3008, 225.84375pt x 225.84375pt>
+File: chapters/chapter5/v17d.png Graphic file (type png)
+<use chapters/chapter5/v17d.png>
+Package luatex.def Info: chapters/chapter5/v17d.png  used on input line 719.
+(luatex.def)             Requested size: 85.35973pt x 85.35973pt.
+ [68<./chapters/chapter5/figonly_hnn_loss.pdf><./chapters/chapter5/figonly_ghnn_
+loss.pdf><./chapters/chapter5/figonly_grughnn_loss.pdf><./chapters/chapter5/figo
+nly_hnn_traj.pdf><./chapters/chapter5/figonly_ghnn_traj.pdf><./chapters/chapter5
+/figonly_gru_ghnn_traj.pdf>] [69]
+Overfull \vbox (6.59831pt too high) has occurred while \output is active []
+
+
+[70<./chapters/chapter5/v1a.png><./chapters/chapter5/v7d.png><./chapters/chapter
+5/v11a.png><./chapters/chapter5/v15a.png><./chapters/chapter5/v17d.png>]
+<chapters/chapter5/fig_hnn_loss.pdf, id=3263, 425.22385pt x 346.71106pt>
+File: chapters/chapter5/fig_hnn_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/fig_hnn_loss.pdf>
+Package luatex.def Info: chapters/chapter5/fig_hnn_loss.pdf  used on input line
+ 740.
+(luatex.def)             Requested size: 125.47794pt x 102.31061pt.
+<chapters/chapter5/fig_ghnn_loss.pdf, id=3264, 425.22385pt x 346.71106pt>
+File: chapters/chapter5/fig_ghnn_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/fig_ghnn_loss.pdf>
+Package luatex.def Info: chapters/chapter5/fig_ghnn_loss.pdf  used on input lin
+e 747.
+(luatex.def)             Requested size: 125.47794pt x 102.31061pt.
+<chapters/chapter5/fig_grughnn_loss.pdf, id=3265, 425.22385pt x 346.71106pt>
+File: chapters/chapter5/fig_grughnn_loss.pdf Graphic file (type pdf)
+<use chapters/chapter5/fig_grughnn_loss.pdf>
+Package luatex.def Info: chapters/chapter5/fig_grughnn_loss.pdf  used on input 
+line 754.
+(luatex.def)             Requested size: 125.47794pt x 102.31061pt.
+<chapters/chapter5/div_hnn_traj.pdf, id=3266, 426.01785pt x 346.71106pt>
+File: chapters/chapter5/div_hnn_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/div_hnn_traj.pdf>
+Package luatex.def Info: chapters/chapter5/div_hnn_traj.pdf  used on input line
+ 768.
+(luatex.def)             Requested size: 125.47794pt x 102.11487pt.
+<chapters/chapter5/fig_ghnn_traj.pdf, id=3267, 444.6872pt x 346.71106pt>
+File: chapters/chapter5/fig_ghnn_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/fig_ghnn_traj.pdf>
+Package luatex.def Info: chapters/chapter5/fig_ghnn_traj.pdf  used on input lin
+e 775.
+(luatex.def)             Requested size: 125.47794pt x 97.82967pt.
+<chapters/chapter5/fig_grughnn_traj.pdf, id=3268, 426.01785pt x 346.71106pt>
+File: chapters/chapter5/fig_grughnn_traj.pdf Graphic file (type pdf)
+<use chapters/chapter5/fig_grughnn_traj.pdf>
+Package luatex.def Info: chapters/chapter5/fig_grughnn_traj.pdf  used on input 
+line 782.
+(luatex.def)             Requested size: 125.47794pt x 102.11487pt.
+
+[71<./chapters/chapter5/fig_hnn_loss.pdf><./chapters/chapter5/fig_ghnn_loss.pdf>
+<./chapters/chapter5/fig_grughnn_loss.pdf><./chapters/chapter5/div_hnn_traj.pdf>
+<./chapters/chapter5/fig_ghnn_traj.pdf><./chapters/chapter5/fig_grughnn_traj.pdf
+>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<chapters/chapter5/loss_3dof.pdf, id=3511, 420.94223pt x 346.71106pt>
+File: chapters/chapter5/loss_3dof.pdf Graphic file (type pdf)
+<use chapters/chapter5/loss_3dof.pdf>
+Package luatex.def Info: chapters/chapter5/loss_3dof.pdf  used on input line 86
+2.
+(luatex.def)             Requested size: 167.29967pt x 137.79318pt.
+<chapters/chapter5/loss_4dof.pdf, id=3512, 447.44122pt x 346.71106pt>
+File: chapters/chapter5/loss_4dof.pdf Graphic file (type pdf)
+<use chapters/chapter5/loss_4dof.pdf>
+Package luatex.def Info: chapters/chapter5/loss_4dof.pdf  used on input line 86
+9.
+(luatex.def)             Requested size: 167.29967pt x 129.6354pt.
+[72]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<chapters/chapter5/loss_3dof1000.pdf, id=3518, 420.95445pt x 346.71106pt>
+File: chapters/chapter5/loss_3dof1000.pdf Graphic file (type pdf)
+<use chapters/chapter5/loss_3dof1000.pdf>
+Package luatex.def Info: chapters/chapter5/loss_3dof1000.pdf  used on input lin
+e 914.
+(luatex.def)             Requested size: 167.29967pt x 137.79318pt.
+<chapters/chapter5/loss_4dof1000.pdf, id=3519, 420.95445pt x 346.71106pt>
+File: chapters/chapter5/loss_4dof1000.pdf Graphic file (type pdf)
+<use chapters/chapter5/loss_4dof1000.pdf>
+Package luatex.def Info: chapters/chapter5/loss_4dof1000.pdf  used on input lin
+e 921.
+(luatex.def)             Requested size: 167.29967pt x 137.79318pt.
+[73<./chapters/chapter5/loss_3dof.pdf><./chapters/chapter5/loss_4dof.pdf>]
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 932.
+
+[74<./chapters/chapter5/loss_3dof1000.pdf><./chapters/chapter5/loss_4dof1000.pdf
+>]
+<chapters/chapter5/loss_9.pdf, id=3691, 420.95445pt x 346.71106pt>
+File: chapters/chapter5/loss_9.pdf Graphic file (type pdf)
+<use chapters/chapter5/loss_9.pdf>
+Package luatex.def Info: chapters/chapter5/loss_9.pdf  used on input line 974.
+(luatex.def)             Requested size: 167.29967pt x 137.79318pt.
+<chapters/chapter5/loss_10.pdf, id=3692, 420.95445pt x 346.71106pt>
+File: chapters/chapter5/loss_10.pdf Graphic file (type pdf)
+<use chapters/chapter5/loss_10.pdf>
+Package luatex.def Info: chapters/chapter5/loss_10.pdf  used on input line 981.
+
+(luatex.def)             Requested size: 167.29967pt x 137.79318pt.
+) [75<./chapters/chapter5/loss_9.pdf><./chapters/chapter5/loss_10.pdf>]
+[76]
+\openout2 = chapters/chapter6/conclusions.aux
+ (./chapters/chapter6/conclusions.tex
+chapter 6.
+) [77
+
+
+
+
+]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 191.
+LaTeX Font Info:    Font shape `TU/RobotoMono(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 191.
+ [78
+
+
+] [79] [80]
+Overfull \hbox (4.35464pt too wide) in paragraph at lines 304--304
+[]\TU/XCharter(0)/m/n/10.95 Jür-gen Adamy. \TU/XCharter(0)/m/it/10.95 Sys-tem-d
+y-namik und Regelung-stech-nik II\TU/XCharter(0)/m/n/10.95 . Shaker Ver-lag, 201
+0, pp. 135–
+ []
+
+[81
+
+] [82] [83] [84]
 
 Package tudapub Warning: You did not provide a Label for key introduction.
 (tudapub)                Either you need to recompile your document or add a
@@ -2709,36 +3399,35 @@ Package tudapub Warning: You did not provide a Label for key discussion.
 (tudapub)                Either you need to recompile your document or add a
 (tudapub)                label using \IMRADlabel.
 
-[47] (./main.aux (./chapters/abstract.aux)
+[85] (./main.aux (./chapters/abstract.aux)
 (./chapters/chapter1/introduction.aux) (./chapters/chapter2/background.aux)
-(./chapters/chapter3/methods.aux) (./chapters/chapter4/datasets.aux))
+(./chapters/chapter3/datasets.aux) (./chapters/chapter4/methods.aux)
+(./chapters/chapter5/experiments.aux) (./chapters/chapter6/conclusions.aux))
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 43846 strings out of 477805
- 100000,1977958 words of node,token memory allocated
- 9958 words of node memory still in use:
+ 48179 strings out of 477805
+ 476936,2373549 words of node,token memory allocated
+ 10378 words of node memory still in use:
    122 hlist, 11 vlist, 22 rule, 47 disc, 23 local_par, 10 math, 206 glue, 54 ke
-rn, 37 penalty, 2 margin_kern, 425 glyph, 740 attribute, 76 glue_spec, 377 attri
-bute_list, 2 write, 13 pdf_action, 58 pdf_colorstack, 4 pdf_setmatrix, 4 pdf_sav
+rn, 37 penalty, 2 margin_kern, 426 glyph, 832 attribute, 77 glue_spec, 423 attri
+bute_list, 2 write, 35 pdf_action, 58 pdf_colorstack, 4 pdf_setmatrix, 4 pdf_sav
 e, 4 pdf_restore nodes
-   avail lists: 1:4,2:2088,3:455,4:203,5:872,6:136,7:5573,8:91,9:1861,10:14,11:2
-95,12:1
- 62553 multiletter control sequences out of 65536+600000
- 140 fonts using 19805951 bytes
+   avail lists: 1:13,2:6380,3:504,4:9253,5:8598,6:142,7:11078,8:128,9:21984,10:2
+5,11:768,12:1
+ 66052 multiletter control sequences out of 65536+600000
+ 142 fonts using 20190607 bytes
  122i,21n,136p,10650b,3705s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.ot
 f></usr/share/texlive/texmf-dist/fonts/opentype/google/roboto/RobotoMono-Regular
@@ -2756,9 +3445,9 @@ ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (47 pages, 1203642 bytes).
+Output written on main.pdf (85 pages, 3790265 bytes).
 
-PDF statistics: 791 PDF objects out of 1000 (max. 8388607)
- 242 named destinations out of 1000 (max. 131072)
- 287 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 4252 PDF objects out of 4296 (max. 8388607)
+ 464 named destinations out of 1000 (max. 131072)
+ 391 words of extra memory for PDF output out of 10000 (max. 100000000)
 

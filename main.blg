@@ -1,15 +1,20 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[50] biber:340> INFO - === Fr Sep 13, 2024, 02:13:10
-[60] Biber.pm:418> INFO - Reading 'main.bcf'
-[97] Biber.pm:972> INFO - Found 20 citekeys in bib section 0
-[105] Biber.pm:4383> INFO - Processing section 0
-[111] Biber.pm:4574> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[112] bibtex.pm:1713> INFO - LaTeX decoding ...
-[123] bibtex.pm:1518> INFO - Found BibTeX data source 'biblio.bib'
-[218] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[218] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[219] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[219] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[233] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[239] bbl.pm:757> INFO - Output to main.bbl
+[68] biber:340> INFO - === Sa Okt 12, 2024, 04:36:41
+[79] Biber.pm:418> INFO - Reading 'main.bcf'
+[122] Biber.pm:972> INFO - Found 46 citekeys in bib section 0
+[130] Biber.pm:4383> INFO - Processing section 0
+[137] Biber.pm:4574> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[139] bibtex.pm:1713> INFO - LaTeX decoding ...
+[164] bibtex.pm:1518> INFO - Found BibTeX data source 'biblio.bib'
+[400] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[400] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[400] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[400] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[430] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[448] bbl.pm:757> INFO - Output to main.bbl
+[448] Biber.pm:130> WARN - Duplicate entry key: 'cheb' in file 'biblio.bib', skipping ...
+[448] Biber.pm:130> WARN - Possible typo (case mismatch) between datasource keys: 'Delan' and 'delan' in file 'biblio.bib'
+[448] Biber.pm:130> WARN - legacy month field 'Jul' in entry 'Cuomo2022' is not an integer - this will probably not sort properly.
+[448] Biber.pm:130> WARN - legacy year field '2016--2019' in entry 'pybullet' is not an integer - this will probably not sort properly.
+[448] Biber.pm:132> INFO - WARNINGS: 4

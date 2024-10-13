@@ -5,4 +5,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Figure 8 Dataset samples\blx@tocontentsinit {0}\cite {web}\relax }}{70}{table.caption.28}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Evaluation of 3dof sample on various models and training procedures, Discarding dof\relax }}{73}{table.caption.31}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Evaluation of 4dof sample on various models and training procedures, Adding dof\relax }}{73}{table.caption.32}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Evaluation of 3dof sample on GRUGNN and training procedures, Discarding dof\relax }}{74}{table.caption.34}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Evaluation of 4dof sample on GRUGNN models and training procedures, Adding dof\relax }}{74}{table.caption.35}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Evaluation of 3dof sample on GRUGNN and training procedures, Discarding body(Nbody)\relax }}{75}{table.caption.37}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Evaluation of 4dof sample on GRUGNN and training procedures, Adding body (Nbody)\relax }}{75}{table.caption.38}%
+\addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

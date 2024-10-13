@@ -1,6 +1,6 @@
 \chapter{Background}\label{background}
 %In this chapter we will discuss main topics from Classical Mechanics and refresh out knowledge about common neural network architectures. This will be needed to understand the working of our Physics informed networks in chapter Methods.
-In this chapter, we revisit some of the important concepts from Classical Mechanics and further develop an understanding of common neural network architectures. This is a critical foundation which will be required to understand how Physics-Informed Neural Networks work, as discussed in greater detail in the Methods chapter. 
+In this chapter, we revisit some of the important concepts from Classical Mechanics and further develop our understanding of common neural network architectures. This is a critical foundation which will be required to understand how Physics-Informed Neural Networks work, as discussed in greater detail in the Methods chapter. 
 \section{Classical Mechanics}\label{cs}
 %The classical physics are most important science to understand the laws which govern how mass object behaves in our reality. Such science is called the Classical Mechanics. It tend to describe how the mass moves in space. Simply the movement manifests through forces applied on the matter. Sir Isaac Newton for this observed phenomena gave a laws which masses should obey  \cite{ClassPhy}
 Classical Physics presents the basics for understanding the laws presiding over the behavior of objects with mass in our physical reality. This aspect of the science of Classical Mechanics describes how mass moves in space: motion is the result of forces applied to matter. Moving on, Sir Isaac Newton did develop laws that describe and predict the behavior of such objects, which today are called the Newton's Laws of Motion.\cite{ClassPhy}
@@ -10,19 +10,18 @@ Classical Physics presents the basics for understanding the laws presiding over 
 	m is to induce an acceleration $\mathbf{a}$ such that $$\mathbf{F}=m\mathbf{a}$$
 	If mass is constant we can introduce momentum $\mathbf{p}$.
 	$$\mathbf{F}=\frac{d\mathbf{p}}{dt}$$ \\
-	Derivation of the momentum in time t is a force. 
+	The derivative of momentum with respect to time is force. 
 	With this equation we can obtain momentum as $$\mathbf{p}=m\mathbf{v}$$ where $\mathbf{v}$ is velocity.
 	\item Newton’s 3rd law: If an object applies a force $\mathbf{F}$ on a second object, then the second object applies an equal and opposite force $-\mathbf{F}$ on the first object.\\
 	In the physics it is most famous law and it is often referenced as  \textit{actio = reactio} from latin.
 \end{itemize}
 One of the simplest systems that adheres to these laws is the harmonic oscillator.
 \subsection{Harmonic Oscilator}
-Harmonic Oscilator is  system  in classical physics which describes the situation where body is displaced from equilibirium position and it experience the restoring force $\mathbf{F}$ proportional to its displacement.\cite{} This system is described with Ordinary Differential Equation of second order : 
+Harmonic Oscilator is  system  in classical physics which describes the situation where body is displaced from equilibrium position and it experience the restoring force $\mathbf{F}$ proportional to its displacement.\cite{osci}\cite{osci2} This system is described with Ordinary Differential Equation of second order : 
 \begin{equation}
 	m\ddot{\mathbf{x}}(t) = -k\mathbf{x}(t) \texttt{,   } \mathbf{x}(0)= \mathbf{x}_0
 \end{equation}
-We will consider this system as one dimensional $\mathbf{x}= x$
-in which the harmonic motion is along straight line, the motion is said to be simple harmonic motion \cite{osci}. To show the simple harmonic motion let us solve the equation.\\
+We will consider this system as one dimensional $\mathbf{x}= x$ along straight line which produces simple harmonic motion \cite{osci}. It is built with the spring  stiffness $k$ and mass connected to it $m$. To show the simple harmonic motion let us solve the equation.\\
 First we will build the the linear system of equations to get the first order ordinary differential equation in form: \begin{equation}
 	\ddot{\mathbf{z}}= \mathbf{A}\mathbf{z} + \mathbf{b}.
 \end{equation}
@@ -49,13 +48,13 @@ With this we got:
 \end{equation}
 We got differential ordinary equation which is homogeneous ($\mathbf{b}=0$). To solve this Problem we need to refresh the knowledge of solving the ODEs 
 
-\subsection{Analytical solution of Ordinary Differential Equations}
+\subsection{Analytical solution of Ordinary Differential Equations}\label{ana}
 A Differential Ordinary Equation of the first order is defined as:
 \begin{equation}
 \label{eq:diff}
 \dot{\mathbf{z}}= \mathbf{A}\mathbf{z} + \mathbf{b}u \texttt{, }\mathbf{z}(0) = \mathbf{z}_0
 \end{equation}
-Before we show analytical solution of mentioned linear system, let us solve first the simplest case:
+Before we show analytical solution of mentioned linear system, let us solve first the simplest case\cite{SDRT2}:
  
 \begin{equation}
 	\dot{z}(t)= az(t) + bu \texttt{, }z(0) = z_0
@@ -127,7 +126,7 @@ With the variation of the constant method we obtain the particular solution:
 \end{equation}
 With inclusion of the initial condition $z(0) = z_0$ we get final form of the solution \\
 \begin{equation}
-	\boxed{\mathbf{z}= \underbrace{\exp(\mathbf{A}t)\mathbf{x}_0}_\text{homogeneous} + \underbrace{\int^t_0 \exp(\mathbf{A}(t-\tau))bu(\tau)d\tau}_\text{particular}}.
+	\boxed{\mathbf{z}= \underbrace{\exp(\mathbf{A}t)\mathbf{x}_0}_\text{homogeneous} + \underbrace{\int^t_0 \exp(\mathbf{A}(t-\tau))\mathbf{b}u(\tau)d\tau}_\text{particular}}.
 \end{equation}\\
 In our work the most important part is homogeneous solution and to obtain that we should use standard practice to solving it.\\
 \begin{itemize}
@@ -169,23 +168,23 @@ In those cases we use numerical methods to obtain the solutions.
 For every every ODE there is solution, sometimes there is no analytical solution but we can obtain numerical one trough numerical integrators. 
 Still numerical solutions are only approximations of the analytical solution. Due to their stability we differ two categories of one-step methods and that are explicit and implicit methods.\\
 \begin{itemize}
-	\item explicit methods are trivial to calculate because the next step is dependent only on the previous step:
+	\item Explicit Methods are trivial to calculate because the next step is dependent only on the previous step:
 	\begin{equation}
 		x(t_{i+1}) = x(t_i) + h\Phi(x(t_i)),t_i)
 	\end{equation}
-	\item implicit methods are chalenging because the next step is dependent on itself.
+	\item Implicit Methods are challenging because the next step is dependent on itself.
 	\begin{equation}
 		x(t_{i+1}) = x(t_i) + h\Phi(x(t_{i+1})),t_{i+1})
 	\end{equation}
-To obtain the step it is needed to know  function $\Phi$ and solving a next step trough some method like  for example Einstein-Raphson method. 
+To obtain the step it is needed to know method function $\Phi$ and solving a next step trough some method like  for example Einstein-Raphson method. 
 \end{itemize}
 To assure the stability and correctness of the methods we need to set some properties.
-The properties that the every one-step method should have, are Consistency and Convergence.\\
+The properties that the every one-step method should have, are Consistency and Convergence\cite{num}.\\
 
-The Consistency are proven over local discretisation error.
-Let say that for $(x,y)\in  \mu = \mu(\eta)$ is a solution for the ODE $\mu^{'} = f(\eta,\mu), \mu(x)=y$,then the discretisation error is
+The Consistency are proven over local discretization error.
+Let say that for $(x,y)\in G \mu = \mu(\eta)$ is a solution for the ODE $\mu^{'} = f(\eta,\mu), \mu(x)=y$,then the discretisation error is
 \begin{equation}
-	le(x,y;h) = \mu(x+h)-\mu{x}-h\Phi(x,y;h)
+	le(x,y;h) = \mu(x+h)-\mu(x)-h\Phi(x,y;h)
 \end{equation}
 and discretisation error per step
 \begin{equation}
@@ -231,7 +230,21 @@ Most important for us are
 		\end{eqnarray}	
 	\item Dormand- Prince method is most accurate method for obtaining he solutions of ODEs\cite{dopri5}.
 	It is widely used in experiments.\\
+	this butcher shema builds the DOPRI5 method
+	\begin{equation}
+	\begin{matrix}
+		0 & & & & & & & \\
+		\frac{1}{5}  & \frac{1}{5} & & & & & &\\
+		\frac{3}{10} &\frac{3}{40} &\frac{9}{40} & & & & & \\
+		\frac{4}{5}& \frac{44}{45}& -\frac{56}{15}& \frac{32}{9} & & & &\\
+		\frac{8}{9} &\frac{19372}{6561} &-\frac{25360}{2187} &\frac{64448}{6561}& -\frac{212}{729} & & &\\
+		1 & \frac{9017}{3168} &-\frac{355}{33}&\frac{46732}{5247}&\frac{49}{176}&-\frac{5103}{18656} & \\
+		1 & \frac{35}{384} &0&\frac{500}{113}&\frac{125}{192}&-\frac{2187}{6784} & \frac{11}{84}\\
 		
+	\hline
+	& \frac{35}{384} &0&\frac{500}{113}&\frac{125}{192}&-\frac{2187}{6784} & \frac{11}{84}\\
+	\end{matrix}
+	\end{equation}	
 \end{itemize}
 \subsection{Solving the harmonic oscilator}
 In one of the previous subsections we obtained the first order ODE for harmonic oscilator and we described how it should be solved.
@@ -285,11 +298,11 @@ The is harmonic at we can se that clearly because it is periodic and we can read
 	z_2 &= \dot{x} =& -x_0\omega\sin\left(\omega t\right)
 \end{eqnarray}
 \subsection{Langrange and Hamiltonian Equations}
-In robotics, research and model creation of the robot models are not only one-bodied system. Mostly they are are rigid-body systems like a manipulator which has N degrees of freedom. Every of the joints and links have own properties like mass, friction, etc.\\
-The Kinematic of the model and irreversibility is possible to calculate with mathematic methods. Kinematic is just establishing the function which with correct input like angles of joints $q$ give as an output in form of target position of the endeffector. This easy easy to establish with Denavit–Hartenberg convention.  On the other hand determining Dynamics is not trivial task. The Dynamic creates trajectory which is in form of ODE.\\
-There is one most popular method to solve and establish Dynamics of the model and that are Lagrange Equations.
+In robotics, research and model creation of the robot models are not only one-bodied system. Mostly they are are rigid-body systems with own joint space, like a manipulator which has N degrees of freedom. Every of the joints and links have own properties like mass, friction, etc.\\
+The Kinematics of the model and irreversibility is possible to calculate with mathematic methods. Kinematic is just establishing the function which with correct input like angles of joints $q$ give as an output in form of target position of the endeffector in cartesian coordinates. This is possible to establish with Denavit–Hartenberg convention\cite{dh}.  On the other hand determining Dynamics is not trivial task. The Dynamics of the system describe the movement and possible trajectories which are determined trough control and initial condition of the system. This means that it is fully describable trough the ODE mentioned in section\ref{ana}\\
+One of the most popular methods for solving and establishing the dynamics of a model is through the use of Lagrange equations.
 \subsubsection{Lagrange Equations}
-Langrage Equations are derived from D’Alambert Principle which is an alternative to the Newton's second law\cite{ClassPhy}:
+Langrage Equations are derived from D’Alambert Principle\cite{dalambert} which is an alternative to the Newton's second law\cite{ClassPhy}:
 \begin{equation}
 	\mathbf{F} = m\mathbf{a}
 \end{equation}   
@@ -373,9 +386,14 @@ The Lagrange Equations for holonomic constrains and conservative force is define
 \frac{d}{dt}\frac{\partial}{\partial \dot{q_j}}\mathcal{L}-\frac{\partial}{\partial q_j}\mathcal{L} =0
 \end{eqnarray}
 $\mathcal{L}$ is called Lagrangian.
+In robotics this equation is not so interesting without control. For controlling the langrangian system we set a formula as 
+\begin{equation}
+	\frac{d}{dt}\frac{\partial}{\partial \dot{q_j}}\mathcal{L}-\frac{\partial}{\partial q_j}\mathcal{L} =\tau
+\end{equation}
+Where $\tau$ is torque/momentum or controlling input. 
+
 \subsubsection{Hamiltonian Equations}
-To derive Hamiltonian Equations we need an Lagrangian $\mathcal{L}$.
-We have two famous derivation of Langrangian and that are:
+To derive Hamiltonian Equations we need a Lagrangian $\mathcal{L}$, because we need:
 \begin{equation}
 	\frac{\partial\mathcal{L}}{\partial \mathbf{q}} = \dot{\mathbf{p}}
 \end{equation}
@@ -407,21 +425,41 @@ With comparing both equivalent derivations we can define the equations of motion
 \begin{equation}
 	\frac{\partial\mathcal{H}}{\partial t} = - \frac{\partial\mathcal{L}}{\partial t}
 \end{equation}
-Hamiltonian equations are very useful because in the case $\frac{\partial\mathcal{H}}{\partial t} = 0$ our Total Energy $\mathcal{H} = E = T + U$ is conserved and often we can derive time independent motion.
+Hamiltonian equations are very useful because in the case $\frac{\partial\mathcal{H}}{\partial t} = 0$ our Total Energy $\mathcal{H} = E = T + U$ is conserved and often we can derive time independent motion.\\
+This can be simplified as 
+\begin{equation}
+	\dot{\mathbf{x}} = \mathbf{J}\frac{\partial\mathcal{H}}{\partial \mathbf{x}}(x)
+\end{equation}
+where $\mathcal{H}=T+U$ and 
+$\mathbf{J} = \begin{bmatrix}
+	0 & \mathbf{I}_n\\
+	-\mathbf{I}_n & 0
+\end{bmatrix} $\\
+In applied robotics we use Port-Hamiltonian Equation\cite{portham}
+\begin{equation}
+	\left[\mathbf{J}-\mathbf{R}\right]\frac{\partial\mathcal{H}}{\partial x}(x) + \mathbf{g}(x)u.
+\end{equation}
+If we set $\mathbf{R}$ and $u$ as zero we get a trivial hamitonian equation. $\mathbf{R}=\begin{bmatrix}
+	0 & 0\\
+	0 & \mathbf{r}
+\end{bmatrix}$ is in this case dissipation matrix or coriolis matrix and $g=\begin{bmatrix}
+0\\
+\mathbf{b}
+\end{bmatrix}$ is control vector.
 \section{Neural Network Architectures}
 At the beginning of our research we experimented with feedforward networks and recurrent networks.  
 \subsection{Deep forward Network - Multilayer Perceptron }
-Feedforward networks like Multilayer perceptron approximates a certain function $\mathbf{f(\mathbf{x})}$. As MLP function we will show it as a mapping $\mathbf{f}(\mathbf{x}|\Theta)$.\\
-The main goal of feedforward network is to fit the model so that the we get best approximation. Fit the model means to learn the parameters of the model trough optimizing procedure.\\
+Feedforward networks like Multilayer perceptron approximates a certain function $\mathbf{f(\mathbf{x})}$ which is often interpreted as a mapping $\mathbf{f}(\mathbf{x}|\Theta)$.\\
+The main goal of feedforward networks is to fit the model so that the we get best approximation. Fit the model means to learn the parameters of the model trough optimizing procedure.\\
 Multiplayer perceptron is fully connected feedforward neural network. The nodes of the MLP are often called neurons and they build a layer. A minimal MLP has three consecutive layers: which form complete bipartite graph.\\
 Mathematical expression of one neuron:
 \begin{equation}
 	y = \sigma(\sum_i{w_i \cdot x_i} + b) 
 \end{equation}
-Mathematical expression of the feedforward layer network:
+Mathematical expression of the feedforward layer network
 \begin{equation}
 	\mathbf{h}^{(k+1)} =\sigma\left(\mathbf{W}^{(k)}\mathbf{h}^{(k)} + \mathbf{b}^{(k)}\right)
-\end{equation} and we can see graphical representation in \ref{mlp}
+\end{equation} and we can see graphical representation in \ref{mlp}.
 In this equation $\sigma$ is called activation function, 
 $\mathbf{W}$ as weights and $\mathbf{b}$ as bias which are our parameters $\Theta =\{\mathbf{W},\mathbf{b}\}$.\\
 \begin{figure}[h!]
@@ -430,51 +468,9 @@ $\mathbf{W}$ as weights and $\mathbf{b}$ as bias which are our parameters $\Thet
 	\label{mlp}
 \end{figure}
 The activation function in the network introduces non linearity to improve approximation capability.\\
-
-
-
-
-\subsection{Recurrent Neural Networks}
-Reccurent Neural Networks are very interesting concept of Neural Network architecture. It is mostly used for speech recognition but for a time series\cite{mlprnn}.\\
-Architecture of this Neural Network depends on which data we work.
-There is three types which we can use\cite{rnntypes}:
-\begin{itemize}
-	\item many to many\\
-	This type is used for speech recognition we use a dataset which has sentences and it outputs some values which could be understood from other model. Fo example translation or video captioning
-	\item one to many\\
-	used for the time series data from one input we can create recurrence that represent a time point with new output. From one input we get more outputs. time-series can be for example music generation.
-	\item many to one\\
-	from many outputs we get only one output. This is very good model for example spam detection
-\end{itemize}
-Let say that we have a sequence $S = \{\mathbf{x}^0,\mathbf{x}^1,...,\mathbf{x}î,..\mathbf{x}^n\}$. the first element $\mathbf{h}^0$ will be initialized as 0.
-The architecture of the RNN-cell\cite{rnn} described in mathematical formulation 
-\begin{eqnarray*}
-	\mathbf{h}^{(i)} &=& \sigma(\mathbf{W}_{hh} \cdot \mathbf{h}^{(i-1)} + \mathbf{W}_{hx}\mathbf{x}^{(i-1)} + \mathbf{b}_h)\\
-	\mathbf{y}^{(i)} &=& \sigma(W_{yh}\cdot \mathbf{h}^{(i)} + \mathbf{b}_y)
-\end{eqnarray*} and graphical appearance is shown in \ref{rnn}
-\begin{figure}[h!]
-	\centering\includegraphics[width=8cm]{chapters/chapter2/rnn}
-	\caption{Recurrent neural unit(many to many)\cite{rnn_picture}}
-	\label{rnn}
-\end{figure}
-
-There is similar and better model then RNN and that is Gated Recurrent Unit called GRU.
-We use it in same way as RNN but it his own unique architecture\cite{gru}:
-\begin{eqnarray}
-	r_t &=& \sigma(W_{ir} x_t + b_{ir} + W_{hr} h_{(t-1)} + b_{hr}) \\
-	z_t &=& \sigma(W_{iz} x_t + b_{iz} + W_{hz} h_{(t-1)} + b_{hz}) \\
-	n_t &=& \tanh(W_{in} x_t + b_{in} + r_t \odot (W_{hn} h_{(t-1)}+ b_{hn})) \\
-	h_t &=& (1 - z_t) \odot n_t + z_t \odot h_{(t-1)}
-\end{eqnarray} and we can see it in plot \ref{gru}
-\begin{figure}[h!]
-	\centering\includegraphics[width=8cm]{chapters/chapter2/gru}
-	\caption{Gated recurrent unit\cite{gru_picture}}
-	\label{gnn}
-\end{figure}
-The GRU unit is specific because it has reset gate $r_i$ and update gate $u_i$. Such architecture give better performance then at simple RNN.
-
 \subsection{Activation functions and Loss functions}
-In every neural architecture there is a activation function.
+In every neural architecture, especially MLP, there is a activation function  $\sigma$.
+They are differentiable functions which are used to introduce nonlinearity into the model. They must be differentiable because of the backpropagation.
 Most used activation functions are:
 \begin{itemize}
 	\item ReLU\\
@@ -495,7 +491,7 @@ Most used activation functions are:
 	\end{figure}
 \end{itemize} 
 
-Output layer has no activation function. it is connected to the loss function. The most used loss functions are:
+Output layer has no activation function. it is connected to the loss function. They are used for optimization comparing model output with the target.  The most used loss functions are:
 \begin{itemize}
 	\item Mean Absolute Error(MAE)
 	\begin{equation}
@@ -517,15 +513,60 @@ Output layer has no activation function. it is connected to the loss function. T
 	
 \end{itemize}.
 
+
+
+\subsection{Recurrent Neural Networks}
+Recurrent Neural Networks are very interesting concept of Neural Network architecture. It is mostly used for speech recognition but for a time series\cite{mlprnn}.\\
+As the name says it feed forward network which propagate recurrently. It means that propagation is dependent on repeating the model to fit the size of the data, like data for time-series which can have various time length. 
+There is three types which we can use\cite{rnntypes}:
+\begin{itemize}
+	\item many to many\\
+	This type is used for speech recognition we use a dataset which has sentences and it outputs some values which could be understood from other model. For example translation or video captioning
+	\item one to many\\
+	used for the time series data from one input we can create recurrence that represent a time point with new output. From one input we get more outputs. time-series can be for example music generation.
+	\item many to one\\
+	from many outputs we get only one output. This is very good model for spam detection
+\end{itemize}
+Let say that we have a sequence $S = \{\mathbf{x}^0,\mathbf{x}^1,...,\mathbf{x}î,..\mathbf{x}^n\}$. the first element $\mathbf{h}^0$ will be initialized as 0.
+The architecture of the RNN-cell\cite{rnn} described in mathematical formulation 
+\begin{eqnarray*}
+	\mathbf{h}^{(i)} &=& \sigma(\mathbf{W}_{hh} \cdot \mathbf{h}^{(i-1)} + \mathbf{W}_{hx}\mathbf{x}^{(i-1)} + \mathbf{b}_h)\\
+	\mathbf{y}^{(i)} &=& \sigma(W_{yh}\cdot \mathbf{h}^{(i)} + \mathbf{b}_y)
+\end{eqnarray*} and graphical appearance is shown in \ref{rnn}
+\begin{figure}[h!]
+	\centering\includegraphics[width=8cm]{chapters/chapter2/rnn}
+	\caption{Recurrent neural unit(many to many)\cite{rnn_picture}}
+	\label{rnn}
+\end{figure}
+
+There is similar and better model then RNN and that is Gated Recurrent Unit called GRU.
+We use it in same way as RNN but it his own unique architecture\cite{gru}:
+\begin{eqnarray}
+	r_t &=& \sigma(W_{ir} x_t + b_{ir} + W_{hr} h_{(t-1)} + b_{hr}) \\
+	z_t &=& \sigma(W_{iz} x_t + b_{iz} + W_{hz} h_{(t-1)} + b_{hz}) \\
+	n_t &=& \tanh(W_{in} x_t + b_{in} + r_t \odot (W_{hn} h_{(t-1)}+ b_{hn})) \\
+	h_t &=& (1 - z_t) \odot n_t + z_t \odot h_{(t-1)}
+\end{eqnarray} and we can see it in figure \ref{gru}
+\begin{figure}[h!]
+	\centering\includegraphics[width=8cm]{chapters/chapter2/gru}
+	\caption{Gated recurrent unit\cite{gru_picture}}
+	\label{gru}
+\end{figure}
+The GRU unit is specific because it has reset gate $r_i$ and update gate $u_i$. Such architecture give better performance then at simple RNN because it has memory capabilities.
+
+
+
 \subsection{Optimizers}
 To do backpropagation we need an optimizer to update our learnable parameters. The easiest optimizer is stochastic gradient descent.
 \begin{equation}
 	\mathbf{W}^{(i+1)} =\mathbf{W}^{(i)}-\mu \frac{\partial Loss(z)}{\partial \mathbf{W}^{(i)}}
 \end{equation}
 There are more better one and for our use case we will use AdamW\cite{adamW}.
+We use this optimizer because it shows good performance in both regression and classification models.
+ 
 
 \subsection{Backpropagation of Neural Models}
-After forward pass and calculated loss, we need to do just next steps Backward pass and optimization step.\\In backward pass we are computing the gradients of our learnable parameters to use it for the optimization of the model.\\
+After the forward pass and calculated loss, we need to do just backward pass and optimization step.\\In backward pass we are computing the gradients of our learnable parameters to use it for the optimization of the model.\\
 For example we will use stochstic gradient descent(SGD)
 \begin{eqnarray}
 	\mathbf{W}_{i+1} = \mathbf{W}_i - \gamma\cdot \frac{\partial Loss(z)}{\partial \mathbf{W}_i }\\
@@ -541,4 +582,4 @@ The obtaining the gradients of the weights is called backpropagation because for
 \begin{equation}
 \frac{\partial Loss(z)}{\partial \mathbf{W}_0}= \frac{\partial Loss(z)}{\partial \mathbf{y}_1} \cdot\frac{\partial \mathbf{y}_1}{\partial \mathbf{z}_1}\cdot	\frac{\partial \mathbf{z}_1}{\partial \mathbf{W}_0}
 \end{equation}
-Recurrent neural networks often fall as a victim of gradient vanishing or gradient exploding. In this manner the models doesn’t learn because the derivations calculated through backpropogation are to small or to big. It is important that gradients slowly decrease trough learning that whole model can generalize the data.
+Recurrent neural networks often fall as a victim of gradient vanishing or gradient exploding. In this manner the models doesn’t learn because the derivatives calculated through backpropogation are to small or to big. It is important that gradients slowly decrease trough learning that whole model can fit the data.
