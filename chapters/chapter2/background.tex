@@ -21,7 +21,7 @@ Harmonic Oscilator is  system  in classical physics which describes the situatio
 \begin{equation}
 	m\ddot{\mathbf{x}}(t) = -k\mathbf{x}(t) \texttt{,   } \mathbf{x}(0)= \mathbf{x}_0
 \end{equation}
-We will consider this system as one dimensional $\mathbf{x}= x$ along straight line which produces simple harmonic motion \cite{osci}. It is built with the spring  stiffness $k$ and mass connected to it $m$. To show the simple harmonic motion let us solve the equation.\\
+We will consider this system as one dimensional $\mathbf{x}= x$ along straight line which produces simple harmonic motion \cite{osci}. It is built with the spring  stiffness $k$ and mass $m$ connected to it. To show the simple harmonic motion let us solve the equation.\\
 First we will build the the linear system of equations to get the first order ordinary differential equation in form: \begin{equation}
 	\ddot{\mathbf{z}}= \mathbf{A}\mathbf{z} + \mathbf{b}.
 \end{equation}
@@ -130,7 +130,7 @@ With inclusion of the initial condition $z(0) = z_0$ we get final form of the so
 \end{equation}\\
 In our work the most important part is homogeneous solution and to obtain that we should use standard practice to solving it.\\
 \begin{itemize}
-	\item Find eigenvalues and eigenvectors- Every matrix with full rank is diagonalizable 
+	\item Find eigenvalues and eigenvectors: Every matrix with full rank is diagonalizable 
 	\begin{eqnarray}
 		\mathbf{A} &=& \mathbf{V}\mathbf{D}\mathbf{V}^{-1}\\
 		\mathbf{D} &=& \texttt{diag}(\{\lambda_1,...,\lambda_i,...\lambda_n\}) \text{    Eigenvalues}\\`
@@ -146,8 +146,7 @@ In our work the most important part is homogeneous solution and to obtain that w
 	\end{eqnarray}
 	This system is now trivial to solve.
 	\item Set it in general solution $\Theta_i=c_i\exp(\lambda_i t)$ 
-	In case of repeated eigenvalue we should use $\Theta_i=c_i \frac{t^r}{r!} \exp(\lambda_i t)$ where $r$ is number of repetitions.
-	It will came up from the eigenvectors. 
+	In case of repeated eigenvalue we should use $\Theta_i=c_i \frac{t^r}{r!} \exp(\lambda_i t)$ where $r$ is number of repetitions. 
 	\item back-substitute $\mathbf{z}$
 	\begin{eqnarray}
 		\mathbf{z} &=& \mathbf{V}\boldsymbol{\Theta} =\sum^n_{i=1}\mathbf{v}_i\Theta_i\\
@@ -165,7 +164,7 @@ In this procedure we obtained the homogeneous solution. The particular solution 
 In those cases we use numerical methods to obtain the solutions.
 
 \subsection{Numerical solution of Ordinary Differential Equations}
-For every every ODE there is solution, sometimes there is no analytical solution but we can obtain numerical one trough numerical integrators. 
+For every ODE there is solution, sometimes there is no analytical solution but we can obtain numerical one trough numerical integrators. 
 Still numerical solutions are only approximations of the analytical solution. Due to their stability we differ two categories of one-step methods and that are explicit and implicit methods.\\
 \begin{itemize}
 	\item Explicit Methods are trivial to calculate because the next step is dependent only on the previous step:
@@ -181,8 +180,8 @@ To obtain the step it is needed to know method function $\Phi$ and solving a nex
 To assure the stability and correctness of the methods we need to set some properties.
 The properties that the every one-step method should have, are Consistency and Convergence\cite{num}.\\
 
-The Consistency are proven over local discretization error.
-Let say that for $(x,y)\in G \mu = \mu(\eta)$ is a solution for the ODE $\mu^{'} = f(\eta,\mu), \mu(x)=y$,then the discretisation error is
+The Consistency is proven over local discretization error.
+Let say that for $(x,y)\in G$ and $\mu = \mu(\eta)$ is a solution for the ODE $\mu^{'} = f(\eta,\mu), \mu(x)=y$,then the discretisation error is
 \begin{equation}
 	le(x,y;h) = \mu(x+h)-\mu(x)-h\Phi(x,y;h)
 \end{equation}
@@ -230,7 +229,7 @@ Most important for us are
 		\end{eqnarray}	
 	\item Dormand- Prince method is most accurate method for obtaining he solutions of ODEs\cite{dopri5}.
 	It is widely used in experiments.\\
-	this butcher shema builds the DOPRI5 method
+	This butcher shema builds the DOPRI5 method
 	\begin{equation}
 	\begin{matrix}
 		0 & & & & & & & \\
@@ -298,8 +297,8 @@ The is harmonic at we can se that clearly because it is periodic and we can read
 	z_2 &= \dot{x} =& -x_0\omega\sin\left(\omega t\right)
 \end{eqnarray}
 \subsection{Langrange and Hamiltonian Equations}
-In robotics, research and model creation of the robot models are not only one-bodied system. Mostly they are are rigid-body systems with own joint space, like a manipulator which has N degrees of freedom. Every of the joints and links have own properties like mass, friction, etc.\\
-The Kinematics of the model and irreversibility is possible to calculate with mathematic methods. Kinematic is just establishing the function which with correct input like angles of joints $q$ give as an output in form of target position of the endeffector in cartesian coordinates. This is possible to establish with Denavit–Hartenberg convention\cite{dh}.  On the other hand determining Dynamics is not trivial task. The Dynamics of the system describe the movement and possible trajectories which are determined trough control and initial condition of the system. This means that it is fully describable trough the ODE mentioned in section\ref{ana}\\
+In robotics, research and model creation of the robot models are not only one-bodied system. Mostly they are are rigid-body systems with own joint space, like a manipulator which has $N$ degrees of freedom. Every of the joints and links have own properties like mass, friction, etc.\\
+The kinematics of the model and irreversibility is possible to calculate with mathematic methods. Kinematic is just establishing the function which with correct input like angles of joints $q$ give as an output in form of target position of the endeffector in cartesian coordinates. This is possible to establish with Denavit–Hartenberg convention\cite{dh}.  On the other hand determining Dynamics is not trivial task. The Dynamics of the system describe the movement and possible trajectories which are determined trough control and initial conditions of the system. This means that it is fully describable trough the ODE mentioned in section\ref{ana}\\
 One of the most popular methods for solving and establishing the dynamics of a model is through the use of Lagrange equations.
 \subsubsection{Lagrange Equations}
 Langrage Equations are derived from D’Alambert Principle\cite{dalambert} which is an alternative to the Newton's second law\cite{ClassPhy}:
@@ -344,7 +343,7 @@ If we need virtual displacement for the generalized coordinates:
 Now we can derive Langrange Equations applying last equation to D'Alambert principle:
 \begin{eqnarray*}
 \sum_i^N{\mathbf{F}_i \cdot \delta \mathbf{r}_i} &=& \\ \sum_i^N{\mathbf{F}_i\sum_j^n{\frac{\partial\mathbf{r}_i}{\partial q_j}\cdot \delta q_j}}&=&\\
-\sum_j^n{\delta q_j\underbrace{\sum_i^N{\mathbf{F}_i}\frac{\partial\mathbf{r}_i}{\partial q_j}}_\text{$Q_j$}}&=&\boxed{\sum_j^n{\delta q_j\cdot Q_j}}\\
+\sum_j^n{\delta q_j\underbrace{\sum_i^N{\mathbf{F}_i}\frac{\partial\mathbf{r}_i}{\partial q_j}}_\text{$Q_j$}}&=&\boxed{\sum_j^n{\delta q_j\cdot \mathbf{Q}_j}}\\
 \sum_i^N{m_i\ddot{\mathbf{r}}_i \cdot \delta \mathbf{r}_i}&=&\\
 \sum_i^N{m_i\ddot{\mathbf{r}}_i \sum_j^n{\frac{\partial\mathbf{r}_i}{\partial q_j}\cdot \delta q_j}}&=&
 \sum_j^n{\delta q_j\sum_i^N{m_i\ddot{\mathbf{r}}_i\frac{\partial\mathbf{r}_i}{\partial q_j}}}\\
@@ -360,7 +359,7 @@ We get this equation
 \end{equation}
 With those two made equations we can finally put it togehter in D'Alambert Principle formula:
 \begin{equation}
-	\sum_j^n{\delta q_j\left[\frac{d}{dt}\frac{\partial}{\partial \dot{q_j}}\left(\sum_i^N\frac{1}{2}m_i\dot{\mathbf{r}_i}^2\right)-\frac{\partial}{\partial q_j}\left(\sum_i^N\frac{1}{2}m_i\dot{\mathbf{r}_i}^2\right)- Q_j\right]} =0 
+	\sum_j^n{\delta q_j\left[\frac{d}{dt}\frac{\partial}{\partial \dot{q_j}}\left(\sum_i^N\frac{1}{2}m_i\dot{\mathbf{r}_i}^2\right)-\frac{\partial}{\partial q_j}\left(\sum_i^N\frac{1}{2}m_i\dot{\mathbf{r}_i}^2\right)- \mathbf{Q}_j\right]} =0 
 \end{equation}
 This Equation is almost complete, we need to define the energies and their specifications
 
@@ -371,13 +370,13 @@ This Equation is almost complete, we need to define the energies and their speci
 		T(q,\dot{q}) = \sum_i^N\frac{1}{2}m_i\dot{\mathbf{r}_i}^2
 	\end{equation}
 	\item Potential Energy - Energy held by body becuase of its relative position to other bodies or other target.\\
-	There is many types of potential energy:\\
+	There are many types of potential energy:\\
 	Pendelum - $U(q=h)=mgh$\\
 	Oscilator - $U(q)=\frac{kq}{2}$ 
 \end{itemize}
 In the Formula $\mathbf{Q}$ is generalized force and it is created from the gradient of the potential energy and it is conservative :
 \begin{equation}
-	\mathbf{Q_j} =- \sum^N_i \nabla_{\mathbf{r_i}}U(q)\frac{\partial\mathbf{r_i}}{\partial q_j}= -\frac{\partial U}{\partial q_j}
+	\mathbf{Q}_j =- \sum^N_i \nabla_{\mathbf{r_i}}U(q)\frac{\partial\mathbf{r_i}}{\partial q_j}= -\frac{\partial U}{\partial q_j}
 \end{equation} 
 Potential Energy is only dependent on position of the bodies $\frac{\partial U}{\partial \dot{q}} = 0$.\\
 The Lagrange Equations for holonomic constrains and conservative force is defined as:
@@ -428,7 +427,7 @@ With comparing both equivalent derivations we can define the equations of motion
 Hamiltonian equations are very useful because in the case $\frac{\partial\mathcal{H}}{\partial t} = 0$ our Total Energy $\mathcal{H} = E = T + U$ is conserved and often we can derive time independent motion.\\
 This can be simplified as 
 \begin{equation}
-	\dot{\mathbf{x}} = \mathbf{J}\frac{\partial\mathcal{H}}{\partial \mathbf{x}}(x)
+	\dot{\mathbf{x}} = \mathbf{J}\frac{\partial\mathcal{H}}{\partial \mathbf{x}}(\mathbf{x})
 \end{equation}
 where $\mathcal{H}=T+U$ and 
 $\mathbf{J} = \begin{bmatrix}
@@ -437,7 +436,7 @@ $\mathbf{J} = \begin{bmatrix}
 \end{bmatrix} $\\
 In applied robotics we use Port-Hamiltonian Equation\cite{portham}
 \begin{equation}
-	\left[\mathbf{J}-\mathbf{R}\right]\frac{\partial\mathcal{H}}{\partial x}(x) + \mathbf{g}(x)u.
+	\left[\mathbf{J}-\mathbf{R}\right]\frac{\partial\mathcal{H}}{\partial \mathbf{x}}(\mathbf{x}) + \mathbf{g}(\mathbf{x})u.
 \end{equation}
 If we set $\mathbf{R}$ and $u$ as zero we get a trivial hamitonian equation. $\mathbf{R}=\begin{bmatrix}
 	0 & 0\\
@@ -450,8 +449,8 @@ If we set $\mathbf{R}$ and $u$ as zero we get a trivial hamitonian equation. $\m
 At the beginning of our research we experimented with feedforward networks and recurrent networks.  
 \subsection{Deep forward Network - Multilayer Perceptron }
 Feedforward networks like Multilayer perceptron approximates a certain function $\mathbf{f(\mathbf{x})}$ which is often interpreted as a mapping $\mathbf{f}(\mathbf{x}|\Theta)$.\\
-The main goal of feedforward networks is to fit the model so that the we get best approximation. Fit the model means to learn the parameters of the model trough optimizing procedure.\\
-Multiplayer perceptron is fully connected feedforward neural network. The nodes of the MLP are often called neurons and they build a layer. A minimal MLP has three consecutive layers: which form complete bipartite graph.\\
+The main goal of feedforward networks is to fit the model so that the we get best approximation. Fit the model means measuring how the model adapts the data similar to data on which is trained on.\\
+Multiplayer perceptron is fully connected feedforward neural network. The nodes of the MLP are often called neurons and they build a layer. A minimal MLP has three consecutive layers, input, hidden and output layer,which form complete bipartite graph.\\
 Mathematical expression of one neuron:
 \begin{equation}
 	y = \sigma(\sum_i{w_i \cdot x_i} + b) 
@@ -459,7 +458,7 @@ Mathematical expression of one neuron:
 Mathematical expression of the feedforward layer network
 \begin{equation}
 	\mathbf{h}^{(k+1)} =\sigma\left(\mathbf{W}^{(k)}\mathbf{h}^{(k)} + \mathbf{b}^{(k)}\right)
-\end{equation} and we can see graphical representation in \ref{mlp}.
+\end{equation} and we can see graphical representation in Figure  \ref{mlp}.
 In this equation $\sigma$ is called activation function, 
 $\mathbf{W}$ as weights and $\mathbf{b}$ as bias which are our parameters $\Theta =\{\mathbf{W},\mathbf{b}\}$.\\
 \begin{figure}[h!]
@@ -516,16 +515,16 @@ Output layer has no activation function. it is connected to the loss function. T
 
 
 \subsection{Recurrent Neural Networks}
-Recurrent Neural Networks are very interesting concept of Neural Network architecture. It is mostly used for speech recognition but for a time series\cite{mlprnn}.\\
+Recurrent Neural Networks are very interesting concept of Neural Network architecture. It is mostly used for speech recognition and for the time series data\cite{mlprnn}.\\
 As the name says it feed forward network which propagate recurrently. It means that propagation is dependent on repeating the model to fit the size of the data, like data for time-series which can have various time length. 
 There is three types which we can use\cite{rnntypes}:
 \begin{itemize}
-	\item many to many\\
+	\item Many to many\\
 	This type is used for speech recognition we use a dataset which has sentences and it outputs some values which could be understood from other model. For example translation or video captioning
-	\item one to many\\
-	used for the time series data from one input we can create recurrence that represent a time point with new output. From one input we get more outputs. time-series can be for example music generation.
-	\item many to one\\
-	from many outputs we get only one output. This is very good model for spam detection
+	\item One to many\\
+	Used for the time series data from one input we can create recurrence that represent a time point with new output. From one input we get more outputs. time-series can be for example music generation.
+	\item Many to one\\
+	From many outputs we get only one output. This is very good model for spam detection
 \end{itemize}
 Let say that we have a sequence $S = \{\mathbf{x}^0,\mathbf{x}^1,...,\mathbf{x}î,..\mathbf{x}^n\}$. the first element $\mathbf{h}^0$ will be initialized as 0.
 The architecture of the RNN-cell\cite{rnn} described in mathematical formulation 

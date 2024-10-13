@@ -1958,6 +1958,58 @@
       \verb 1909.01315
       \endverb
     \endentry
+    \entry{wave}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=c97b91ddf59fcb75f2d1b52080711566}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zonghan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=019bcbde9904047f7c02c1ae64e1d46e}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Shirui},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e7b6aa3c68f9430695b34429c0871856}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Guodong},
+           giveni={G\bibinitperiod}}}%
+        {{hash=78f8ffda028131a2ad3f19fb3e42cdb7}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=59f3e845390faff6c808a1556b2ac0ef}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chengqi},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d8fc377d7726031a0daf3b3b9ab64b3}
+      \strng{fullhash}{80dc2a1a19f802d0e2ef4a4f96e9456e}
+      \strng{bibnamehash}{0d8fc377d7726031a0daf3b3b9ab64b3}
+      \strng{authorbibnamehash}{0d8fc377d7726031a0daf3b3b9ab64b3}
+      \strng{authornamehash}{0d8fc377d7726031a0daf3b3b9ab64b3}
+      \strng{authorfullhash}{80dc2a1a19f802d0e2ef4a4f96e9456e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Graph WaveNet for Deep Spatial-Temporal Graph Modeling}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1906.00121
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1906.00121
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1906.00121
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

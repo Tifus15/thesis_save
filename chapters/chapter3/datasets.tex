@@ -2,8 +2,8 @@
 Now we consider the study case of the datasets:
 \begin{itemize}
 	\item  N body problem
-	\item two body problem
-	\item threebody problem
+	\item Two body problem
+	\item Threebody problem
 	\item N pendelum
 \end{itemize}
 First we will mathematically describe the system and later we will explain how to prepare and create trajectories corresponding to their starting point/initial value. 
@@ -24,7 +24,7 @@ or we could compare Hamiltonian with elipse formula
 	1 = \frac{x^2}{a^2} + \frac{y^2}{b^2},
 \end{equation} and set the components in parametric equation\begin{equation}
 (x,y) = (a\cos(\phi),b\sin(\phi)) \rightarrow(p,q) = \left(\sqrt{2Hm}\cos(\phi),\sqrt{\frac{2H}{k}}\sin(\phi)\right)
-\end{equation} of the ellipse.\\ This equation represents kinematic of the oscilator. To find periodicity let say that $\phi = \omega t + \Phi $ and we know that the $p = mx$, with this equation we can calculate $\omega$.
+\end{equation} of the ellipse.\\ This equation represents kinematics of the oscilator. To find periodicity let say that $\phi = \omega t + \Phi $ and we know that the $p = mx$, with this equation we can calculate $\omega$.
 \begin{eqnarray}
 	p &=& m\dot{x} =\sqrt{2Hm}\cos(\omega t + \Phi), \\
 	\dot{x} &=& \sqrt{\frac{2H}{m}}\cos(\omega t + \Phi),\\
@@ -46,7 +46,7 @@ To create unique trajectories for the dataset we just need to specify energy reg
 
 
 \section{N-body problem}
-N-body problem is most complex problem in physics. It describes a movement of bodies in the free space. There are no conditions and there are multitude of solutions.This problem is even a topic in quantum theory. We will just observe an compute real trajectories of this problem.\\ 
+N-body problem is most complex problem in physics. It describes a movement of bodies in the free space. There are no conditions and there are multitude of solutions. This problem is even a topic in quantum theory.\\ We will just observe an compute real trajectories of this problem.\\ 
 In Newtonian formulation the N-body problem is
 \begin{equation}
 m_i\ddot{\mathbf{x}}_i = -\sum_{i\neq j, j=1}^nG\frac{m_im_j(\mathbf{x}_i-\mathbf{x}_j)}{||\mathbf{x}_i-\mathbf{x}_j||^3}
@@ -66,7 +66,7 @@ We secured that the value in the dominator never reaches 0. This is important be
 To create the dataset we carefully chosed those constalations which are in fixed domain and the hamiltonian looks conservative. This conservative property is observable trough mean and standard deviation of the Hamiltonian Energy 
 \subsection{Symplectic numerical methods to solve N-body problem}
 Symplectic numerical methods are designed for numerical solution of Hamilton Equations. It posses conserved quality to approximate the Total Energy the Hamiltonian.\\
-They have two forms. One in canonical coordinates(q,p) and in langrangian coordinates($x$,$v$,$a$). Most used ones are in langrangian form and we will use it to create trajectory for N-body problem.\\
+They have two forms. One in canonical coordinates($q$,$p$) and in langrangian coordinates($x$,$v$,$a$). Most used ones are in langrangian form and we will use it to create trajectory for N-body problem.\\
 For the N-body problem we used two numerical solvers. In first step we used velocity verlet
 \begin{eqnarray}
 	\mathbf{x}_{i+1} &=& \mathbf{x}_i + h\mathbf{v}_i + \mathbf{a}_i\frac{h^2}{2} \\
@@ -78,14 +78,14 @@ for the next steps with timestep $h$ we used more stable beeman method
 	\mathbf{v}_{i+1}&=&\mathbf{v}_i + \frac{h}{6}(2\mathbf{a}_{i+1} + 5\mathbf{a}_i-\mathbf{a}_{i+1}).
 \end{eqnarray}
 This needed to be done because the beeman method needs acceleration of the next and previous step to be calculated. We used langragian coordinates because it is most easiest way to create trajectories.
-In canonical coordinates we need more formulas like for hamiltonian energy and its derivation. In thi way suggested we can very fast calculate the trajecories of nbody problem. The dataset is fully adjustable. We can adjust gravity constant and masses how we like. As proof of concept we used $G=1$ and $m_i=1$.  
+In canonical coordinates we need more formulas like for hamiltonian energy and its derivation. In thi way we can very fast calculate the trajecories of nbody problem. The dataset is fully adjustable. We can adjust gravity constant and masses how we like. As proof of concept we used $G=1$ and $m_i=1$.  
 \subsection{Twobody problem}
-Twobody problem is one of the most easiest dataset which could be created from N-body problem. It has one trivial solution which is binary star movement.
+Twobody problem is one of the most easiest dataset which could be created from N-body problem. It has one trivial solution which is binary star movement which is periodic.
 Two stars trough their movement maintain constant distance $r$ and their center of mass $\mathbf{p}_m$ is static at the origin.\\
 The newtonian form of twobody Problem is written as
 \begin{eqnarray}
 	m_1\ddot{\mathbf{q}}_1 = -G\frac{m_1m_2(\mathbf{q}_1-\mathbf{q}_2)}{||\mathbf{q}_1-\mathbf{q}_2||^3}\\
-	m_2\ddot{\mathbf{x}}_2 = -G\frac{m_1m_2(\mathbf{q}_2-\mathbf{q}_1)}{||\mathbf{q}_2-\mathbf{q}_1||^3}
+	m_2\ddot{\mathbf{q}}_2 = -G\frac{m_1m_2(\mathbf{q}_2-\mathbf{q}_1)}{||\mathbf{q}_2-\mathbf{q}_1||^3}
 \end{eqnarray}
 From those equations we can get a statement about third newton law:
 \begin{equation}
@@ -93,23 +93,23 @@ From those equations we can get a statement about third newton law:
 \end{equation}
 and its hamiltonian
 \begin{equation}
-\mathcal{H} = \frac{||\mathbf{p}_1||}{2m_1} +\frac{||\mathbf{p}_2||}{2m_2} - G\frac{m_1m_2}{||\mathbf{q}_1 - \mathbf{q}_2||}
+\mathcal{H} = \frac{||\mathbf{p}_1||}{2m_1} +\frac{||\mathbf{p}_2||}{2m_2} - G\frac{m_1m_2}{||\mathbf{q}_1 - \mathbf{q}_2||}.
 \end{equation}
 We said that we have static center mass point. center mass point is obtained using following formula
 \begin{equation}
-	\mathbf{q}_m = \frac{1}{m_1+m_2}(m_1\mathbf{q_1} + m_2\mathbf{q_2})
+	\mathbf{q}_m = \frac{1}{m_1+m_2}(m_1\mathbf{q_1} + m_2\mathbf{q_2}).
 \end{equation}
-if we set the center mass point in origin the equation simplifies nd we get one about velocity
+If we set the center mass point in origin the equation simplifies nd we get one about velocity
 \begin{eqnarray}
-	m_1\mathbf{q_1} + m_2\mathbf{q_2} = 0\\
+	m_1\mathbf{q_1} + m_2\mathbf{q_2} = 0,\\
 	m_1\dot{\mathbf{q}}_1 + m_2\dot{\mathbf{q}}_2 = \mathbf{p}_1 +\mathbf{p}_2 = 0.
 \end{eqnarray}
 From now on we will write $\mathbf{p} =\mathbf{p}_1 = -\mathbf{p}_2$.
-Lets make some formulas about distance. 
+Lets make some formulas about distance
 \begin{eqnarray}
-	\mathbf{q}_2 = \frac{m_1}{m_2}\mathbf{q}_2\\
-	||\mathbf{q}_2|| =^{\mathbf{q}_m=0} \frac{m_1}{m_2}||\mathbf{q}_1||\\ 
-	r_2 =\frac{m_1}{m_2}r_1
+	\mathbf{q}_2 = \frac{m_1}{m_2}\mathbf{q}_2,\\
+	||\mathbf{q}_2|| =^{\mathbf{q}_m=0} \frac{m_1}{m_2}||\mathbf{q}_1||,\\ 
+	r_2 =\frac{m_1}{m_2}r_1.
 \end{eqnarray}
 With this we got interesting property
 \begin{equation}
@@ -129,12 +129,12 @@ Still to make a dataset with twobody trajectories we need a period $T$. Let assu
 	\begin{bmatrix}
 		\cos(\Phi)\\
 		\sin(\Phi)
-	\end{bmatrix}\\
+	\end{bmatrix},\\
 \mathbf{q}_2 = r_2
 \begin{bmatrix}
 	\cos(\Phi+ \pi)\\
 	\sin(\Phi+ \pi)
-\end{bmatrix}
+\end{bmatrix}.
 \end{eqnarray}
 The momentum is tangential in dependency of orientation of position
 \begin{eqnarray}
@@ -164,9 +164,9 @@ With the equations
 ||\mathbf{p}|| = r_1m_1\omega,
 \end{eqnarray}
 we calculated the value of the momentum.
-This momentum we can get from Physics and newton third law. If some body moves around some point in radial path, we can calculate a centripetal Force and this Force should be equal to Gravitational Force
+This momentum we can get from Physics and newton third law: if some body moves around some point in radial path, we can calculate a centripetal Force and this Force should be equal to Gravitational Force
 \begin{equation}
-	F_c = \frac{||\mathbf{p}||^2}{m_1r_1} = \frac{Gm_1m_2}{r^2} = F_g
+	F_c = \frac{||\mathbf{p}||^2}{m_1r_1} = \frac{Gm_1m_2}{r^2} = F_g.
 \end{equation}
 Substituting $||\mathbf{p}||$ we get $\omega$
 \begin{equation}
@@ -196,10 +196,10 @@ The mathematical formulation of the solution which is used for code is taken fro
 	p_y
 \end{bmatrix} 
 \end{equation} where $\mu_{ij}=\frac{Gm_im_j}{r^3}.$
-We used Dopri5 to create the trajectories. To diversify our dataset we suggest to do it over the distance between the bodies and keeping the masses the same.
+We used Dopri5 to create the trajectories. To diversify our dataset we suggest to define the distance region and pick randomly the distance between the bodies. The mases should be the same.
 
 \subsection{Three body problem}
-Three body problem is from formulation similar to two body problem, but finding the periodic solutions is very complex task. Fortunatly the M. Šuvlakov and V. Dmitrašinović have found many of the initial values to create periodic three body trajectory and made data public over the website for everyone to use.\cite{papthreebody}\cite{web}. It is important to mention that they made it to mathematical problem which means that the parameters like the gravitational constant $G$ and all masses $m$ are set to 1.
+Three body problem is from formulation similar to two body problem, but finding the periodic solutions is very complex task. Fortunatly the M. Šuvlakov and V. Dmitrašinović have found many of the initial values to create periodic three body trajectory in 2D space and made data public over the website for everyone to use.\cite{papthreebody}\cite{web}. It is important to mention that they made it to mathematical problem which means that the parameters like the gravitational constant $G$ and all masses $m$ are set to 1.
 Even today there are scientists which are documenting initial values for more periodic solutions \cite{hudomal2015new}.
 Having those conditions we need just Hamiltonian equations which are easy to obtain. 
 
@@ -228,9 +228,9 @@ In following consider $\mathbf{m_i^{⁻1}}=\text{diag}(\frac{1}{m_i},\frac{1}{m_
 	\end{bmatrix}
 \end{equation}
 To diversify our dataset we found that
-the three-body problem has two interesting properties due its defined potentional energy. Their potential energy is defined over gravitational force between the bodies. In another words we can translate the trajectory in space and rotate it without changing the hamiltonian value. Let us prove this over Hamiltonian Energy
+the three-body problem has two interesting properties due its defined potentional energy. Their potential energy is defined over gravitational force between the bodies. In another words we can translate the trajectories together in space and rotate it without changing the hamiltonian value. Let us prove this over Hamiltonian Energy
 \begin{equation}
-	\mathcal{H} = \frac{||\mathbf{p}_1||^2}{2m_1} +\frac{||\mathbf{p}_2||^2}{2m_2}+\frac{||\mathbf{p}_3||^2}{2m_3} - G\frac{m_1m_2}{||\mathbf{q}_1 - \mathbf{q}_2||}-G\frac{m_2m_3}{||\mathbf{q}_2 - \mathbf{q}_3||}-G\frac{m_1m_3}{||\mathbf{q}_1 - \mathbf{q}_3||} 
+	\mathcal{H} = \frac{||\mathbf{p}_1||^2}{2m_1} +\frac{||\mathbf{p}_2||^2}{2m_2}+\frac{||\mathbf{p}_3||^2}{2m_3} - G\frac{m_1m_2}{||\mathbf{q}_1 - \mathbf{q}_2||}-G\frac{m_2m_3}{||\mathbf{q}_2 - \mathbf{q}_3||}-G\frac{m_1m_3}{||\mathbf{q}_1 - \mathbf{q}_3||}. 
 \end{equation}-
 \begin{itemize}
 	\item Translation:\\
@@ -361,14 +361,19 @@ Making the Hamiltonan only dependent on $\Theta$ and $p_{\Theta}$ we can get ham
 	\dot{p_{\Theta_i}} = -\frac{\partial \mathcal{H}}{\partial \Theta}
 \end{eqnarray}
 This was done using auto-differentiation and we managed to create dataset models for (1,2,3,4) degrees of freedom, which offers very accurate hamiltonian values in the dataset. 
-The dataset need phyperparameters like  $\Theta \in [-\frac{\pi}{6},\frac{\pi}{6}]$ and starting $p_{\Theta_i} = 0 $.\\
-We can create a dataset with observation. With interest to creating of urdf files, we created the framework which trough python coding crates accurate urdf model, in our case $N$ Pendelum. This was used to create pendulum with $N$  number of joints. This model was created for and  observed in \texttt{pybullet}\cite{pybullet}. From the use case we suggest if you are working with pendelums where $N<10$ please use the pytorch numerical technique, otherwise use \texttt{pybullet} observation. \texttt{Pybullet} can extract, almost in real-time, the movement and velocities of the pendelum. Only we need to calculate if Hamiltonian energy is stable enough for our experiments. 
+The dataset need fixed inital values like  $\Theta \in [-\frac{\pi}{6},\frac{\pi}{6}]$ and starting $p_{\Theta_i} = 0 $.\\
+We can create a dataset with observation. With interest to creating of 3D models as´ \texttt{urdf} files, we created the framework which trough python coding crates accurate urdf model, in our case $N$ Pendelum. This was used to create pendulum with $N$  number of joints. This model was created for and  observed in \texttt{pybullet}\cite{pybullet}. From the use case we suggest if you are working with pendelums where $N<10$ please use the pytorch numerical technique, otherwise use \texttt{pybullet} observation. \texttt{Pybullet} can extract, almost in real-time, the movement and velocities of the pendelum. Only we need to calculate if Hamiltonian energy is stable enough for our experiments.\\ In the case that we didn't got any velocity for our dataset it is possible to obtain it over trajectory trough "euler trick"
+\begin{equation}
+	\mathbf{v}_i=\mathbf{f}(\mathbf{x}_i) = \frac{\mathbf{x}_{i+1}-\mathbf{x}_i}{h}.
+\end{equation}
+In Figure \ref{pyb} you can see the Pendelum in \texttt{Pybullet }simulation software
 
  \begin{figure}[h!]
  	\label{pend}
  	\centering
  	\includegraphics[width=10cm]{chapters/chapter3/pendulum.pdf}
  	\caption{Pendelum with 3 degrees of freedom in pybullet}
+ 	\label{pyb}
  \end{figure}
 
 

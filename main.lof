@@ -15,23 +15,27 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture of time-stepper model\relax }}{46}{figure.caption.14}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Graph representation\relax }}{48}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Architecture of Graph Neural Hamiltonian Network\relax }}{50}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Architecture of GRUGHNN\relax }}{52}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Architecture of Graph Neural Hamiltonian Network\relax }}{51}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Architecture of improved GHNN\relax }}{52}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Architecture of GRUGHNN\relax }}{53}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Losses and energy accuracy on various neural models(Oscilator)\relax }}{57}{figure.caption.18}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Evaluation of the sample on the models, Trajectory and Energy(Oscilator)\relax }}{58}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Losses and energy accuracy on various neural models(Oscilator)\relax }}{60}{figure.caption.20}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Evaluation of the sample on the models, Trajectory and Energy(Twobody)\relax }}{61}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Evaluation of the sample on the models, phase space (Twobody)\relax }}{62}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Losses and energy accuracy on various neural models(Threebody)\relax }}{64}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Evaluation of the sample on the models, Trajectory and Energy(Threebody)\relax }}{65}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Evaluation of the sample on the models, phase space (Threebody)\relax }}{66}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Losses at various pinn models (threebody dataset)\relax }}{68}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Trajectories , phase spaces and hamiltonian at various pinn models\relax }}{68}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Losses at various models (figure dataset)\relax }}{71}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Trajectories , phase spaces and hamiltonian at various models(figure dataset)\relax }}{71}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Losses till 500 epochs(Pendulum)\relax }}{73}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Losses till 1000 epochs on GRUGHNN(Pendelum)\relax }}{74}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Losses till 1000 epochs on GRUGHNN (Nbody)\relax }}{75}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Losses and energy accuracy on various neural models(Oscilator)\relax }}{58}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Evaluation of the sample on the models, Trajectory and Energy(Oscilator)\relax }}{59}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Losses and energy accuracy on various neural models(Oscilator)\relax }}{61}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Evaluation of the sample on the models, Trajectory and Energy(Twobody)\relax }}{62}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Evaluation of the sample on the models, phase space (Twobody)\relax }}{63}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Losses and energy accuracy on various neural models(Threebody)\relax }}{65}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Evaluation of the sample on the models, Trajectory and Energy(Threebody)\relax }}{66}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Evaluation of the sample on the models, phase space (Threebody)\relax }}{67}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Losses at various pinn models (threebody dataset)\relax }}{69}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Trajectories , phase spaces and hamiltonian at various pinn models\relax }}{69}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Losses at various models (figure dataset)\relax }}{71}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Trajectories , phase spaces and hamiltonian at various models(figure dataset)\relax }}{71}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Losses till 500 epochs(Pendulum)\relax }}{73}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Losses till 1000 epochs on GRUGHNN(Pendelum)\relax }}{74}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces trajectories of pendelums after 1000 epochs\relax }}{75}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Losses till 1000 epochs on GRUGHNN (Nbody)\relax }}{76}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Trajectories of nbody after 1000 epochs\relax }}{77}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Hamiltonian of nbody cases\relax }}{78}{figure.caption.43}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

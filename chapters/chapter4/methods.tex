@@ -29,14 +29,14 @@ For PINN models the adjoint method over framework \texttt{torchdiffeq} doesn't w
 
 
 \section{Recurrent time steppers}
-In chapter\ref{background}  we introduced recurrent models which are RNN and GRU.
+In chapter \ref{background}  we introduced recurrent models which are RNN and GRU.
 Those models are very good at learning the time series data. To make it more physics informed we applied an euler method which it makes to time stepper models:
 \begin{eqnarray}
 	[\mathbf{v}_i, \mathbf{h}_{i+1}] = \text{RNN}(\mathbf{x}_i,\mathbf{h}_i) \text{  or  }  \text{GRU}(\mathbf{x}_i,\mathbf{h}_i)\\
 	\mathbf{x}_{i+1} = \mathbf{x}_i + \mathbf{v}_i \cdot dt
 \end{eqnarray}
 We describe it this procedure as a rollout. 
-This model has one big static parameter dependency which is fixed $dt$. We suggest to not to change this parameter after training. In Chapter experimentation we will show the performance of RNN and GRU time stepper models. In the figure \ref{fig:rnn} we can see the architecture of the model.
+This model has one big static parameter dependency which is fixed $dt$. We suggest to not to change this parameter after training. In Chapter Experimentation we will show the performance of RNN and GRU time stepper models. In the figure \ref{fig:rnn} we can see the architecture of the model.
 \begin{figure}[h!]
 	\includegraphics[width=15cm]{chapters/chapter4/RNN_stepper}
 	
@@ -51,7 +51,7 @@ This model comes from the paper \cite{hnn} it is one of the physics informed mod
 The forward pass looks like:
 \begin{eqnarray}
 	H_{\Theta} &=& \mathbf{f}(\mathbf{x}|\boldsymbol{\Theta})\\
-	\frac{d\mathbf{x}}{dt}(\mathbf{x}) &=& \mathbf{J}\left[\frac{\partial H_{\Theta}}{\partial\mathbf{p}}(\mathbf{x}),-\frac{\partial H_{\Theta}}{\partial\mathbf{q}}(\mathbf{x})\right]^T
+	\frac{d\mathbf{x}}{dt}(\mathbf{x}) &=& \left[\frac{\partial H_{\Theta}}{\partial\mathbf{p}}(\mathbf{x}),-\frac{\partial H_{\Theta}}{\partial\mathbf{q}}(\mathbf{x})\right]^T
 \end{eqnarray}
 In the paper they train it only over the produced vectorfield.
 For our experiments we made rollout part for the network to create trajectory. 
@@ -82,8 +82,9 @@ Most important property of graphs is creating the normailzed Laplacian matrix. T
 In the figure \ref{graph} you can see a representation of the graph together with adjecency matrix.
 \begin{figure}[h!]
 	\includegraphics[width=15cm]{chapters/chapter4/graph}
-	\label{graph}
+	
 	\caption{Graph representation}
+	\label{graph}
 \end{figure}
 We recognize 3 main training types of GNNs and that are graph- , edge and node - oriented learning.\\
 We will do only node oriented learning because we care that our data from the nodes comes dynamically right. For this we implemented two Graph Neural Layer to our work. 
@@ -94,31 +95,33 @@ First idea about graph neural network was Spectral Graph Network (SGN) \cite{sgn
 \end{equation}where we exchange adjecency matrix with learnable weight matrix.
 Because of cost of computation and hard backpropagation, the ChebNet was introduced\cite{cheb}. 
 It was dependent of fourier transformation and had high computational comlpexity.
-First Kipf and Welling used both ideas and simplified Laplacian to create broadly used architecture called Convolutional Graph Network \cite{gcn}. \\
-The propagation of the layer mathematicly look like
+First Kipf and Welling used both ideas and simplified Laplacian to create broadly used architecture called convolutional graph network \cite{gcn}. \\
+The propagation of the layer mathematically looks like
 \begin{equation}
 	\mathbf{h}^{(i+1)}=\sigma(\tilde{\mathbf{D}}^{\frac{1}{2}}\tilde{\mathbf{A}}\tilde{\mathbf{D}}^{\frac{1}{2}}\mathbf{W}\mathbf{h}^{(i)})
-\end{equation} where we modified Adjacency matrix $\tilde{\mathbf{A}}=\mathbf{A}+ \mathbf{I}$.
-This mathematical expression is equivalent to message passing on the  and aggregation on the graph from and between the neighbouring nodes. In this case with $\sum$ operator.\\ There are other types of aggregations like $\texttt{mean}$, $\texttt{sum}$ and $\texttt{sub}$. 
+\end{equation} where we modify adjacency matrix $\tilde{\mathbf{A}}=\mathbf{A}+ \mathbf{I}$ and $\tilde{\mathbf{D}}$ as $\tilde{\mathbf{D_{ij}}} =\sum_{j=1}^N \tilde{\mathbf{A}}_{ij}.$ 
+This mathematical expression of propagation of the graph layer is equivalent to message passing on the  and aggregation on the graph from and between the neighbouring nodes. In this case with $\sum$ operator.\\ There are other types of aggregations like $\texttt{mean}$, $\texttt{sum}$ and $\texttt{sub}$. 
 The default message passing and aggregation formula is defined as
 \begin{equation}
 \mathbf{x}_i^{(k)} = \gamma^{(k)} \left( \mathbf{x}_i^{(k-1)}, \bigoplus_{j \in \mathcal{N}(i)} \, \phi^{(k)}\left(\mathbf{x}_i^{(k-1)}, \mathbf{x}_j^{(k-1)},\mathbf{e}_{j,i}\right) \right) 
-\end{equation} where $\gamma$ and $\phi$ represents MLPs.  
-With knowledge that the neural network doesn't depend on graph structure,on the other hand it depends on massage passing and aggregation between the nodes, we can build more designs of graph neural networks. We should not forget, that those message passing and aggregation can be parallelized and calculated on GPUs improving performance. In our use cases we will use Framework \texttt{DGL}\cite{dgl}.
+\end{equation} where $\gamma$ and $\phi$ represents MLPs and $\bigoplus$ the aggregation function. 
+While the neural graph network doesn't depend on the graph structure itself, it relies on message passing and aggregation between nodes. With this understanding, we can develop more diverse designs of graph neural networks. 
+%With knowledge that the neural network doesn't depend on graph structure,on the other hand it depends on massage passing and aggregation between the nodes, we can build more designs of graph neural networks.\\ 
+We should not forget, that those message passing and aggregation can be parallelized and calculated on GPUs improving performance. In our use cases we will use Framework \texttt{DGL}\cite{dgl}.
 
 
 \subsection{Gated Attention Network}
-In paper \cite{gat} is intoduced new type of architecture which incomporates weighting factors. This weightning factors $\alpha$ shows importance of the node j to the node in question.
+In paper \cite{gat} is intoduced new type of architecture which incomporates weighting factors. This weightning factors $\alpha$ shows importance of the outgoing node  to the  ingoing node in question.
 The forward pass of one layer is defined as:
 \begin{eqnarray}
-\mathbf{z}_i^{(l)}&=&\mathbf{W}_f^{(l)}\mathbf{h}_i^{(l)} \\
-e_{ij}^{(l)}&=&\text{LeakyReLU}(\mathbf{W_a}^{(l)^T}(\mathbf{z}_i^{(l)}||\mathbf{z}_j^{(l)}))\\
-\alpha_{ij}^{(l)}&=&\frac{\exp(e_{ij}^{(l)})}{\sum_{k\in \mathcal{N}(i)}^{}\exp(e_{ik}^{(l)})}\\
+\mathbf{z}_i^{(l)}&=&\mathbf{W}_f^{(l)}\mathbf{h}_i^{(l)}, \\
+e_{ij}^{(l)}&=&\text{LeakyReLU}(\mathbf{W_a}^{(l)^T}(\mathbf{z}_i^{(l)}||\mathbf{z}_j^{(l)})),\\
+\alpha_{ij}^{(l)}&=&\frac{\exp(e_{ij}^{(l)})}{\sum_{k\in \mathcal{N}(i)}^{}\exp(e_{ik}^{(l)})},\\
 \mathbf{h}_i^{(l+1)}&=&\sigma\left(\sum_{j\in \mathcal{N}(i)} {\alpha^{(l)}_{ij} \mathbf{z}^{(l)}_j }\right)
 \end{eqnarray}
 
-This architecture is computationally efficient and the attentional coefficients are not hard-coded and they are build in dependence with a graph structure.
-For better training and preventing overfitting, we can set a dropout at attentional coefficients\cite{att}, it is even suggested for  the small graphs.
+This architecture is computationally efficient and the number of weightning factors depends on number of edges on the graph, furthermore the weightning factors are created one per edge within the multilayer perceptron. This means that the weightning factors are not bounded to the size of the graph and behaves dynamicly. % are not hard-coded and they are calculated in dependence with a graph structure.
+For better training and preventing overfitting, we can set a dropout at MLP which creates weightning factors\cite{att}, it is even suggested for  the small graphs.
 
 
 
@@ -134,22 +137,54 @@ For better training and preventing overfitting, we can set a dropout at attentio
 \section{Graph Hamiltonian Neural Network}
 This architecture is inspired on implementation of HNN\cite{hnn} and paper \cite{GNNODE}. In the paper they implemented own Graph Neural Network with complicated architecture called GN, which has many applications in Deep Leraning.  They tried to implement HOGN model.
 In our case we will use conventional GNN model to create the same.
-In our cases our graph will built without loop nodes. Nodes with edge connected to the starting node. With many trials we achieve same valued features at the nodes using sum, mean aggregation at fully connected graph, With discarding self loops we don't have this problem anymore.  It is important that the output of our Graph network is a scalar value because it represents $\mathcal{H}$. Without this condition, auto differentiation won't work. 
-
+In our cases our graph will built without loop nodes. Nodes with edge connected to the starting node. With many trials we achieve same valued features at the nodes using \texttt{sum} or \texttt{mean} aggregation at fully connected graph, With discarding self loops we don't have this problem anymore.\\  It is important that the output of our Graph network is a scalar value because it represents $\mathcal{H}$. Without this condition, auto differentiation won't work. 
+There is the forumla for GHNN.
 \begin{eqnarray}
-	H_{\Theta} &=& \mathbf{f}(\mathbf{x}|\boldsymbol{\Theta})=\text{GNN }(\mathbf{x})\\
-	\frac{d\mathbf{x}}{dt}(\mathbf{x}) &=& \left[\frac{\partial H_{\Theta}}{\partial\mathbf{p}}(\mathbf{x}),-\frac{\partial H_{\Theta}}{\partial\mathbf{q}}(\mathbf{x})\right]^T
+	H_{\Theta} &=& \mathbf{f}(\mathbf{x}|\boldsymbol{\Theta})=\text{GNN layer }(\mathbf{x})\\
+	\frac{d\mathbf{x}}{dt} &=& \left[\frac{\partial H_{\Theta}}{\partial\mathbf{p}}(\mathbf{x}),-\frac{\partial H_{\Theta}}{\partial\mathbf{q}}(\mathbf{x})\right]^T
 \end{eqnarray}
-
+The Graph Neural Network can be made with more layers and we can add activation functions. In the experiments we used GAT layer.\\
 This model gives trajectory trough using of one ode solvers. Its architecture you can observe in Figure \ref{ghnn}.
 \begin{figure}[h!]
 	\includegraphics[width=15cm]{chapters/chapter4/ghnn}
 	\caption{Architecture of Graph Neural Hamiltonian Network}
 	\label{ghnn}
 \end{figure}
+\section{Improved Graph Hamiltonian Neural Network}
+As GHNN mentioned before did't show very good performance we were forced to find some new architecture. We found new layer which we could use and it is inspired by paper \cite{wave}. The adapting adjecency matrix is very interesting concept but in the scope of coding, the \texttt{DGL} don't allow fitting the adjecency matrix.\\
+In the paper adaptive adjecency was calculated as
+\begin{equation}
+	\mathbf{A_{adp}} = Softmax(ReLU(\mathbf{E_1}\mathbf{E_2^T})),
+\end{equation}
+This procedure looks very alike attentional coefficient calculation.
+We made our architecture for one layer as
+
+\begin{eqnarray}
+	\mathbf{y}_{gcn} &=& GCN(\mathbf{x}),\\
+	\mathbf{y}_{gat} &=& GAT(\mathbf{x}),\\
+	\mathbf{y}_{mlp} &=& MLP(\mathbf{y}_{gcn}|\mathbf{y}_{gat}),\\
+	\mathbf{y} &=& \mathbf{y}_{gcn}+\mathbf{y}_{gat}+\mathbf{y}_{mlp}\\
+	H_{\Theta} &=& \sum \mathbf{y} \text{   sum of the all features}\\
+	\frac{d\mathbf{x}}{dt} &=& \left[\frac{\partial H_{\Theta}}{\partial\mathbf{p}}(\mathbf{x}),-\frac{\partial H_{\Theta}}{\partial\mathbf{q}}(\mathbf{x})\right]^T
+\end{eqnarray}
+We used the multilayer perceptron as some sort of decoder which uses concatenated input of outputs from GAT and GCN layer. We summed everything together.\\
+We will use it in some of our experiments. The architecture can be observed in Figure \ref{improvedGHNN}
+
+\begin{figure}[h!]
+	\includegraphics[width=15cm]{chapters/chapter4/improved_GHNN.pdf}
+	
+	\caption{Architecture of improved GHNN}
+	\label{improvedGHNN}
+\end{figure}
+
+ 
+
+ 
+
+
 
 \section{Gated Recurrent Graph Hamiltonian Neural Network - GRUGHNN}
-In previous section we introduced the GHNN, which is base an Hamiltonian layer and ode-solver. This architecture is not different but improved with a GRU unit at the beginning of the input. this model is equivalent to the GRU stepper but we added a GHNN in it. It is Graph Neural Network with a memory feature. If we compare this model to spatio-temporal models you can see similarities. Only two models have similar gameplay to this. We will mention Gated Graph Sequence Neural Network\cite{GGSNN} and GNN-GRU\cite{gnngru}, but they don't use auto differentiation. With Autodifferentiation we can not call our architectures as "hamiltonian" 
+In previous section we introduced the GHNN, which is base an Hamiltonian layer and ode-solver. This architecture is not different but improved with a GRU unit at the beginning of the input. this model is equivalent to the GRU stepper but we added a GHNN in it. It is Graph Neural Network with a memory feature. If we compare this model to spatio-temporal models you can see similarities. Only two models have similar architecture to this. We will mention Gated Graph Sequence Neural Network\cite{GGSNN} and GNN-GRU\cite{gnngru}, but they don't use auto differentiation. Without autodifferentiation we can not call our architectures as "hamiltonian". 
 
 \begin{eqnarray}
 	[\mathbf{a}_i, \mathbf{h}_{i+1}] &=&  \text{GRU}(\mathbf{x}_i,\mathbf{h}_i)\\
@@ -166,10 +201,10 @@ Its architecture you can observe in Figure \ref{GRUGHNN}
 \end{figure}
 \section{Training for Physics Informed Models}
 As we introduced the models we can observe that they are intended to be used in some ODE solver. That means that the data and our datasets are time series oriented. The specifics of time-series data are they have three dimensions which are time $t$, sample space $s$ and feature space $f$. Let us define it as $\mathcal{V}^{t,s,f}$.\\
-This sample is very specific, we can just pick some values and make a batch , the data follow the timeflow which means we can create a batches specifing the length of the sequence and how many sequences are in the sample. We call it \texttt{timebatch size} and \texttt{batch size}.\\
-Such \texttt{time batches} we call snapshots $\mathcal{V}^{t,f}$, because it is recorded confined sequence for one specific inital value. For example we have a sequence with 128 timepoints and with $\texttt{timebatch size} = 32$ we can make 98 snapshots with sequence size 32. Even if the data repeats itself it is important that we use many initial values as possible.\\
+This sample is very specific, and in case of mini-batching we can't just pick some values and make a batch , the data follow the timeflow which means, that we need to create a batches specify the length of the sequence and how many sequences are in the sample. We call it \texttt{timebatch size} and \texttt{batch size}.\\
+Such \texttt{time batches} we call snapshots $\mathcal{V}^{t,f}$, because it represents recorded confined sequence for one specific inital value. For example we have a sequence with 128 timepoints and with $\texttt{timebatch size} = 32$ we can make 96 snapshots with sequence size 32. Even if the data repeats itself it is important that we need to use many initial values as possible.\\
 If we have to many samples or to big sequence we can implement \texttt{stride} technique. We specify which sequence will we recorded for our dataset. For example with \texttt{stride}=4 we specify that we want every forth inital value and its sequence recorded. Resulting in smaller dataset.\\
-In case of graph batched data we need to be careful. First our sample space will change in $\mathcal{V}^{s \times n,t,f}$ where  $n$ means nodes. First we need to transform our made snapshots to graph structure, which means to place the features at their corresponding nodes and we get $\mathcal{V}^{n,t,f}$. The batching is very straight forward, it could be called "stacking the graph". We make one big graph using $s$ times graphed independent snapshots. We call it independent because there are no edge connections, which means that propagating between nodes of the graphs is done in parallel.\\
-In case of PINNs and extracting a hamiltonian values of the independent graphs we suggest to unbatch it first and create a normal batch of hamiltonian values.      
+In case of graph batched data we need to be careful. First our sample space will change in $\mathcal{V}^{s \times n,t,f}$ where  $n$ means nodes. First we need to transform our made snapshots to graph structure, which means to place the features at their corresponding nodes and we get $\mathcal{V}^{n,t,f}$. The batching is very straight forward, it could be called "stacking the graphs". We make one big graph using $s$ times graphed independent snapshots. We call it independent because there are no edge connections between other graphs and propagating between nodes of the graphs is done in parallel.\\
+In case of Hamiltonian Neural Networks and extracting a hamiltonian values of the independent graphs we suggest to unbatch it first and create a normal batch of hamiltonian values. It makes calculation of hamiltonian easier. If you calculate from the batched form, you need to be careful because the  hamiltonian can be incorrect because, we need to sum the features in every  independent graph separately.      
 
 

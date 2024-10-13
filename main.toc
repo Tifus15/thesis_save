@@ -32,18 +32,19 @@
 \contentsline {subsection}{\numberline {4.4.1}Convolutional Graph Neural Network}{47}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Gated Attention Network}{49}{subsection.4.4.2}%
 \contentsline {section}{\numberline {4.5}Graph Hamiltonian Neural Network}{49}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Gated Recurrent Graph Hamiltonian Neural Network - GRUGHNN}{51}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Training for Physics Informed Models}{51}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Experiments}{54}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Experimentation of the Models on the Datasets}{54}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Harmonic Oscillator}{55}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Twobody-problem}{58}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Three-body problem}{62}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Experimentation of Physics informed datasets on three body Dataset}{66}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Threebody dataset}{67}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Figure 8 solutions}{68}{subsection.5.2.2}%
+\contentsline {section}{\numberline {4.6}Improved Graph Hamiltonian Neural Network}{50}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Gated Recurrent Graph Hamiltonian Neural Network - GRUGHNN}{51}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Training for Physics Informed Models}{53}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Experiments}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Experimentation of the Models on the Datasets}{55}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Harmonic Oscillator}{56}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Twobody-problem}{59}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Three-body problem}{63}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Experimentation of Physics informed datasets on three body Dataset}{67}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Threebody dataset}{68}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Figure 8 solutions}{69}{subsection.5.2.2}%
 \contentsline {section}{\numberline {5.3}Experimentation of Physics informed models on N body problem and N pendelum}{72}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}N-body pendulum}{72}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}N-body problem}{75}{subsection.5.3.2}%
-\contentsline {chapter}{\numberline {6}Conclusions}{77}{chapter.6}%
+\contentsline {subsection}{\numberline {5.3.2}N-body problem}{74}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {6}Conclusions}{79}{chapter.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -30,13 +30,13 @@ The $\omega_s$,$\omega_r$,$\omega_l$, in this case are coefficients $0\leq \omeg
 	\Theta^* = \arg\min\text{Loss}(\Theta).
 \end{equation}
 The $\Theta$ are learnable parameters which can be updated with $\Theta^*$ trough optimization algorithm.\\
-Such model wouldn't be possible without automatic differentiation\cite{autodiff} which is offered from machine learning library $\texttt{pytorch}$\cite{pytorch}. In this example we need a large amount of data, and the optimization of the model could be very slow,especially if we don't have a computation capable hardware for it. Obtaining the data can be done trough precise measurement or using some numerical solvers like FEM\cite{fem} or Isogeometric Analysis\cite{iga}. Keep in mind that there are Poission Equation, Wave Equation which are time-dependent $t$.\\
+Such model wouldn't be possible without automatic differentiation\cite{autodiff} which is offered from machine learning library $\texttt{pytorch}$\cite{pytorch}. In this example we need a large amount of data, and the optimization of the model could be very slow, especially if we don't have a computation capable hardware for it. Obtaining the data can be done trough precise measurement or using some numerical solvers like FEM\cite{fem} or Isogeometric Analysis\cite{iga}. Keep in mind that there are Poission Equation, Wave Equation which are time-dependent $t$.\\
 Those PDEs are mostly appllied in electrotechnical(Electro-magnetical fields) and  civil Engineering(static in construction).
 In this thesis we won't work on the PDEs but in similar vein, we will try to train a model to predict the Dynamics of some physical phenomena and non-/holonomic hamiltonian systems.\\
 The Dynamics for Robots called Joint Space Dynamics are defined as second order ordinary differential equation\cite{jointspace} .
 \begin{equation}
 	\mathbf{M}\ddot{\mathbf{x}}(t) + \mathbf{D}(\dot{\mathbf{x}}(t)) + \mathbf{C}(\mathbf{x}(t))=\tau,
-\end{equation} but there are other forms, as Langrange Equations of Motion if our system is holonomic\cite{holo}. It is based on Lagrange Function which is based on Kinetic $T$ and Potential $U$ Energy
+\end{equation} but there are other forms, as Langrange Equations of Motion if our system is holonomic\cite{holo}. Lagrange Function are neat idea to find Dynamics of the system in the joint space and it is  based on derivatives of Kinetic $T$ and Potential $U$ Energy
 \begin{eqnarray}
 	\mathcal{L} &=& T - V,\\
 	\frac{d}{dt}\frac{\partial \mathcal{L}}{\partial \dot{q}_i} - \frac{\partial \mathcal{L}}{\partial q_i}&=&0.
@@ -52,14 +52,14 @@ or in Hamiltonian Form where $\mathcal{H} = T + V$
 \end{equation} where $\mathbf{z}=[\mathbf{q},\mathbf{p}]^T$ and $\mathbf{J} = \begin{bmatrix}
 0 & \mathbf{I}_n\\
 -\mathbf{I}_n & 0
-\end{bmatrix} $\\
+\end{bmatrix}. $\\
 \begin{figure}[h!]
 	\includegraphics[width=15cm]{chapters/chapter1/hnn}
 	\caption{HNN model with integration solver step}
 	\label{fig:hnn}
 \end{figure}
-One of such model is introduced in the \cite{hnn} and it is called Hamiltonian Neural Network. it architecture you can observe in figure \ref{fig:hnn}.
-We will make it more interesting introducing the Graph Neural Network instead Conventional Multy layer Perceptron and try to use it as a base of our architecture. We hypothesize that implementing a Graph Neural Network could improve the architecture's performance. 
+One of such model is introduced in the \cite{hnn} and it is called Hamiltonian Neural Network. Its architecture you can observe in figure \ref{fig:hnn}.\\
+We will make it more interesting introducing the Graph Neural Network instead Conventional Multilayer Perceptron and try to use it as a base of our architecture. We hypothesize that implementing a Graph Neural Network could improve the architecture's performance. 
 In this thesis, we will also discuss Hamiltonian equations and how to derive them. During our research, we encountered the issue that there are no high-quality datasets available for training physics-based neural networks. Given this, we will explain how to create five datasets based on Hamiltonian Equations of Motion.\\
 Next we will revisit state of the art neural architectures and test NeuralODE as new Nerual Paradigm, and how thy learn dynamics from given data.\\
 In the experiments we tested the capabilities of Graph Neural Networks based PINN Models, how do they adapt to diverse training data and their possibility to reduce or increase a degree of freedom in the training. For example how similar is the movement between 3 and 4 bodied pendulum on the same trained set of neural parameters. We hope that we will give valuable insight in those topics.    
