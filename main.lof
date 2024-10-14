@@ -14,8 +14,8 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Pendelum with 3 degrees of freedom in pybullet\relax }}{43}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture of time-stepper model\relax }}{46}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Graph representation\relax }}{48}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Architecture of Graph Neural Hamiltonian Network\relax }}{51}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Graph representation\relax }}{47}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Architecture of Graph Neural Hamiltonian Network\relax }}{50}{figure.caption.16}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Architecture of improved GHNN\relax }}{52}{figure.caption.17}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Architecture of GRUGHNN\relax }}{53}{figure.caption.18}%
 \addvspace {10\p@ }

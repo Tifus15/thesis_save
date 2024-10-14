@@ -1,5 +1,9 @@
 \chapter{Experiments}
-Now we perform comparison experiments to compare the state of the art models, common models and PINN(Graph Neural Network) models. Our goal is implicitly train our dataset to proposed networks in fully supervised manner. In cases of PINN models we supervise trajectory, vectorfield and hamiltonian energy made by the model itself. 
+Now we perform comparison experiments to compare the state of the art models, common models and PINN(Graph Neural Network) models. Our goal is implicitly train our dataset to proposed networks in fully supervised manner. In cases of PINN models we supervise trajectory, vectorfield and hamiltonian energy made by the model itself. Our goal is to show if the models are capable implicitly train the data.\\
+We decided to do 3 types of experiments.\\
+In first experiment we will test the training capabilities of common and state of the art models on our made datasets(oscilator, twobody problem, threebody problem).\\
+In second experiment  we will test our PINN models on threebody problem scenarios.
+In third experiment we will train the PINN models on N-Pendelum and N-body dataset and look at capability of changing the graph structure: adding or discarding a node. 
 
 \section{Experimentation of the Models on the Datasets}
 In this section we experiment on following models
@@ -38,7 +42,7 @@ We managed to make batch-wised training making the snapshots of the trajectory w
 With such training we got following results in figures \ref{osci_loss},\ref{osci_traj}: 
 \begin{itemize}
 	\item Multilayer perceptron\\
-	After observation we can conclude that the baseline as MLP did learned hamiltonian system but not accurate enough. In this case which is learned for 1000 epochs we see that we have maybe overtrained the network. From the energy accuracy we can see that the metric for energy accuracy which is made over the trajectory is little bit to high in all of the epochs. 
+	After observation we can conclude that the baseline  MLP did learned hamiltonian system but not accurate enough. In this case which is learned for 1000 epochs we see that we have maybe overtrained the network. From the energy accuracy we can see that the metric for energy accuracy which is made over the trajectory is little bit to high in all of the epochs. 
 
 
 	\item NeuralODE\\
@@ -488,14 +492,14 @@ From all Datasets we can conclude that RNN and RNN Stepper are bad models for th
 
 
 \section{Experimentation of Physics informed datasets on three body Dataset}
-After the showcase of our datasets and architectures, we will now do some training of the physics informed neural networks. We choose two datasets, one will three body problem identical to the experiment before and one dataset with mixed solutions of the body problems. We chosed carefully similar trajectories for better training performance. 
+After the showcase of our datasets and architectures, we will now do some training of the physics informed neural networks. We choose two datasets, one will three body problem identical to the experiment before and one dataset with mixed solutions of the three body problems. We chosed carefully similar trajectories for better training performance. 
 the models are:
 \begin{itemize}
 	\item improved Graph Hamiltonian Neural Network
 	\item Hamiltonian Neural Network
 	\item GRU- Graph Hamiltonian Neural Network(GAT layer)
 \end{itemize}
-This models are called physics informed model not only because they are made through differentiation but all of the models gives Total energy from the model directly. With this information we can make physics-informed loss. 
+This models are called physics informed not only because they are made through differentiation but all of the models gives Total energy from the model directly. With this information we can make physics-informed loss. 
 The physics informed-loss that we chose is
 \begin{equation}
 	Loss =  \omega_rMSE(\dot{\mathbf{q}},\frac{d}{dt}\hat{\mathbf{q}}) + \omega_v MSE(\dot{\mathbf{p}},\frac{d}{dt}\hat{\mathbf{p}}) +
@@ -508,7 +512,7 @@ Hyperparameters of our models:
 	2 layers with tanH activation after the first layer, \\
 	hidden size: 256
 	\item improved GHNN\\ 
-	2 GAT layers with tanH activation with dropout at attention $p=0.65$\\
+	2 Combined(GAT + GCN) layers with tanH activation with dropout at attention $p=0.65$\\
 	hidden size: 256\\
 	output size before constructing H: 16
 	\item GRUGHNN\\ 
@@ -516,6 +520,7 @@ Hyperparameters of our models:
 	hidden size: 256\\
 	output size before constructing H: 16
 \end{itemize}
+We trained our models for 200 epochs.
 \subsection{Threebody dataset}
 For this experiment we choosed 10 trajectories in domain $\alpha= \pi/8$. $\alpha$
 is maximal angle which creates rotational region for creation of the dataset. From those 10 trajectories we made batches for training data and test data. The time sequence is 32 timepoints and 32 samples pro batch. The is $dt$=0.05.
@@ -575,7 +580,7 @@ After 100 epochs we get following results which can be observed in Figures \ref{
 	\label{div_traj}
 \end{figure}
 
-We can observe that hamiltonian is overall constant, this could be observed at HNN and improved GHNN model. Best performance shows the GRUGHNN where we have almost perfectly rollouted trajectory with almost conservative hamiltonian.
+We can observe that hamiltonian at HNN and GHNN model is overall constant. Best performance shows the GRUGHNN where we have almost perfect trajectory with oscilating hamiltonian.
 
 \begin{comment}
 
@@ -663,7 +668,7 @@ For the models we get following plots\ref{div_loss}\ref{div_traj}
 In those Figures we see that only GRUGHNN shows potential in training. In our evaluation trajectory plots we introduced figure 8 trajectory which wasn't in the dataset as a training sample. We know and assumpt that the trajectories won't be good or perfect. The point of this experiment was to see if those experiments are capable to make trajectories with somehow constant hamiltonian. As we see from trajectory figures our baseline achieves a constant hamiltonian value but not equal to true hamiltonian and GRUGHNN shows potential doing the same and the movement is more exaggerated but hamiliation tries to be conserved around the true value. Those models were trained for 300 epochs which equals to 1.5 days.    
 \end{comment}
 \subsection{Figure 8 solutions}
-In this Dataset we use 4 Types of Figure 8 solutions which differs from eachother in period and energy. Those sample are in the table \ref{fig8} We use v.7.a, v.7.b, v.7.d solutions for training and testing and figure 8 for evaluation and visualization. We took 5 trajectories for every solution and it is fully supervised with loss mentioned before. Because of the size of the dataset because of different periods, we implemented stride and took every forth snapshot. The time sequences have 32 timepoints and 32 samples pro batch. \\
+In this Dataset we use 4 Types of Figure 8 solutions which differs from eachother in period and energy. Those samples are in the table \ref{fig8} We use v.7.a, v.7.b, v.7.d solutions for training and testing and figure 8 for evaluation and visualization. We took 5 trajectories from every solution and it is fully supervised with loss mentioned before. Because of different periods, which results with different number of time points, we implemented stride and took every forth snapshot from the trajectories. For batching our time sequences have 32 timepoints and there are 32 samples pro batch. \\
 In figures \ref{fig_loss}, \ref{fig_traj}, we can see their loss progression, trajectories and phase spaces.
 
 \begin{table}[H]
@@ -727,7 +732,7 @@ In figures \ref{fig_loss}, \ref{fig_traj}, we can see their loss progression, tr
 	\label{fig8}
 \end{table}
 
-For the models we get following plots \ref{fig_loss}, \ref{fig_traj}\
+
 % First main plot with 3 subplots (horizontally aligned)
 \begin{figure}[H]
 	\centering
@@ -783,12 +788,12 @@ For the models we get following plots \ref{fig_loss}, \ref{fig_traj}\
 	\caption{Trajectories , phase spaces and hamiltonian at various models(figure dataset)}
 	\label{fig_traj}
 \end{figure}
-We can clearly see that the proposed models are better then baseline HNN. They show better performance and better data fitting. Interestingly the hamiltonian on HNN and improved GHNN is almost constant and the trajectories have movement. Even though the trajectories of GRUGHNN are not accurate and hamiltonian tries to be conservative, it tries to follow the ground truthtrajectory better then other models.  
+We can clearly see that the proposed models are better then baseline HNN. They show better performance and better data fitting. Interestingly the hamiltonian on HNN and improved GHNN is almost constant and the trajectories have movement. Even though the trajectories of GRUGHNN are not accurate and hamiltonian tries to be conservative, it tries to follow the ground truth trajectory better then other models.  
 
 
 
 \section{Experimentation of Physics informed models on N body problem and N pendelum}
-In this experiment we took only physics informed graph models. Here we have two samples of datasets for n-pendelum and n body problem. The goal of this experiment is to see if the model is capable to generalize or make correct trajectory adding or discarding one more degree of freedom. For graph neural network that shouldn't be a problem because the size of the network depends not at size of the graph but on the size of the feature space.
+In this experiment we took only physics informed graph models GHNN and GRUGHNN. Here we have two samples of datasets for n-pendelum and n body problem. The goal of this experiment is to see if the model is capable to generalize or make correct trajectory adding or discarding one more degree of freedom. For graph neural network that shouldn't be a problem because the size of the network depends not at size of the graph but on the size of the feature space. HNN model in this case is not usable.
 
 We will use simmilar hyperparameters for our models for both cases:
 \begin{itemize}
@@ -803,7 +808,7 @@ We will use simmilar hyperparameters for our models for both cases:
 \end{itemize}
 
 \subsection{N-body pendulum}
-In this case we took 20 trajectories with 128 timepoints. The dataset is created with randomised inital values: $p\_{\Theta} = 0$ and $\Theta =[-\pi,\pi]$ but we discarded those which trajectory is $|\Theta|>2\pi$. We batched training data with batch size of 32 with 32 points in trajectory, vectorfield and hamiltonian energy. We supervised within the loss
+In this case we took 20 trajectories with 128 timepoints. The dataset is created with randomised inital values: $p_{\Theta} = 0$ and $\Theta =[-\pi,\pi]$ but we discarded those which trajectory is $|\Theta|>2\pi$. We batched training data with batch size of 32 with 32 points in trajectory, vectorfield and hamiltonian energy. We supervised within the loss
 \begin{equation}
 	Loss =  \omega_r(Hub({\mathbf{q}},\hat{\mathbf{q}}) + Hub({\mathbf{p}},\hat{\mathbf{p}})) +
 	\omega_v(Hub(\dot{\mathbf{q}},\frac{d}{dt}\hat{\mathbf{q}}) + Hub(\dot{\mathbf{p}},\frac{d}{dt}\hat{\mathbf{p}})) +
@@ -961,17 +966,18 @@ In this case we took 20 trajectories with 128 timepoints. The dataset is created
 	\label{pend_traj}
 \end{figure}
 
-In the tables \ref{tab:pend500} and  \ref{tab:pend1000} we compared the HuberLoss values of evaluation trajectoriy of 3dof pendulum and 4dof pendelum on the models PINN under 500 epochs  and 1000 epochs only on GRUGHNN. Chosed trajectory is fully unknown to the models.\\ 
-eFrom the values we can read that GHNN dosen't like losing degree of freedom. We see very big difference in those values. In other cases there is difference but not exaggerated.\\
+In the tables \ref{tab:pend500} and  \ref{tab:pend1000} we compared the HuberLoss values of evaluation trajectory of 3dof pendulum and 4dof pendelum on the PINN models, which are train on 3dof and 4dof dataset under 500 epochs. For better comparison we evaluated  1000 epochs only on GRUGHNN. Chosed trajectories for visualization iare fully unknown to the models.\\ 
+From the values in the tables\ref{tab:pend500} and \ref{tab:pend1000} we can read that GHNN dosen't like losing degree of freedom. We see very big difference in those values. In other cases there is difference but not exaggerated.\\
+Interestingly Huberloss for the vector field at GRUGHNN is realtivly stable in comparison with GHNN.  
 The trajectories are observable in figure \ref{pend_traj}
 
 \subsection{N-body problem}
 In the similar manner as N-pendelum we made N-body Problem.
-First we needed to set up domain of movement and we chosed 20 samples of trajectories of 128 timesteps with $dt =0.01$. In the dataset we have position velocity and energy and it is suprivised same as N-pendelum case and we reused only GRUGHNN model because it showed greatest performance in last experiments. This is just proof of concept that adding and discarding the graph nodes is possible.
+First we needed to set up domain of movement and we chosed 20 samples of trajectories of 128 timesteps with $dt =0.01$. In the dataset we have position velocity and energy and it is suprivised same as N-pendelum case and we reused only GRUGHNN model because it showed greatest performance in last experiments. Training was done trough 1000 epochs. This is just proof of concept that adding and discarding the graph nodes is possible.
 \begin{table}[h!]
 	\centering
 	\caption{Evaluation of 3dof sample on GRUGNN and training procedures, (Nbody)} % Add your caption here
-	\label{tab:my_label}  
+	\label{nbody_9dof}  
 \begin{tabular}{|l|l|l|l|l|}
 	\hline
 	dof3 & roll & vec & h\\  
@@ -986,7 +992,7 @@ First we needed to set up domain of movement and we chosed 20 samples of traject
 \begin{table}[h!]
 	\centering
 	\caption{Evaluation of 4dof sample on GRUGNN and training procedures (Nbody)} % Add your caption here
-	\label{tab:my_label}  
+	\label{nbody_10dof}  
 \begin{tabular}{|l|l|l|l|l|}
 	\hline
 	dof4 & roll & vec & h\\  
@@ -1064,6 +1070,6 @@ First we needed to set up domain of movement and we chosed 20 samples of traject
 	\label{nbody_ham}
 \end{figure}
 
-The results of the adding and discarding a body are really suprising good enough. Still the model tolerates more losing the body then gain it. This can be observed in \ref{body_traj} It is fully understandable looking at Nbody problem. Adding a body we could heavy disrupt the system.
-Mostly interesting result is hamiltonian figure \ref{nbody_ham}
-With those experiments we got an good insight in those PINN models.
+The results of the adding and discarding a body are really suprising good enough. The HuberLoss in the tables \ref{nbody_9dof} and \ref{nbody_10dof} shows relatively simmilar values Still the model tolerates more losing the body then gain it. This can be observed in \ref{body_traj} It is fully understandable looking at Nbody problem. Adding a body we could heavy disrupt the system.
+Mostly interesting result is hamiltonian figure \ref{nbody_ham}. It shows that model trained on 9dof sample better accepts 10dof sample. Following the logic it is possible because we used GAT layers which at training of 4dof samples had few more weighting factors to create and fit. \\
+With those experiments we got an good insight in the capabilities in those PINN models.

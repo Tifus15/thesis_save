@@ -1,0 +1,231 @@
+\chapter{Appendix}
+\begin{appendices}
+	
+	% Start appendix sections using \section
+	\renewcommand{\thesection}{A\arabic{section}}  % This will format sections as A1, A2, A3, ...
+	
+	\section{Oscilator code}
+\begin{lstlisting}[language=Python, caption={ocilator.py}]
+	"""
+	class which creates matrix vector multiplication for trajectory rollout
+	k: stiffness coeficient
+	m: mass
+	"""
+	class oscigradH(nn.Module):
+	def __init__(self,k,m):
+	super(oscigradH,self).__init__()
+	self.A=torch.zeros(2,2).to(device_util.DEVICE)
+	self.A[0,1]=1/m
+	self.A[1,0]=-k
+	
+	def forward(self,t,y):
+	return torch.matmul(y,self.A.T)
+	"""
+	class to create an oscilator data
+	k: stiffness coeficient
+	m: mass
+	
+	"""    
+	class oscilator:
+	def __init__(self,m,k):
+	self.k = k
+	self.m = m
+	self.F = oscigradH(k,m).to(device_util.DEVICE)
+	"""
+	method for period T
+	"""
+	def getT(self):
+	return 2*math.pi/math.sqrt(self.k/self.m)
+	
+	
+	"""
+	method for creating randomly initial values for the oscilator
+	samples : number of initial values
+	H_span : region for the energy
+	"""	
+	def make_inits(self,samples,H_span=[1,5]):
+	Hs = H_span[0]*torch.rand(samples,)*(H_span[1]-H_span[0])
+	a = torch.sqrt(2*self.m*Hs)
+	b = torch.sqrt(2*Hs/self.k)
+	phis = torch.rand(samples,)*2*torch.pi
+	
+	p = a * torch.cos(phis)
+	p = torch.unsqueeze(p,dim=-1)
+	
+	x = b * torch.sin(phis)
+	x = torch.unsqueeze(x,dim=-1)
+	
+	return torch.cat((x,p),dim=-1)
+	"""
+	method for calculating hamitlonian
+	
+	returns: hamiltonian
+	"""
+	def hamiltonian(self,dataset):
+	# dataset type [len(t),batches,1,2], [len(t),1,2], [batches,1,2]
+	if dataset.dim() > 3:
+	dataset = dataset.squeeze()
+	if dataset.dim() < 3:
+	dataset = torch.unsqueeze(dataset,dim=1)
+	x = dataset[:,:,0]
+	p = dataset[:,:,1]
+	
+	T = p.square()/(2*self.m)
+	U = self.k*x.square()/2
+	
+	H = T+U
+	return H
+	
+	"""
+	method for creating only one trajectory
+	points: number of time points, sequence length
+	H_span: region for the energy
+	
+	returns: trajectory and time
+	"""
+	def make_one(self,points, H_span=[1,5]):
+	omega = math.sqrt(self.k/self.m)
+	T = 2*math.pi/omega
+	
+	t = torch.linspace(0,T,points).to(device_util.DEVICE)
+	y=self.make_inits(1,H_span=H_span).to(device_util.DEVICE)
+	data = odeint(self.F,y[0,:],t,method="rk4")
+	
+	return data.unsqueeze(dim=1), t
+	"""
+	method for creating the dataset 
+	points: number of time points,sequence length
+	samples : number of initial values
+	T: period if 0, else end time
+	H_span: region for the energy
+	
+	returns: trajectory and time
+	"""
+	def make_dataset(self,points,samples,T = 0,H_span=[1,5]):
+	if T == 0:
+	omega = math.sqrt(self.k/self.m)
+	T = 2*math.pi/omega
+	t = torch.linspace(0,T,points).to(device_util.DEVICE)
+	y=self.make_inits(samples,H_span=H_span).to(device_util.DEVICE)
+	y=torch.unsqueeze(y,dim=1)
+	print(y.shape)
+	data = odeint(self.F,y,t,method="rk4")
+	
+	return data, t
+\end{lstlisting}
+	
+	\section{Twobody code}
+	\begin{lstlisting}[language=Python, caption={ocilator.py}]
+		"""
+		class which creates matrix vector multiplication for trajectory rollout
+		k: stiffness coeficient
+		m: mass
+		"""
+		class oscigradH(nn.Module):
+		def __init__(self,k,m):
+		super(oscigradH,self).__init__()
+		self.A=torch.zeros(2,2).to(device_util.DEVICE)
+		self.A[0,1]=1/m
+		self.A[1,0]=-k
+		
+		def forward(self,t,y):
+		return torch.matmul(y,self.A.T)
+		"""
+		class to create an oscilator data
+		k: stiffness coeficient
+		m: mass
+		
+		"""    
+		class oscilator:
+		def __init__(self,m,k):
+		self.k = k
+		self.m = m
+		self.F = oscigradH(k,m).to(device_util.DEVICE)
+		"""
+		method for period T
+		"""
+		def getT(self):
+		return 2*math.pi/math.sqrt(self.k/self.m)
+		
+		
+		"""
+		method for creating randomly initial values for the oscilator
+		samples : number of initial values
+		H_span : region for the energy
+		"""	
+		def make_inits(self,samples,H_span=[1,5]):
+		Hs = H_span[0]*torch.rand(samples,)*(H_span[1]-H_span[0])
+		a = torch.sqrt(2*self.m*Hs)
+		b = torch.sqrt(2*Hs/self.k)
+		phis = torch.rand(samples,)*2*torch.pi
+		
+		p = a * torch.cos(phis)
+		p = torch.unsqueeze(p,dim=-1)
+		
+		x = b * torch.sin(phis)
+		x = torch.unsqueeze(x,dim=-1)
+		
+		return torch.cat((x,p),dim=-1)
+		"""
+		method for calculating hamitlonian
+		
+		returns: hamiltonian
+		"""
+		def hamiltonian(self,dataset):
+		# dataset type [len(t),batches,1,2], [len(t),1,2], [batches,1,2]
+		if dataset.dim() > 3:
+		dataset = dataset.squeeze()
+		if dataset.dim() < 3:
+		dataset = torch.unsqueeze(dataset,dim=1)
+		x = dataset[:,:,0]
+		p = dataset[:,:,1]
+		
+		T = p.square()/(2*self.m)
+		U = self.k*x.square()/2
+		
+		H = T+U
+		return H
+		
+		"""
+		method for creating only one trajectory
+		points: number of time points, sequence length
+		H_span: region for the energy
+		
+		returns: trajectory and time
+		"""
+		def make_one(self,points, H_span=[1,5]):
+		omega = math.sqrt(self.k/self.m)
+		T = 2*math.pi/omega
+		
+		t = torch.linspace(0,T,points).to(device_util.DEVICE)
+		y=self.make_inits(1,H_span=H_span).to(device_util.DEVICE)
+		data = odeint(self.F,y[0,:],t,method="rk4")
+		
+		return data.unsqueeze(dim=1), t
+		"""
+		method for creating the dataset 
+		points: number of time points,sequence length
+		samples : number of initial values
+		T: period if 0, else end time
+		H_span: region for the energy
+		
+		returns: trajectory and time
+		"""
+		def make_dataset(self,points,samples,T = 0,H_span=[1,5]):
+		if T == 0:
+		omega = math.sqrt(self.k/self.m)
+		T = 2*math.pi/omega
+		t = torch.linspace(0,T,points).to(device_util.DEVICE)
+		y=self.make_inits(samples,H_span=H_span).to(device_util.DEVICE)
+		y=torch.unsqueeze(y,dim=1)
+		print(y.shape)
+		data = odeint(self.F,y,t,method="rk4")
+		
+		return data, t
+	\end{lstlisting}
+	
+	
+	\section{threebody code}
+
+	
+\end{appendices}

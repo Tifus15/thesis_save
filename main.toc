@@ -29,12 +29,12 @@
 \contentsline {section}{\numberline {4.2}Recurrent time steppers}{45}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Hamiltonian Neural Network}{45}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Graph Neural Network}{46}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Convolutional Graph Neural Network}{47}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}Convolutional Graph Neural Network}{48}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Gated Attention Network}{49}{subsection.4.4.2}%
 \contentsline {section}{\numberline {4.5}Graph Hamiltonian Neural Network}{49}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Improved Graph Hamiltonian Neural Network}{50}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Improved Graph Hamiltonian Neural Network}{51}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Gated Recurrent Graph Hamiltonian Neural Network - GRUGHNN}{51}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Training for Physics Informed Models}{53}{section.4.8}%
+\contentsline {section}{\numberline {4.8}Training for Physics Informed Models based on ODE}{53}{section.4.8}%
 \contentsline {chapter}{\numberline {5}Experiments}{55}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Experimentation of the Models on the Datasets}{55}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Harmonic Oscillator}{56}{subsection.5.1.1}%

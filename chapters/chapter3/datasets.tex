@@ -46,7 +46,7 @@ To create unique trajectories for the dataset we just need to specify energy reg
 
 
 \section{N-body problem}
-N-body problem is most complex problem in physics. It describes a movement of bodies in the free space. There are no conditions and there are multitude of solutions. This problem is even a topic in quantum theory.\\ We will just observe an compute real trajectories of this problem.\\ 
+N-body problem is most complex problem in physics. It describes a movement of bodies in the free space. There are no conditions and there are multitude of solutions. This problem is even a topic in quantum theory.\\ We will just observe an compute real or deterministic trajectories of this problem.\\ 
 In Newtonian formulation the N-body problem is
 \begin{equation}
 m_i\ddot{\mathbf{x}}_i = -\sum_{i\neq j, j=1}^nG\frac{m_im_j(\mathbf{x}_i-\mathbf{x}_j)}{||\mathbf{x}_i-\mathbf{x}_j||^3}
@@ -56,18 +56,18 @@ and its Hamiltonian:
 	\mathcal{H} =\sum_i^n \frac{1}{2m_i}||\mathbf{p}_i||^2 - \sum_{1<i,j<n,i\neq j}\frac{Gm_im_j}{||\mathbf{x}_i-\mathbf{x}_j||}
 \end{equation} 
 for $i \in[1,n].$
-N body problem is very complex problem because we need to achieve a conservative property of the Hamiltonian in the system\\
+N body problem is very complex problem because we need to achieve a conservative property of the Hamiltonian in the system.\\
 The biggest issue in this dataset are the crashes between the bodies.
-This can be resolved with simple trick adding the $\epsilon$ to fix maximal potentional energy
+This can be resolved with simple trick adding the $\epsilon$ to fix maximal potential energy
 \begin{equation}
 	- \sum_{1<i,j<n,i\neq j}\frac{Gm_im_j}{||\mathbf{x}_i-\mathbf{x}_j||+\epsilon}.
 \end{equation}
 We secured that the value in the dominator never reaches 0. This is important because we use numerical solvers to create trajectories. If we have energy which achieves very big difference in values between two time steps, our solution will be inaccurate.  For calculation of such trajectories we are forced not to calculate over the Hamiltonian equations, but to calculate the trajectories using acceleration, velocity and position of the bodies trough some symplectic numerical methods. The code base for computation of the dataset we borrowed from \cite{nb}. In the code we introduced changes like solver, we used leapfrog and beeman method for calculating the trajectories.\\
-To create the dataset we carefully chosed those constalations which are in fixed domain and the hamiltonian looks conservative. This conservative property is observable trough mean and standard deviation of the Hamiltonian Energy 
+To create the dataset we carefully chose those constalations which are in fixed domain and the hamiltonian looks conservative. This conservative property is observable trough mean and standard deviation of the Hamiltonian Energy 
 \subsection{Symplectic numerical methods to solve N-body problem}
 Symplectic numerical methods are designed for numerical solution of Hamilton Equations. It posses conserved quality to approximate the Total Energy the Hamiltonian.\\
 They have two forms. One in canonical coordinates($q$,$p$) and in langrangian coordinates($x$,$v$,$a$). Most used ones are in langrangian form and we will use it to create trajectory for N-body problem.\\
-For the N-body problem we used two numerical solvers. In first step we used velocity verlet
+From the Newtonian formula for N-body problem we can get acceleration function which will be used in numerical solvers. In first step we used velocity verlet
 \begin{eqnarray}
 	\mathbf{x}_{i+1} &=& \mathbf{x}_i + h\mathbf{v}_i + \mathbf{a}_i\frac{h^2}{2} \\
 	\mathbf{v}_{i+1}&=&\mathbf{v}_i + (\mathbf{a}_i +\mathbf{a}_{i+1})\frac{h}{2}
@@ -78,9 +78,10 @@ for the next steps with timestep $h$ we used more stable beeman method
 	\mathbf{v}_{i+1}&=&\mathbf{v}_i + \frac{h}{6}(2\mathbf{a}_{i+1} + 5\mathbf{a}_i-\mathbf{a}_{i+1}).
 \end{eqnarray}
 This needed to be done because the beeman method needs acceleration of the next and previous step to be calculated. We used langragian coordinates because it is most easiest way to create trajectories.
-In canonical coordinates we need more formulas like for hamiltonian energy and its derivation. In thi way we can very fast calculate the trajecories of nbody problem. The dataset is fully adjustable. We can adjust gravity constant and masses how we like. As proof of concept we used $G=1$ and $m_i=1$.  
+In canonical coordinates we need more formulas like for hamiltonian energy and its derivation. In this way we can very fast calculate the trajectories of nbody problem. The dataset is fully adjustable. We can adjust gravity constant and masses how we like. As proof of concept we used $G=1$ and $m_i=1$.  
+
 \subsection{Twobody problem}
-Twobody problem is one of the most easiest dataset which could be created from N-body problem. It has one trivial solution which is binary star movement which is periodic.
+Twobody problem is one of the most easiest dataset which could be created from N-body problem. It has one trivial periodic solution which is binary star movement.
 Two stars trough their movement maintain constant distance $r$ and their center of mass $\mathbf{p}_m$ is static at the origin.\\
 The newtonian form of twobody Problem is written as
 \begin{eqnarray}
@@ -123,7 +124,7 @@ This can be used to calculate constant distance between the bodies
 With those equations we can simplify hamiltonian \begin{equation}
 	\mathcal{H}= ||\mathbf{p}||^2\left(\frac{1}{m_1}+\frac{1}{m_2}\right) - G\frac{m_1m_2}{r}.
 \end{equation}
-Still to make a dataset with twobody trajectories we need a period $T$. Let assume that our solution as describe is radial. the bodies moves on a circular path
+Still to make a dataset with twobody trajectories we need a period $T$. Let assume that the bodies moves on a circular path
 \begin{eqnarray}
 	\mathbf{q}_1 = r_1
 	\begin{bmatrix}
@@ -164,7 +165,7 @@ With the equations
 ||\mathbf{p}|| = r_1m_1\omega,
 \end{eqnarray}
 we calculated the value of the momentum.
-This momentum we can get from Physics and newton third law: if some body moves around some point in radial path, we can calculate a centripetal Force and this Force should be equal to Gravitational Force
+This momentum we can get from physics and newton third law: if some body moves around some point in radial path, we can calculate a centripetal Force and this Force should be equal to Gravitational Force
 \begin{equation}
 	F_c = \frac{||\mathbf{p}||^2}{m_1r_1} = \frac{Gm_1m_2}{r^2} = F_g.
 \end{equation}
@@ -175,7 +176,7 @@ Substituting $||\mathbf{p}||$ we get $\omega$
  \begin{equation}
  	T = \frac{2\pi}{\omega}.
  \end{equation}
-In two body problem to create some diverse dataset but with equivalent bodies we vary the distance between the bodies. We need to be careful because with grater distance $r$ the period $T$ will be longer.\\
+In twobody problem to create some diverse dataset we vary the distance between the bodies keeping the masses intact. We need to be careful because with grater distance $r$ the period $T$ will be longer.\\
 The mathematical formulation of the solution which is used for code is taken from hamiltonian equations
 \begin{equation}
 	\dot{\mathbf{x}} = J\frac{\partial H}{\partial \mathbf{x}}(\mathbf{x})=
@@ -371,7 +372,7 @@ In Figure \ref{pyb} you can see the Pendelum in \texttt{Pybullet }simulation sof
  \begin{figure}[h!]
  	\label{pend}
  	\centering
- 	\includegraphics[width=10cm]{chapters/chapter3/pendulum.pdf}
+ 	\includegraphics[width=10cm]{chapters/chapter3/pendelum-1.pdf}
  	\caption{Pendelum with 3 degrees of freedom in pybullet}
  	\label{pyb}
  \end{figure}
